@@ -1,0 +1,71 @@
+.sales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--nav-overlay-color);
+}
+
+.sales__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+
+}
+
+.sales__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 5rem;
+}
+
+.discount__off {
+    font-size: 2rem;
+    font-weight: var(--font-bold);
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-family: "Satoshi-Bold", sans-serif;
+    letter-spacing: 0.325rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.sales__content h1 {
+    font-size: 2rem;
+    font-weight: var(--font-bold);
+    color: var(--container-color);
+    text-transform: uppercase;
+    font-family: "Satoshi-Bold", sans-serif;
+    letter-spacing: 0.325rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.sales__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--container-color);
+    color: var(--nav-overlay-color);
+    font-size: 1rem;
+    font-weight: var(--font-bold);
+    font-family: "Satoshi-Bold", sans-serif;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}

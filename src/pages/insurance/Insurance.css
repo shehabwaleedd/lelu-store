@@ -1,0 +1,70 @@
+
+.brag__content_lower {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.brag__cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-bottom: 0.5rem;
+
+}
+
+.brag__card {
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: center;
+    gap: 1rem;
+    width: 20rem;
+    height: 15rem;
+    border-radius: 1rem;
+    padding-bottom: 0.5rem;
+    padding: 1rem;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.brag__card  i {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.brag__card h1 {
+    font-size: 1.1rem;
+    font-weight: var(--font-bold);
+    color: var(--title-color);
+    text-transform: uppercase;
+    font-family: "Satoshi-Bold", sans-serif;
+    letter-spacing: 0.125rem;
+    display: flex;
+    text-align: left;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+    border-bottom: 1px solid var(--title-color);
+
+    padding-bottom: 0.5rem;
+}
+
+.brag__card span {
+    color: var(--text-color);
+    font-family: "Satoshi", sans-serif;
+}
+
+.brag__card:hover {
+    color: var(--text-color);
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.brag__card span i {
+    padding-left: 0.4rem;
+    font-size: 1.4rem;
+    color: var(--title-color);
+}

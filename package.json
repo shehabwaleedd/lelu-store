@@ -3,12 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@motionone/utils": "^10.15.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "auth-provider": "^0.6.2",
+    "axios": "^1.4.0",
+    "barba.js": "^1.0.0",
+    "emailjs": "^4.0.2",
+    "firebase": "^9.22.0",
+    "framer-motion": "^10.12.10",
+    "gsap": "^3.11.5",
+    "i18next": "^22.4.15",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "i18next-http-backend": "^2.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^12.2.2",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.11.1",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
+    "react-swipeable": "^7.0.0",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^9.3.2",
+    "swiper-react": "^1.0.0",
+    "typescript": "^5.0.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +54,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "install": "^0.13.0",
+    "npm": "^9.6.6",
+    "tailwindcss": "^3.3.2"
   }
 }

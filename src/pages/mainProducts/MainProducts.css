@@ -1,0 +1,126 @@
+.mainproducts {
+    width: 100%;
+    cursor: grab;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.mainproducts::-webkit-scrollbar {
+    display: none;
+}
+
+.slider__wrapper {
+    white-space: nowrap;
+
+}
+
+.slider__item {
+    display: inline-block;
+    position: relative;
+    width: 40vw;
+    padding: 3vw;
+    scroll-snap-align: start;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.slider__item figure {
+    position: relative;
+    padding-bottom: 50%;
+    overflow: hidden;
+}
+
+.slider__item.active {
+    transform: scale(1.1);
+    z-index: 1;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+.slider__item figure img {
+    
+}
+
+
+.slider__wrapper:hover .slider__item:not(.active) {
+    opacity: 0.75;
+}
+
+.slider__wrapper:hover .slider__item:hover {
+    opacity: 1;
+}
+
+.slider__wrapper:hover .slider__item.active {
+    transform: scale(1.2);
+}
+
+.swiper-slide {
+    touch-action: pan-y;
+}
+
+
+.slider__item__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.slider__item__info h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+    color: var(--accent-color);
+}
+
+.slider__item__info p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0.5rem 0;
+    color: var(--text-color);
+}
+
+
+
+.mainproducts__like {
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    margin: 1rem;
+    font-size: 2rem;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+
+    padding: 0rem 0.5rem;
+    padding-top: 0.2rem;
+    border-radius: 50%;
+}
+
+.mainproducts__like:hover {
+    color: rgb(255, 121, 121);
+    background-color: #ffdbdb;
+    border-radius: 2rem;
+}
+
+.slider__item__info button {
+    padding: 0.5rem 0rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    color: var(--title-color);
+    text-transform: uppercase;
+}
+
+.slider__item__info button::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0.1rem;
+    background-color: var(--accent-color);
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.slider__item__info button:hover::after {
+    width: 90%;
+}

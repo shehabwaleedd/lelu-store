@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import { createContext } from 'react';
+import { AnimatePresence } from 'framer-motion';
+import Footer from './pages/footer/Footer';
+import MainRoutes from './routes/routes/MainRoutes';
+import AnimatedNav from './navItems/animatedNav/AnimatedNav';
+import ScrollUp from './components/scrollup/ScrollUp';
+import './index.css';
+
+export const ThemeContext = createContext(null);
+
 
 function App() {
+
+  const [theme, setTheme] = useState('dark');
+  const [navOpen, setNavOpen] = useState(false);
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="App" id={theme}>
+            <AnimatedNav navOpen={navOpen} setNavOpen={setNavOpen} toggleTheme={toggleTheme}/>
+            <ThemeContext.Provider value={{ theme, toggleTheme }}>
+              <AnimatePresence>
+                <MainRoutes />
+              </AnimatePresence>
+              <ScrollUp />
+              <Footer />
+            </ThemeContext.Provider>
+      </div>
   );
 }
 

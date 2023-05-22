@@ -1,0 +1,147 @@
+
+.headerr {
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 0;
+    right: 0;
+    height: 5rem;
+    width: 100%;
+}
+
+
+.containerr {
+    margin-top: 1.5rem;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.inner-container {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: transparent;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1) ease-in-out;
+    cursor: pointer;
+    
+}
+
+.inner-container .inner-inner-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-left: 1px solid var(--text-color);
+    text-align: center;
+    
+}
+
+.inner-inner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.top-section {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+.top-section h1 {
+    font-size: 3rem;
+    font-family: "Kenoky";
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.top-section p {
+    padding: 0.5rem 0px;
+    font-family: "Neutral Face";
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    padding-left: 2px;
+    text-align: left;
+    display: flex;
+}
+
+.inner-container .bottom-section {
+    font-size: 20rem;
+    margin-bottom: 50px;
+    font-family: "Kenoky";
+    font-weight: lighter;
+    color: #8f0000;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.inner-container:hover .top-section h1 {
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    opacity: 0;
+    border-left: 0px solid var(--text-color);
+}
+
+.inner-container:hover .inner-inner-container{
+    border-left: 0px solid var(--text-color);
+}
+
+.inner-container:hover {
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    transform: scale(1.05); /* Add this line to apply scale on hover */
+    border-left: 0px solid var(--text-color);
+}
+
+.inner-container:hover .top-section p {
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    opacity: 0;
+}
+
+.inner-container:hover .bottom-section {
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    opacity: 0;
+}
+
+.inner-container-1:hover {
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    background-image: url("../../assets/lelu6.jpg");
+    border-left: 0;
+    
+}
+
+.inner-container-2:hover {
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    background-image: url("../../assets/lelu3.jpg");
+    border-left: 0px solid var(--text-color);
+}
+
+.inner-container-3:hover {
+    background-image: url("../../assets/lelu5.jpg");
+}
+
+.inner-container-4:hover {
+    background-image: url("../../assets/lelu4.jpg");
+}
+.headerr:hover .img img {
+    filter: invert(1);
+}
+
+.headerr:hover .heading img {
+    filter: invert(1);
+}
