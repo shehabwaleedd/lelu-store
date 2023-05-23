@@ -41,16 +41,16 @@
     justify-content: center;
     gap: 0.5rem;
     cursor: pointer;
-    margin-left: 3rem;
+    margin-left: 5rem;
     position: relative;
 }
 
 .toppicks__card img {
-    width: 18rem;
-    height: 16.5rem;
+    width: 22rem;
+    height: 18.5rem;
     object-fit: cover;
-    border-radius: 1rem;
-    border: 0.5px solid var(--text-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 1.5rem;
 }
 
 .toppicks__card h2 {
@@ -81,23 +81,17 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 85%;
+    width: 100%;
 }
 
 .toppicks__cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 20px;
+
 }
 
 
-.toppicks__carousel .swiper-slide img {
-    width: 22rem;
-    height: 18.5rem;
-    object-fit: cover;
-    border-radius: 1rem;
-}
 
 .toppicks__carousel .swiper-pagination-bullet {
     background-color: #7e7e7e;

@@ -3,18 +3,13 @@ import './Insurance.css'
 
 const Insurance = () => {
     return (
-        <section className='brag'>
+        <section className='insurance section'>
             <div className="brag__content_lower">
                 <div className="brag__cards">
                     <div className="brag__card">
                         <i class='bx bx-happy-beaming' ></i>
                         <h1>Satisfaction Guarantee</h1>
                         <span>Exchange the products you've purchased if it doesn't fit on you</span>
-                    </div>
-                    <div className="brag__card">
-                        <i class='bx bx-trending-up'></i>
-                        <h1>New Arrival</h1>
-                        <span>Every week we have new products coming in fresh from the factory</span>
                     </div>
                     <div className="brag__card">
                         <i class='bx bx-credit-card-front'></i>
@@ -38,6 +33,7 @@ const Insurance = () => {
                     </div>
                 </div>
             </div>
+
         </section>
     )
 }

@@ -1,41 +1,54 @@
-import React from 'react'
-import './Main.css'
-import img1 from '../../assets/land1.jpg'
-import img2 from '../../assets/women1.jpg'
-import img3 from '../../assets/women3.jpg'
-import logo from '../../assets/logo_lelu.webp'
+import React, { useEffect } from 'react';
+import './Main.css';
+import img1 from '../../assets/land4.jpg';
+import img2 from '../../assets/women1.jpg';
+import img3 from '../../assets/women3.jpg';
+import logo from '../../assets/logo_lelu.webp';
+import Data from './Data';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Controller } from 'swiper';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const Home = () => {
 
     return (
         <section className='home section'>
-            <div className="home__container grid">
-                <div className="swipere mySwiper">
-                    <div className="slider-nav">
-                        <div className="button-next">
-                            <i className='bx bx-chevron-left'></i>
-                        </div>
-                        <div className="button-prev">
-                            <i className='bx bx-chevron-right'></i>
+            <div className='home__container grid'>
+                <Swiper
+                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    slidesPerView={1}
+                    className='main__carousel'
+                    spaceBetween={150}
+                    loop={true}
+                    navigation={true}
+                    pagination={{ clickable: true }}
+                >
+                    <div className='swipere mySwiper'>
+                        <div className='swiper-wrapper'>
+                            {Data.map(({ id, image, h2, h22, h222 }) => (
+                                <SwiperSlide key={id}>
+                                    <div className='swipere-slide'>
+                                        <div className='swipere__p'>
+                                            <p>new arrivals</p>
+                                        </div>
+                                        <div className='sing-details'>
+                                            <h2 className='sing__h2'>{h2}</h2>
+                                            <h2 className='sing__h22'>{h22}</h2>
+                                            <h2 className='sing__h222'>{h222}</h2>
+                                        </div>
+                                        <img src={image} alt='' />
+                                    </div>
+                                </SwiperSlide>
+                            ))}
                         </div>
                     </div>
-                    <div className="swiper-wrapper">
-                        <div className="swipere-slide">
-                            <div className="swipere__p">
-                                <p>new arrivals</p>
-                            </div>
-                            <div className="sing-details">
-                                <h2 className='sing__h2'>LELU is giving </h2>
-                                <h2 className='sing__h22'> you taste of</h2>
-                                <h2 className='sing__h222'>What's Coming</h2>
-                            </div>
-                            <img src={img1} alt="" />
-                        </div>
-                    </div>
-                </div>
+                </Swiper>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;

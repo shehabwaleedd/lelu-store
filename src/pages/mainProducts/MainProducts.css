@@ -2,11 +2,30 @@
     width: 100%;
     cursor: grab;
     overflow-x: scroll;
+
     scroll-snap-type: x mandatory;
 }
 
 .mainproducts::-webkit-scrollbar {
     display: none;
+}
+
+.mainproducts_title {
+    position: relative;
+    text-align: left;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.mainproducts__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--title-color);
+    letter-spacing: 1rem;
+    text-transform: uppercase;
 }
 
 .slider__wrapper {
@@ -21,6 +40,7 @@
     padding: 3vw;
     scroll-snap-align: start;
     transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+
 }
 
 .slider__item figure {
@@ -35,10 +55,6 @@
     transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-
-.slider__item figure img {
-    
-}
 
 
 .slider__wrapper:hover .slider__item:not(.active) {

@@ -85,7 +85,6 @@ const AnimatedNav = () => {
                             <li><Link to="/">Accessories</Link></li>
                             <li><Link to="/">About Us</Link></li>
                             <li><Link to="/">Contact</Link></li>
-                            <li><Link to="/">Follow Us</Link></li>
                         </ul>
                     </div>
                 </div>

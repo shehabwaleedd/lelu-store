@@ -8,6 +8,8 @@ import TopPicks from "../../pages/topPicks/TopPicks"
 import Sales from "../../components/sales/Sales"
 import MainProducts from "../../pages/mainProducts/MainProducts"
 import Insurance from "../../pages/insurance/Insurance"
+import Awareness from "../../pages/awareness/Awareness"
+import Testimonials from "../../pages/testimonials/Testimonials"
 
 export const BlogHome = () => {
 
@@ -16,19 +18,20 @@ export const BlogHome = () => {
   const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
   return (
     <div>
-          <motion.div>
-          <Picks />
-            <Home  />
-            <MainProducts />
-            <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0, transition: { delay: 1, ...transition } }} exit={{ opacity: 1 }} transition={transition}>
-              <ParallaxTextAnimation />
-            </motion.div>
-
-            <Brag />
-            <TopPicks />
-            <Sales />
-            <Insurance />
-          </motion.div>
+      <motion.div>
+        <Picks />
+        <Home />
+        <Awareness />
+        <MainProducts />
+        <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0, transition: { delay: 1, ...transition } }} exit={{ opacity: 1 }} transition={transition}>
+          <ParallaxTextAnimation />
+        </motion.div>
+        <Brag />
+        <TopPicks />
+        <Sales />
+        <Insurance />
+        <Testimonials />
+      </motion.div>
     </div >
   )
 }

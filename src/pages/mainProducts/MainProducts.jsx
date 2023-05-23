@@ -8,6 +8,7 @@ const MainProducts = () => {
 
     return (
         <section className="mainproducts section">
+
             <div className="slider__wrapper">
                 {Data.map(({ id, title, price, img, desc }) => (
                     <div className="slider__item" key={id}>
