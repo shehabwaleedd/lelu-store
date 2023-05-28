@@ -13,7 +13,7 @@ const Picks = () => {
             <div className="picks__wrapper">
                 {Data.map(({ id, title, img, alt, desc }) => (
                     <div className="picks__inner__card" key={id}>
-                        <img src={img} alt={alt} draggable="false" on/>
+                        <img src={img} alt={alt} draggable="false"/>
                         <div className="picks__inner__card__info">
                             <h1>{desc}</h1>
                         </div>

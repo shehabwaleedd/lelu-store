@@ -5,7 +5,7 @@ import { AnimatePresence } from 'framer-motion';
 import Footer from './pages/footer/Footer';
 import MainRoutes from './routes/routes/MainRoutes';
 import AnimatedNav from './navItems/animatedNav/AnimatedNav';
-import ScrollUp from './components/scrollup/ScrollUp';
+import ScrollUp from './components/supplements/socials/scrollup/ScrollUp';
 import './index.css';
 
 export const ThemeContext = createContext(null);

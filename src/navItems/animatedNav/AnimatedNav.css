@@ -42,6 +42,7 @@
   height: 100%;
   bottom: 0;
   position: relative;
+  padding-bottom: 1.6rem;
 }
 
 .nav__content {
@@ -73,7 +74,7 @@
   bottom: 0;
   position: relative;
   transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
-  padding-top: 0.5rem;
+  padding-top: 2rem;
 }
 
 .nav__content ul li {
@@ -285,7 +286,7 @@
 }
 
 
-.cart-icon {
+.createpost__button {
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
@@ -297,12 +298,16 @@
   justify-content: center;
   height: 7.2vh;
   color: var(--container-color);
+  gap: 1rem;
 }
 
-.createpost__button button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.createpost__button h3 {
+  color: var(--container-color);
+}
+
+.createpost__button i {
+  color: var(--container-color);
+  font-size: 1.3rem;
 }
 
 .nav__logins {

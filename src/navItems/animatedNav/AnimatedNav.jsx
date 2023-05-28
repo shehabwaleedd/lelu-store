@@ -60,9 +60,8 @@ const AnimatedNav = () => {
                             <NavComponents navOpen={navOpen} />
                         </div>
                         <Link className="createpost__button " to={user ? "/createpost" : "/signup"}>
-                            <button>
+                                <i className='bx bx-cart' ></i>
                                 <h3 className='cart-icon '>CART</h3>
-                            </button>
                         </Link>
                     </div>
                     <div className="nav-overlay" style={{
@@ -78,13 +77,13 @@ const AnimatedNav = () => {
                     <div className="nav__content">
                         <ul>
                             <li><Link to="/">New Arrivals</Link></li>
-                            <li><Link to="/">Tees</Link></li>
+                            <li><Link to="/shop">Tees</Link></li>
                             <li><Link to="/">Hoodies</Link></li>
                             <li><Link to="/">Cargos</Link></li>
                             <li><Link to="/collection">Collections</Link></li>
                             <li><Link to="/">Accessories</Link></li>
                             <li><Link to="/">About Us</Link></li>
-                            <li><Link to="/">Contact</Link></li>
+                            <li><Link to="/contact">Contact</Link></li>
                         </ul>
                     </div>
                 </div>

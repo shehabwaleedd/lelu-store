@@ -9,7 +9,6 @@ const Testimonials = () => {
   const { t } = useTranslation()
   return (
     <section className="testimonial section">
-      <h2 className="section__title">Our Clients' Testimonials</h2>
       <div className="testimonials__container containered">
         {Data.map(({ id, image, title, comment, job, url, location }) => {
           return (

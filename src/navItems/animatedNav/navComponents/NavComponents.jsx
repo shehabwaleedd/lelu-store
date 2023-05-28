@@ -22,9 +22,6 @@ const NavComponents = (Props) => {
     return (
         <div className="nav__links-links">
             {user ? <>
-                <Link className="nav__home" to="/">
-                    {t("navbar__home")}
-                </Link>
                 <button className={Props.navOpen ? "nav__home spin" : "nav__home"} onClick={handleLogout} >Logout</button>
                 <button className={Props.navOpen ? "nav__home spin" : "nav__home"} >Account</button>
             </>

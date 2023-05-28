@@ -26,6 +26,7 @@
     color: var(--title-color);
     letter-spacing: 1rem;
     text-transform: uppercase;
+    
 }
 
 .slider__wrapper {
@@ -41,13 +42,16 @@
     scroll-snap-align: start;
     transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
 
+
 }
 
-.slider__item figure {
+.slider__item img {
     position: relative;
-    padding-bottom: 50%;
     overflow: hidden;
+    border-radius: 2rem;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
 }
+
 
 .slider__item.active {
     transform: scale(1.1);
@@ -56,6 +60,9 @@
 }
 
 
+.slider__wrapper:hover .slider__item img:hover {
+    border-radius: 0;
+}
 
 .slider__wrapper:hover .slider__item:not(.active) {
     opacity: 0.75;

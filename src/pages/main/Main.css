@@ -100,13 +100,11 @@
     font-family: "Satoshi-Bold";
     letter-spacing: 0.525rem;
     text-transform: uppercase;
-    position: absolute;
     display: flex;
     align-items: start;
     justify-content: flex-start;
     text-align: left;
-    top: 10rem;
-    right: -25rem;
+
 }
 
 .swipere__p p {
@@ -122,7 +120,7 @@
     position: relative;
     font-size: 4.5rem;
     color: #fffce2;
-    font-family: "Satoshi-Bold";
+    font-family: "Satoshi-Black";
     font-weight: var(--font-bold);
     text-transform: uppercase;
     letter-spacing: 0.525rem;

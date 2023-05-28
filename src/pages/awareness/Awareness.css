@@ -74,7 +74,7 @@
     letter-spacing: 0.2rem;
     text-align: left;
     border: 1px solid var(--title-color);
-    padding: 0.2rem 0.5rem;
+    padding: 0.2rem 0.8rem;
     border-radius: 1rem;
     cursor: pointer;
     transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);

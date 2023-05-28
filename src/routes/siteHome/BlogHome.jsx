@@ -10,6 +10,7 @@ import MainProducts from "../../pages/mainProducts/MainProducts"
 import Insurance from "../../pages/insurance/Insurance"
 import Awareness from "../../pages/awareness/Awareness"
 import Testimonials from "../../pages/testimonials/Testimonials"
+import Mission from "../../pages/mission/Mission"
 
 export const BlogHome = () => {
 
@@ -22,14 +23,15 @@ export const BlogHome = () => {
         <Picks />
         <Home />
         <Awareness />
+        <Mission />
         <MainProducts />
         <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0, transition: { delay: 1, ...transition } }} exit={{ opacity: 1 }} transition={transition}>
           <ParallaxTextAnimation />
         </motion.div>
         <Brag />
         <TopPicks />
-        <Sales />
         <Insurance />
+        <Sales />
         <Testimonials />
       </motion.div>
     </div >

@@ -23,17 +23,26 @@
     width: 25rem;
     height: 12.5rem;
     object-fit: cover;
+    object-position:  50% 30%;
     border: 0.7px solid var(--text-color);
+    border-radius: 0.5rem;  
     margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+
 }
 
 .picks__inner__card {
     display: inline-block;
+    align-items: center;
     position: relative;
     width: 30vw;
     scroll-snap-align: start;
     transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
     margin-top: 5rem;
+
+    padding-top: 1rem;
 }
 
 

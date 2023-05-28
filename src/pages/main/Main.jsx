@@ -31,10 +31,11 @@ const Home = () => {
                             {Data.map(({ id, image, h2, h22, h222 }) => (
                                 <SwiperSlide key={id}>
                                     <div className='swipere-slide'>
-                                        <div className='swipere__p'>
-                                            <p>new arrivals</p>
-                                        </div>
+
                                         <div className='sing-details'>
+                                            <div className='swipere__p'>
+                                                <p>new arrivals</p>
+                                            </div>
                                             <h2 className='sing__h2'>{h2}</h2>
                                             <h2 className='sing__h22'>{h22}</h2>
                                             <h2 className='sing__h222'>{h222}</h2>

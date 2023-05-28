@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@motionone/utils": "^10.15.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -11,6 +12,7 @@
     "axios": "^1.4.0",
     "barba.js": "^1.0.0",
     "emailjs": "^4.0.2",
+    "emailjs-com": "^3.2.0",
     "firebase": "^9.22.0",
     "framer-motion": "^10.12.10",
     "gsap": "^3.11.5",

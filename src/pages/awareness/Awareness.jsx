@@ -29,7 +29,7 @@ const Awareness = () => {
                     </div>
                     <div className="awareness__data data3">
                         <div className="awareness__tag">
-                            <p>Education</p>
+                            <p>Insights</p>
                         </div>
                         <div className="awareness__title">
                             <h3>Which Materials You Should Avoid?</h3>
@@ -37,9 +37,6 @@ const Awareness = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="mainproducts_title">
-                <h2 className='mainproducts__title'>Currated Picks</h2>
             </div>
         </section>
     )

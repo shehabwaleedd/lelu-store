@@ -9,8 +9,8 @@ const Data = [
     {
         id: 1,
         image: img1,
-        h2: 'What Do You',
-        h22: "Say To Death's God?",
+        h2: 'What Do We',
+        h22: "Say To God Of Death?",
         h222: '"Not Today"',
     },
     {

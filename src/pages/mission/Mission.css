@@ -1,0 +1,179 @@
+.mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    margin-bottom: 5rem;
+}
+
+.mission__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.mission__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: 80vh;
+    width: 80vw;
+
+}
+
+.content__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 80%;
+    height: 76%;
+    background-color: #ff9f73;
+    padding: 4rem;
+    border-radius: 2rem;
+}
+
+.content__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 110%;
+
+}
+
+.left__upper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #000;
+}
+
+.left__lower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    height: 50%;
+}
+
+.left__upper h2 {
+    font-size: 3.5rem;
+    font-weight: var(--font-bold);
+    color: var(--nav-overlay-color);
+    text-transform: uppercase;
+    font-family: "Satoshi-Bold", sans-serif;
+    gap: 0.5rem;
+}
+
+.lower__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.lower__mission {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.mission__mission {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.mission__mission i {
+    font-size: 1.4rem;
+    color: var(--container-color);
+    background-color: var(--nav-overlay-color);
+    padding: 0.4rem;
+    border-radius: 2rem;
+}
+
+.sustainability__sustainability {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.sustainability__sustainability i {
+    font-size: 1.4rem;
+    color: var(--container-color);
+    background-color: var(--nav-overlay-color);
+    padding: 0.4rem;
+    border-radius: 2rem;
+}
+
+.lower__mission h2 {
+    font-size: 1.4rem;
+    font-weight: var(--font-bold);
+    color: var(--nav-overlay-color);
+    text-transform: uppercase;
+    font-family: "Satoshi-Bold", sans-serif;
+    gap: 0.5rem;
+}
+
+.lower__mission p {
+    font-size: 0.5rem;
+    font-weight: var(--font-normal);
+    color: var(--nav-overlay-color);
+    text-transform: uppercase;
+    font-family: "Satoshi-Bold", sans-serif;
+    gap: 0.5rem;
+}
+
+.lower__sustainbility {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.lower__sustainbility h2 {
+    font-size: 1.4rem;
+    font-weight: var(--font-bold);
+    color: var(--nav-overlay-color);
+    text-transform: uppercase;
+    font-family: "Satoshi-Bold", sans-serif;
+    gap: 0.5rem;
+}
+
+.lower__sustainbility p {
+    font-size: 0.5rem;
+    font-weight: var(--font-normal);
+    color: var(--nav-overlay-color);
+    text-transform: uppercase;
+    font-family: "Satoshi-Bold", sans-serif;
+    gap: 1rem;
+}
+
+
+.content__right img {
+    border-radius: 2rem;
+}
