@@ -1,29 +1,23 @@
-import React from 'react'
-import './Shop.css'
+import React, { useState } from 'react';
+import './Shop.css';
+import Search from './search/Search';
 
 const Shop = () => {
-    
+
+
     return (
-        <section className='shop'>
+        <section className="shop">
             <div className="shop__container containered">
                 <div className="shop__content">
                     <div className="shop__upper">
-                        <div className="shop__titles">
-                            <h1>Search</h1>
-                            <span>hundreds of fresh trending shirts and accessories</span>
-                        </div>
-                        <div className="shop__input">
-                        <i className='bx bx-search search-shop-icon'></i>
-                            <input type="text" placeholder="Search for products" />
-                        </div>
+                        <Search />
                     </div>
-                    <div className="shop__subtitles">
-
+                    <div className="shop__lower">
                     </div>
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Shop
+export default Shop;
