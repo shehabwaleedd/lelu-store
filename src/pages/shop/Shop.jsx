@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Shop.css';
 import Search from './search/Search';
+import Products from './products/Products';
 
 const Shop = () => {
 
@@ -13,6 +14,7 @@ const Shop = () => {
                         <Search />
                     </div>
                     <div className="shop__lower">
+                        <Products />
                     </div>
                 </div>
             </div>

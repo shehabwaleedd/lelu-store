@@ -4,6 +4,7 @@ import Collection from '../../pages/collection/Collection';
 import { BlogHome } from '../siteHome/BlogHome';
 import Contact from '../../pages/contact/Contact';
 import Shop from '../../pages/shop/Shop';
+import DetailsPage from '../../pages/shop/products/detailsPage/DetailsPage';
 
 const MainRoutes = (Props) => {
 
@@ -19,6 +20,7 @@ const MainRoutes = (Props) => {
       <Route path="/collection/:id" element={<Collection />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/shop" element={<Shop />} />
+      <Route path="/details/:id" element={<DetailsPage />} />
     </Routes>
   )
 }

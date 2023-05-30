@@ -1,0 +1,183 @@
+.containerrr {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8.2rem;
+}
+
+
+
+.menu-cart {
+    font-family: Helvetica;
+    font-weight: 400;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.product-wrapper {
+    display: flex;
+    height: 100%;
+}
+
+.product-img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 2;
+}
+
+.product-wrapper img {
+    position: relative;
+
+    margin-bottom: 4rem;
+    object-fit: cover;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    
+}
+
+.product-description {
+    color: var(--nav-overlay-color);
+    padding: 3em;
+}
+
+.product-title {
+    font-family: "Grifinito L";
+    font-size: 6em;
+    line-height: 0.8em;
+    letter-spacing: 0.1rem;
+    color: var(--nav-overlay-color);
+}
+
+.product-colors {
+    margin-top: 1rem;
+    margin-bottom: 0.58rem;
+}
+
+.product-colors label input {
+    display: none;
+}
+
+.red {
+    background-color: #ff8787;
+}
+
+.blue {
+    background-color: #809fcc;
+}
+
+.mint {
+    background-color: #68ba89;
+}
+
+.yellow {
+    background-color: #f8f8a9;
+}
+
+.black {
+    background-color: #3c3c3c;
+}
+
+.product-colors label span {
+    border: 1px solid rgba(101, 82, 76, 0.2);
+    font-family: "Satoshi";
+    width: 100%;
+    margin-right: 0.5rem;
+    height: 100%;
+    overflow: hidden;
+    padding: 1.2rem 2rem;
+    line-height: 1;
+    text-align: center;
+    top: 0;
+    left: 0;
+    font-size: 1.1rem;
+    color: var(--body-color);
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    cursor: pointer;
+}
+
+.product-colors input:checked+span {
+    border: 5px solid #fff;
+    border-radius: 0.5rem;
+}
+
+.product-price {
+    font-family: "Grifinito L";
+    font-size: 4em;
+    margin-top: 0.3em;
+}
+
+.product-color {
+    font-family: Helvetica;
+    font-weight: 400;
+    padding: 1.2em 0;
+}
+
+.product-size {
+    margin-top: 1.4em;
+}
+
+label {
+    display: inline-block;
+    position: relative;
+}
+
+.product-size label input {
+    display: none;
+}
+
+.product-size label span {
+    border: 1px solid rgba(101, 82, 76, 0.2);
+    font-family: "Satoshi";
+    width: 100%;
+    margin-right: 0.5rem;
+    height: 100%;
+    overflow: hidden;
+    padding: 1.2em 1.2em;
+    line-height: 1;
+    text-align: center;
+    top: 0;
+    left: 0;
+    font-size: 1.1rem;
+    transition: all 0.8s cubic-bezier(0, 1, 1, 1);
+    cursor: pointer;
+}
+
+.product-size input:checked+span {
+    background-color: var(--nav-overlay-color);
+    color: var(--container-color);
+}
+
+.product-add-to-cart {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    font-family: Helvetica;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    font-family: "Satoshi-Medium";
+}
+
+.product-add-to-cart:hover {
+    background-color: var(--nav-overlay-color);
+    color: var(--container-color);
+    transition: all 0.8s cubic-bezier(0, 1, 1, 1);
+    cursor: pointer;
+}
+
+.product-add-to-cart:hover .product-add-to-cart h1 {
+    color: var(--container-color);
+}
+

@@ -464,3 +464,5 @@ img {
   font-display: swap;
   font-style: italic;
 }
+
+@font-face {font-family: "Grifinito L"; src: url("//db.onlinewebfonts.com/t/1c87f20c55baa7eccc98b8603b5eecea.eot"); src: url("//db.onlinewebfonts.com/t/1c87f20c55baa7eccc98b8603b5eecea.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1c87f20c55baa7eccc98b8603b5eecea.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1c87f20c55baa7eccc98b8603b5eecea.woff") format("woff"), url("//db.onlinewebfonts.com/t/1c87f20c55baa7eccc98b8603b5eecea.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1c87f20c55baa7eccc98b8603b5eecea.svg#Grifinito L") format("svg"); }

@@ -160,7 +160,7 @@
     transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
     width: 80vw;
     position: absolute;
-    top: 8rem;
+    top: 7rem;
 }
 
 .shop__container__content__items {
