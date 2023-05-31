@@ -29,7 +29,6 @@ function App() {
                 <MainRoutes />
               </AnimatePresence>
               <ScrollUp />
-              <Footer />
             </ThemeContext.Provider>
       </div>
   );

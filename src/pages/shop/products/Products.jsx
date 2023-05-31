@@ -1,12 +1,6 @@
 import React from 'react'
 import './Products.css'
-import ProductCard from './ProductCard'
-import { useState } from 'react'
-import img1 from "../../../assets/women1.jpg"
-import img2 from "../../../assets/women2.jpg"
-import img3 from "../../../assets/women3.jpg"
 import Data from './Data'
-import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 
 const Products = () => {
@@ -27,7 +21,7 @@ const Products = () => {
                                         <img src={item.img} alt="" />
                                         <div className="product__info">
                                             <h3>{item.name}</h3>
-                                            <p>{item.tags}</p>
+                                            <p>{item.category}</p>
                                             <span className='product__price'>EGP {item.price}</span>
                                         </div>
                                     </div>

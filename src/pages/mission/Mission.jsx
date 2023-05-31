@@ -37,9 +37,6 @@ const Mission = () => {
                     </div>
                 </div>
             </div>
-            <div className="mainproducts_title">
-                <h2 className='mainproducts__title'>Currated Picks</h2>
-            </div>
         </section>
     )
 }

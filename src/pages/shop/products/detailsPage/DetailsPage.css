@@ -1,6 +1,6 @@
 .containerrr {
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     margin-top: 8.2rem;
@@ -19,18 +19,53 @@
     height: 100%;
 }
 
+.image__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 .product-img {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    flex-direction: column;
     flex: 2;
-}
-
-.product-wrapper img {
     position: relative;
 
-    margin-bottom: 4rem;
+}
+
+.product__main_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
     object-fit: cover;
+
+}
+
+.image__thumbnails{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    cursor: pointer;
+
+}
+
+.image__thumbnails img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+}
+
+.product__main_img img {
+    position: relative;
+    object-fit: cover;
+    border-radius: 1rem;
 }
 
 .product-info {
@@ -38,14 +73,14 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    flex: 1;
+    flex: 1.5;
     border-left: 1px solid rgba(0, 0, 0, 0.2);
-    
+    padding-left: 2rem;
 }
 
 .product-description {
     color: var(--nav-overlay-color);
-    padding: 3em;
+    padding-top: 3rem;
 }
 
 .product-title {
@@ -122,6 +157,7 @@
 
 .product-size {
     margin-top: 1.4em;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 label {
@@ -131,6 +167,7 @@ label {
 
 .product-size label input {
     display: none;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .product-size label span {
@@ -146,7 +183,7 @@ label {
     top: 0;
     left: 0;
     font-size: 1.1rem;
-    transition: all 0.8s cubic-bezier(0, 1, 1, 1);
+    transition: all 0.8s cubic-bezier(0.1, 0.8, 1, 1.9);
     cursor: pointer;
 }
 
@@ -155,11 +192,21 @@ label {
     color: var(--container-color);
 }
 
+.product-description {
+    padding-right: 2rem;
+    font-family: "Satoshi-Light";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    color: var(--nav-overlay-color);
+}
+
 .product-add-to-cart {
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     text-transform: uppercase;
     font-family: Helvetica;
-    width: 100%;
+    width: 109%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,11 +215,13 @@ label {
     font-weight: 400;
     letter-spacing: 0.25rem;
     font-family: "Satoshi-Medium";
+    background-color: var(--nav-overlay-color);
+    color: var(--container-color);
+
 }
 
 .product-add-to-cart:hover {
-    background-color: var(--nav-overlay-color);
-    color: var(--container-color);
+
     transition: all 0.8s cubic-bezier(0, 1, 1, 1);
     cursor: pointer;
 }

@@ -5,7 +5,7 @@
     margin: 1rem;
     border-radius: 50%;
     background-color: var(--container-color);
-    color: var(--accent-color);
+    color: var(--nav-overlay-color);
     box-shadow: var(--box-shadow);
     cursor: pointer;
     transition: all 2s cubic-bezier(0.16, 1, 0.3, 1 );
@@ -15,7 +15,7 @@
 
 .scroll-up:hover {
     transform: translateY(-2px);
-    background-color: var(--accent-color);
+    background-color: var(--nav-overlay-color);
     color: var(--container-color);
     transition: all 2s cubic-bezier(0.16, 1, 0.3, 1 );
 }
