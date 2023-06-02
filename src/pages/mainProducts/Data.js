@@ -10,46 +10,46 @@ const Data = [
     {
         id: 1,
         title: "Green Tropical T-Shirt", 
-        price: "19.99",
+        price: "599.99",
         img: picture1,
         alt: "summer collection",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+        desc: "Flannel Muslin."
     },
     {
         id: 2,
         title: "Vibrant Tropical T-Shirt",
-        price: "19.99",
+        price: "599.99",
         img: picture2,
         alt: "summer collection",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+        desc: "Flannel Muslin."
     }, 
     {
         id: 3,
         title: "Retro Striped Puffer Jacket",
-        price: "49.99",
+        price: "749.99",
         img: picture3,
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+        desc: "Satin Suede.",
     },
     {
         id: 4,
         title: "Ocean Breeze Wavy Shirt",
-        price: "49.99",
+        price: "599.99",
         img: picture4,
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+        desc: "Flannel Muslin."
     },
     {
         id: 5,
         title: "Floral Summer Shirt",
-        price: "49.99",
+        price: "599.99",
         img: picture6,
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+        desc: "Flannel Muslin."
     }
     , {
         id: 6,
         title: "Navu Blue Summer Shirt",
-        price: "49.99",
+        price: "849.99",
         img: picture5,
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+        desc: "Satin Silk."
     }
 ]
 

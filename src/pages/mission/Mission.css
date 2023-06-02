@@ -177,3 +177,115 @@
 .content__right img {
     border-radius: 2rem;
 }
+
+
+@media (max-width: 450px) {
+
+    
+
+    .mission__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        height: 105vh;
+        width: 80vw;
+    
+    }
+    
+    .content__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+        height: 76%;
+        background-color: #ff9f73;
+        padding: 2rem;
+        border-radius: 2rem;
+        margin-top: 15rem;
+    }
+    
+    .content__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 110%;
+        padding-bottom: 12rem;
+    }
+    
+    .left__upper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid #000;
+    }
+    
+    .left__lower {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+        height: 80%;
+    }
+    
+    .left__upper h2 {
+        font-size: 1.5rem;
+        font-weight: var(--font-bold);
+        color: var(--nav-overlay-color);
+        text-transform: uppercase;
+        font-family: "Satoshi-Bold", sans-serif;
+        gap: 0.5rem;
+    }
+    
+    .lower__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .lower__mission {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1rem;
+    
+    }
+    
+    .mission__mission {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .mission__mission i {
+        font-size: 0.8rem;
+        color: var(--container-color);
+    }
+
+    .content__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 110%;
+        margin-bottom: 4rem;
+    
+    }
+}

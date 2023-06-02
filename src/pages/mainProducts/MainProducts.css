@@ -147,3 +147,40 @@
 .slider__item__info button:hover::after {
     width: 90%;
 }
+
+@media (max-width: 450px)  {
+
+    .slider__item img {
+        border-radius: 1rem;
+    }
+
+    .mainproducts__like {
+        position: absolute;
+        top: -0.5rem;
+        left: -0.4rem;
+        margin: 1rem;
+        font-size: 2rem;
+        color: #ffffff;
+        cursor: pointer;
+        transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    .slider__item__info h3 {
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin: 0.5rem 0;
+        color: var(--accent-color);
+    }
+
+    .slider__wrapper:hover .slider__item:not(.active) {
+        opacity: 1;
+    }
+
+    .slider__item__info button {
+        padding: 0.5rem 0rem;
+        font-size: 0.9rem;
+
+    }
+    
+
+
+}

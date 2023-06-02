@@ -6,6 +6,17 @@
     gap: 0.5rem;
 }
 
+.picks::after {
+    content: "";
+    position: absolute;
+    width: 86vw;
+    left: 6.5em;
+    height: 2rem;
+    border-bottom: 1px solid var(--title-color);
+    z-index: 1;
+    top: 27.9rem;
+}
+
 .picks::-webkit-scrollbar {
     display: none;
 }
@@ -101,6 +112,18 @@
         letter-spacing: normal;
         font-size: 0.7rem;
     }
+
+    .picks::after {
+        content: "";
+        position: absolute;
+        width: 80vw;
+        left: 3rem;
+        height: 2rem;
+        border-bottom: 1px solid var(--title-color);
+        z-index: 1;
+        top: 22.5rem;
+    }
+    
 
 }
 

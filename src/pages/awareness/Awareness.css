@@ -132,3 +132,105 @@
 .data2 {
     border-right: 1px solid #000;
 }
+
+
+
+@media (max-width: 450px)  {
+
+    .awareness__content {
+        width: 100%;
+        font-size: 0.8rem;
+        padding: 8rem 0rem 0rem 0rem;
+    }
+
+    .awareness__title {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .awareness__guide {
+        display: none;
+    }
+
+    .awareness__data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+        text-align: left;
+        padding: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid #000;
+        position: relative;
+    }
+
+    .awareness__tag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        color: var(--title-color);
+        font-family: "Satoshi-Bold", sans-serif;
+        font-size: 0.8rem;
+        position: relative;
+        width: 90%;
+    }
+
+    .awareness__tag p {
+        font-size: 0.6rem;
+        color: var(--title-color);
+        letter-spacing: 0.1rem;
+        text-align: left;
+        border: 1px solid var(--title-color);
+        padding: 0.2rem 0.3rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    
+    
+    .awareness__guide p {
+        font-size: 0.8rem;
+        color: var(--title-color);
+        letter-spacing: 0.2rem;
+        text-align: left;
+        transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        text-transform: uppercase;
+    }
+
+    .awareness__title h3 {
+        font-size: 0.8rem;
+        color: var(--title-color);
+        letter-spacing: 0.1rem;
+    }
+
+    .awareness__title i {
+        border: 1px solid var(--title-color);
+        border-radius: 50%;
+        font-size: 1.3rem;
+        color: var(--title-color);
+        text-align: left;
+        transform: rotate(305deg);
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+        cursor: pointer;
+    }
+
+    .mainproducts_title {
+        font-size: 1rem;
+        color: var(--title-color);
+        letter-spacing: 0.2rem;
+        text-align: left;
+        padding: 0rem;
+        text-transform: uppercase;
+    }
+
+    .mainproducts_title h2 {
+        font-size: 1rem;
+        color: var(--title-color);
+        letter-spacing: 0.2rem;
+        text-align: left;
+        padding: 0rem;
+        margin-bottom: 4rem;
+        text-transform: uppercase;
+    }
+}

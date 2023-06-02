@@ -32,7 +32,7 @@ const Home = () => {
                                 <SwiperSlide key={id}>
                                     <div className='swipere-slide'>
 
-                                        <div className='sing-details'>
+                                        <div className='home-details'>
                                             <div className='swipere__p'>
                                                 <p>new arrivals</p>
                                             </div>
