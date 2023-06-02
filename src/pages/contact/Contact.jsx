@@ -131,7 +131,7 @@ const Contact = () => {
                 <p><a href="mailto:shehabwaleedd@gmail.com">lelustoree@gmail.com</a></p>
               </div>
               <div className="contact__location">
-                <h3>Whatsapp</h3>
+                <h3>Phone</h3>
                 <p>+2001030013746</p>
               </div>
             </div>

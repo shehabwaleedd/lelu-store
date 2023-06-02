@@ -419,8 +419,20 @@
 
 
 
-@media (max-width: 414px) {
+@media (max-width: 454px) {
     /* Styles for mobile phones */
+
+    .contact {
+        width: 100%;
+    }
+
+
+    .let__contact {
+        padding-top: 2rem;
+        font-size: 3rem;
+        letter-spacing: normal;
+        margin-bottom: 3rem;
+    }
 
     .contact__entire {
         overflow-x: hidden;
@@ -454,15 +466,6 @@
         gap: 0.4rem;
     }
 
-    .contact__email h3 {
-        font-size: var(--smaller-font-size);
-        text-align: left;
-    }
-
-    .contact__email p {
-        font-size: var(--smaller-font-size);
-    }
-
     .contact__location {
         display: flex;
         flex-direction: column;
@@ -473,16 +476,16 @@
     }
 
     .contact__location h3 {
-        font-size: var(--smaller-font-size);
+        font-size: 1rem;
     }
 
     .contact__location p {
-        font-size: var(--smaller-font-size);
+        font-size: 1rem;
     }
 
     .contact__form-input {
         width: 100%;
-        font-size: 0.6rem;
+        font-size: 0.9rem;
         padding: 0 0;
         margin: 0 0;
     }
@@ -493,7 +496,7 @@
 
     .contact__merged input {
         width: 100%;
-        font-size: 0.6rem;
+        font-size: 0.9rem;
         padding: 0 0;
         margin: 0 0;
         border-bottom: 1px solid var(--text-color);
@@ -501,7 +504,7 @@
 
     .contact__form-input:focus {
         width: 100%;
-        font-size: 0.6rem;
+        font-size: 0.9rem;
         padding: 0;
         margin: 0;
         border-bottom: 1px solid var(--text-color);
@@ -518,7 +521,7 @@
 
     .contact__form-div textarea {
         width: 100%;
-        font-size: 0.6rem;
+        font-size: 0.9rem;
         padding: 0 0;
         margin: 0 0;
 
@@ -526,7 +529,7 @@
 
     .contact__form-area {
         width: 100%;
-        font-size: 0.5rem;
+        font-size: 0.9rem;
         padding: 0 0;
         margin: 0 0;
         border-bottom: 1px solid var(--text-color);
@@ -544,7 +547,7 @@
     }
 
     .contact__merged select {
-        font-size: 0.5rem;
+        font-size: 0.9rem;
         padding: 0.6rem 1rem;
         gap: 1rem;
         margin: 0;
@@ -558,7 +561,7 @@
     }
 
     .contact__details h1 {
-        font-size: var(--smaller-font-size);
+        font-size: 1.75rem;
     }
 
     .contact__merged {
@@ -578,11 +581,31 @@
     .contact__email,
     .contact__location {
         margin-bottom: 1.5rem;
+
+    }
+
+    .contact__location p {
+        font-size: 1rem;
+    }
+    .contact__location h3 {
+        font-size: 1.1rem;
+    }
+
+    .contact__email h3 {
+        font-size: 1.3rem;
+    }
+
+    .contact__email p {
+        font-size: 0.9rem;
+    }
+
+    .contact__info {
+        gap: 1.5rem;
     }
 
     .contact__checkbox p {
         text-align: center;
-        font-size: 0.5rem;
+        font-size: 0.79rem;
         padding-bottom: 1rem;
     }
 

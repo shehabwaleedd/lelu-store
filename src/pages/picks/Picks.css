@@ -68,3 +68,39 @@
     padding-top: 0.5rem;
     margin-left: 1rem;
 }
+
+
+@media (max-width: 450px) {
+
+    .picks__wrapper {
+        white-space: nowrap;
+        margin-top: 1rem;
+    
+    }
+
+    .picks__inner__card img  {
+        width: 10rem;
+        height: 10rem;
+        margin-right: 2rem;
+    }
+
+    .picks__inner__card  {
+        width: 40vw;
+    }
+
+    .picks__inner__card__info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .picks__inner__card__info h1 {
+        gap: 0;
+        letter-spacing: normal;
+        font-size: 0.7rem;
+    }
+
+}
+

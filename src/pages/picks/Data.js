@@ -1,4 +1,4 @@
-import bestSellers from "../../assets/lelu6.jpg"
+import bestSellers from "../../assets/301845189_3146127769032460_5176714179471543522_n.jpg"
 import accessories from "../../assets/items/bag1.jpg"
 import backpack from "../../assets/backpack2.jpg"
 import men from "../../assets/men2.jpg"
@@ -9,16 +9,16 @@ const Data = [
     {
         id: 2,
         title: "Best Sellers",
-        img: accessories,
+        img: bestSellers,
         alt: "Best Sellers",
-        desc: "Shop our Best Sellers"
+        desc: "Shop Our Best Sellers"
     },
     {
         id: 5,
         title: "Women",
         img: women,
         alt: "women",
-        desc: "Shop Our Women Collection"
+        desc: "Unisex Collection"
     }, 
 
     {
@@ -26,7 +26,7 @@ const Data = [
         title: "Men",
         img: men, 
         alt: "men",
-        desc: "Shop our Men collection"
+        desc: "New Arrivals"
     },
 
     {
