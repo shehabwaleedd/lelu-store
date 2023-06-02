@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
     width: 90%;
-    height: 80%;
+    height: 70%;
 }
 
 .picks_title {
@@ -23,7 +23,7 @@
     text-transform: uppercase;
     letter-spacing: 0.525rem;
     gap: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
 }
 
 .toppicks__cards {

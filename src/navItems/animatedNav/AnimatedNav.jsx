@@ -54,18 +54,21 @@ const AnimatedNav = () => {
                     <div className="rest__navbar">
                         <div className="search-container">
                             <input type="text" className={`${searchOpen ? "search-input" : "search-input-hidden"}`} placeholder="Search" />
-                            <i className='bx bx-search search-icon' onClick={() => setSearchOpen(!searchOpen)}></i>
+                            <div className="search__user_icons">
+                                <i className='bx bx-search search-icon' onClick={() => setSearchOpen(!searchOpen)}></i>
+                                <i className='bx bx-user user__icon'></i>
+                            </div>
                         </div>
                         <div className="nav__logins">
                             <NavComponents navOpen={navOpen} />
                         </div>
                         <Link className="createpost__button " to={user ? "/createpost" : "/signup"}>
-                                <i className='bx bx-cart' ></i>
-                                <h3 className='cart-icon '>CART</h3>
+                            <i className='bx bx-cart' ></i>
+                            <h3 className='cart-icon '>CART</h3>
                         </Link>
                     </div>
                     <div className="nav-overlay" style={{
-                        top: navOpen ? "-92%" : "-300%",
+                        top: navOpen ? "0%" : "-300%",
                         transitionDelay: navOpen ? "0s" : "0s",
                         transitionDuration: navOpen ? "1s" : "1.5s",
                     }}>

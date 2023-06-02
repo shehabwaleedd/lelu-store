@@ -27,7 +27,9 @@ const NavComponents = (Props) => {
             </>
                 :
                 <>
-                    <button className={Props.navOpen ? "nav__home spin" : "nav__home"} onClick={handleLogout} >Login</button>
+                    <button className={Props.navOpen ? "nav__home spin" : "nav__home"} onClick={handleLogout}>
+                        <span className='login__text'>Login</span>
+                        </button>
                 </>
             }
 

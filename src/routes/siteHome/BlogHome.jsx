@@ -29,7 +29,6 @@ export const BlogHome = () => {
         </motion.div>
         <Brag />
         <Mission />
-        <TopPicks />
         <Sales />
         <Testimonials />
         <Insurance />

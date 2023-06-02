@@ -3,6 +3,8 @@ import "./DetailsPage.css";
 import { useParams } from "react-router-dom";
 import Data from "../Data";
 import lelu1 from "../../../../assets/lelu3.jpg";
+import SimilarProducts from "./similarProducts/SimilarProducts";
+import TopPicks from "../../../topPicks/TopPicks";
 
 const DetailsPage = () => {
   const { id } = useParams();
@@ -25,7 +27,7 @@ const DetailsPage = () => {
   };
 
   return (
-    <div className="containerrr">
+    <section className="containerrr">
       <div className="product-wrapper">
         <div className="product-img">
           <div className="product__main_img">
@@ -181,7 +183,8 @@ const DetailsPage = () => {
           <div className="product-add-to-cart">Add to bag</div>
         </div>
       </div>
-    </div>
+      <TopPicks />
+    </section>
   );
 };
 

@@ -1,0 +1,25 @@
+.similar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    height: 100vh;
+}
+
+.similar__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    justify-content: center;
+}
+
+.similar__title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    letter-spacing: 0.5rem;
+}
+
