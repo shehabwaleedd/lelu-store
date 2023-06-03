@@ -103,6 +103,9 @@
 }
 
 @media (max-width: 450px) {
+    .testimonial {
+        overflow-x: hidden;
+    }
     .testimonials__container {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 6rem;
@@ -112,7 +115,7 @@
     .testimonial__card_combined_title_job-combined::before {
         content: "";
         display: block;
-        width: 18.5rem;
+        width: 16.5rem;
         height: 2px;
         background: var(--text-color);
         color: var(--accent-color);
@@ -126,7 +129,7 @@
         border-radius: 1.5rem;
         transition: 0.3s ease;
         height: 300px;
-        width: 28rem;
+        width: 26.5rem;
     }
     .testimonial__description {
         width: 90%;

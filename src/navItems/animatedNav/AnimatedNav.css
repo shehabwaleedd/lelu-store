@@ -159,6 +159,16 @@
   gap: 0.5rem;
   color: #999;
   padding-left: 4rem;
+  position: relative;
+}
+
+.logo svg {
+  position: absolute;
+  top: -10rem;
+  left: 5rem;
+  width: 5.5rem;
+  height: 5.5rem;
+  fill: var(--title-color);
 }
 
 .logo h1 {
@@ -181,13 +191,26 @@
   align-items: center;
   gap: 1rem;
   cursor: pointer;
-  padding: 0.505rem 5.5rem;
+  padding: 0.75rem 4.5rem;
   border-right: 2px solid var(--title-color);
+  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+
 }
 
-.menu__toggle i {
+.menu__toggle:hover {
+  background-color: var(--nav-overlay-color);
+}
+
+.menu__toggle:hover h1 {
+  color: var(--container-color);
+}
+
+
+.menu__toggle h1 {
+  text-transform: uppercase;
   color: var(--title-color);
-  font-size: 3.2rem;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
 }
 
 .createpost__button button {
@@ -351,7 +374,7 @@
   }
 
   .menu__toggle {
-    padding: 1.2rem 1.5rem;
+    padding: 1.05rem 1.5rem;
   }
 
   .menu__toggle i {
@@ -388,6 +411,15 @@
     padding-top: 2rem;
   }
 
+
+
+  .menu__toggle h1 {
+    text-transform: uppercase;
+    color: var(--title-color);
+    font-size: 1rem;
+    letter-spacing: 0rem;
+  }
+
   .search-icon {
     padding: 1.3rem 0.5rem;
     font-size: 1rem;
@@ -396,10 +428,12 @@
 
   .logo {
     padding-left: 0.5rem;
+    letter-spacing: normal;
   }
 
   .logo h1 {
     font-size: 1.3rem;
+    letter-spacing: 0.3rem;
   }
   
   .login__text {
