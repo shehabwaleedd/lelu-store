@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.06f6cb54.css",
-    "main.js": "/static/js/main.c40c6461.js",
+    "main.css": "/static/css/main.d593b81a.css",
+    "main.js": "/static/js/main.0bf13fee.js",
     "static/js/787.fd708470.chunk.js": "/static/js/787.fd708470.chunk.js",
     "static/media/lelu2.jpg": "/static/media/lelu2.85e0c83a41c3038ca114.jpg",
     "static/media/land3.jpg": "/static/media/land3.1a884ac00bf8de693186.jpg",
@@ -93,15 +93,16 @@
     "static/media/basic4.jpg": "/static/media/basic4.dcf7530132ac3a4b9b3d.jpg",
     "static/media/basic3.jpg": "/static/media/basic3.9b74924971ec4af6b011.jpg",
     "static/media/basic1.jpg": "/static/media/basic1.150bd5aff6a0e9e60459.jpg",
+    "static/media/lelulogo.svg": "/static/media/lelulogo.57aa2105986d406a1c7b49587b5fdb42.svg",
     "static/media/logo_lelu.webp": "/static/media/logo_lelu.6fedf37d96c4cbccaab4.webp",
     "index.html": "/index.html",
     "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.06f6cb54.css.map": "/static/css/main.06f6cb54.css.map",
-    "main.c40c6461.js.map": "/static/js/main.c40c6461.js.map",
+    "main.d593b81a.css.map": "/static/css/main.d593b81a.css.map",
+    "main.0bf13fee.js.map": "/static/js/main.0bf13fee.js.map",
     "787.fd708470.chunk.js.map": "/static/js/787.fd708470.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.06f6cb54.css",
-    "static/js/main.c40c6461.js"
+    "static/css/main.d593b81a.css",
+    "static/js/main.0bf13fee.js"
   ]
 }
