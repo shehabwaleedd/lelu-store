@@ -162,12 +162,9 @@
   position: relative;
 }
 
-.logo svg {
-  position: absolute;
-  top: -10rem;
-  left: 5rem;
-  width: 5.5rem;
-  height: 5.5rem;
+.logo img {
+  width: 7.5rem;
+  height: 7.5rem;
   fill: var(--title-color);
 }
 
