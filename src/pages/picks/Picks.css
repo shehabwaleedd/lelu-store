@@ -44,6 +44,11 @@
 
 }
 
+.picks__inner__card img:hover {
+    transform: scale(1.1);
+    border: 1px solid var(--accent-color);
+}
+
 .picks__inner__card {
     display: inline-block;
     align-items: center;

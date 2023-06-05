@@ -7,6 +7,7 @@ import MainRoutes from './routes/routes/MainRoutes';
 import AnimatedNav from './navItems/animatedNav/AnimatedNav';
 import ScrollUp from './components/supplements/socials/scrollup/ScrollUp';
 import './index.css';
+import Cursor from './components/cursor/Cursor';
 
 export const ThemeContext = createContext(null);
 
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <div className="App" id={theme}>
+            <Cursor />
             <AnimatedNav navOpen={navOpen} setNavOpen={setNavOpen} toggleTheme={toggleTheme}/>
             <ThemeContext.Provider value={{ theme, toggleTheme }}>
               <AnimatePresence>
