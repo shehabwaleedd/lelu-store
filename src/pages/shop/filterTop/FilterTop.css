@@ -1,0 +1,174 @@
+.filterTop {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100vw;
+    height: 25vh;
+}
+
+.filterTop__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    background-color: var(--nav-overlay-color);
+}
+
+.filterTop__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterTop__cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.filterTop__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-right: 1px solid var(--container-color);
+}
+
+.card__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    align-content: center;
+    align-items: center;
+
+}
+
+.card__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card__title h3 {
+    font-size: 1.4rem;
+    font-family: "Posterama", sans-serif;
+    color: var(--container-color);
+}
+
+.card__title i {
+    font-size: 1.5rem;
+    color: var(--container-color);
+    padding: 0.7rem;
+    border: 1px solid var(--container-color);
+    border-radius: 50%
+}
+
+.card__dropdown i {
+    font-size: 1.5rem;
+    color: var(--container-color);
+}
+
+.filterItem {
+    margin-bottom: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.filterItem__combined {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+
+.filterItem h2 {
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+    color: var(--container-color);
+    font-family: "Posterama", sans-serif;
+    right: -1rem;
+    width: 10vw;
+    top: -0.2rem;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+
+.filterItem span {
+    position: absolute;
+    width: 10vw;
+    left: 2rem;
+    top: -0.2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+    color: var(--container-color);
+    font-family: "Posterama", sans-serif;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+
+.filterItem input {
+    margin-top: 3rem;
+    margin-right: 4rem;
+    width: 15.5rem;
+    height: 1.5rem;
+
+
+}
+
+.filterItem label {
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+
+.filterItem input[type="range"] {
+    width: 15.5rem;
+    height: 1rem;
+    /* Customize the range track color */
+    background-color: #8e8e8e;
+    -webkit-appearance: none;
+    border-radius: 2rem;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+
+.filterItem input[type='range']::-webkit-slider-runnable-track {
+
+    color: #13bba4;
+}
+
+.filterItem input[type='range']::-webkit-slider-thumb {
+    width: 1.2rem;
+    -webkit-appearance: none;
+    height: 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    background: var(--nav-overlay-color);
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+
+}

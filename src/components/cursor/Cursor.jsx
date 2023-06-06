@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Cursor.css';
 
-const Cursor = () => {
+const Cursor = (Props) => {
     const [cursorX, setCursorX] = useState(0);
     const [cursorY, setCursorY] = useState(0);
     const dotRef = useRef(null);
@@ -44,34 +44,11 @@ const Cursor = () => {
         outlineElement.style.transform = `translate(${cursorX - outlineSizeHalf}px, ${cursorY - outlineSizeHalf}px)`;
     }, [cursorX, cursorY]);
 
-    // useEffect(() => {
-    //     const handleHover = () => {
-    //         const heading = document.querySelector('p');
-    //         heading.style.backgroundColor = 'var(--accent-color)';
-    //         heading.style.color = 'var(--container-color)';
-    //         heading.style.transition = 'all 0.3s ease-in-out';
-    //     };
-
-    //     const handleLeave = () => {
-    //         const heading = document.querySelector('p');
-    //         heading.style.backgroundColor = '';
-    //         heading.style.color = '';
-    //     };
-
-    //     const heading = document.querySelector('p');
-    //     heading.addEventListener('mouseenter', handleHover);
-    //     heading.addEventListener('mouseleave', handleLeave);
-
-    //     return () => {
-    //         heading.removeEventListener('mouseenter', handleHover);
-    //         heading.removeEventListener('mouseleave', handleLeave);
-    //     };
-    // }, []);
 
     return (
         <>
-            <div ref={dotRef} className="cursor-dot" id='cursor-dot'></div>
-            <div ref={outlineRef} className="cursor-outline" id='cursor-outline'></div>
+            <div ref={dotRef} className={Props.navOpen ? "cursor-dot spin" : "cursor-dot"} id='cursor-dot'></div>
+            <div ref={outlineRef} className={Props.navOpen ? "cursor-outline spin" : "cursor-outline"} id='cursor-outline'></div>
         </>
     );
 };

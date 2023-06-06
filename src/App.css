@@ -287,19 +287,6 @@ img {
 }
 
 
-#trailer {
-  height: 20px;
-  width: 20px;
-  background-color: rgb(94, 94, 94);
-  position: fixed;
-  border-radius: 20px;
-  left: 0px;
-  top: 0px;
-  z-index: 10000;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 500ms ease;
-}
 
 ::-webkit-scrollbar {
   width: 0.8rem;

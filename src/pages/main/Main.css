@@ -74,7 +74,7 @@
     left: 50%;
     text-align: center;
     color: #fff;
-    z-index: 100;
+    z-index: 1;
     width: 100%;
     transform: translateX(-50%);
 

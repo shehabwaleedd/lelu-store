@@ -5,7 +5,7 @@
   width: 100%;
   height: 4.3rem;
   background-color: transparent;
-  z-index: 0;
+  z-index: 12;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,7 +13,9 @@
   border-bottom: 2px solid var(--title-color);
 }
 
-
+.nav.spin {
+  border-bottom: 2px solid var(--container-color);
+}
 
 
 .nav__container {
@@ -31,26 +33,11 @@
   position: relative;
 }
 
-.nav-overlay {
-  position: absolute;
-  z-index: -2;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 20vh;
-  transition: all 4s cubic-bezier(0.16, 1, 0.3, 1);
-  background-color: var(--nav-overlay-color);
-}
 
 .user__icon {
   display: none;
 }
 
-.left__navbar {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
 
 .rest__left_links {
   display: flex;
@@ -58,11 +45,6 @@
   gap: 1rem;
 }
 
-.rest__navbar {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
 
 .logo {
   text-transform: uppercase;
@@ -76,6 +58,26 @@
   position: relative;
   transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
   position: relative;
+}
+
+.logoTitle {
+  font-size: 2.5rem;
+  font-family: "LOAL";
+  color: var(--title-color);
+  text-transform: uppercase;
+  letter-spacing: 1.25rem;
+  font-weight: 800;
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  width: 100%;
+  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.logoTitle.spin {
+  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  color: var(--container-color);
+  padding-left: 1rem;
 }
 
 .logo img {
@@ -110,161 +112,20 @@
 }
 
 
-.menu__toggle {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  cursor: pointer;
-  padding: 0.75rem 4.5rem;
-  border-right: 2px solid var(--title-color);
-  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-
-}
-
-.menu__toggle:hover {
-  background-color: var(--nav-overlay-color);
-}
-
-.menu__toggle:hover h1 {
-  color: var(--container-color);
-}
-
-
-.menu__toggle h1 {
-  text-transform: uppercase;
-  color: var(--title-color);
-  font-size: 2rem;
-  letter-spacing: 0.2rem;
-}
 
 
 
-.search-container {
-  position: relative;
-  display: inline-block;
-  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.search-input {
-  padding: 0.5rem 1rem; /* Adjust the padding as needed */
-  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-  padding-right: 2.5rem; /* Adjust the padding as needed */
-
-
-}
 
 
 
-.search-input-hidden {
-  padding: 0.5rem 1rem; /* Adjust the padding as needed */
-  border: none;
-  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-  padding-right: 2.5rem; /* Adjust the padding as needed */
-  opacity: 0;
-
-}
-
-.search-container input {
-  position: absolute;
-  right: 4rem;
-  top: 1rem;
-  width: 14vw;
-  height: 4vh;
-  font-size: 1rem;
-  font-weight: var(--font-medium);
-  background-color: transparent;
-  border: 1px solid var(--title-color);
-  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-  text-align: left;
-  align-items: last baseline;
-  border-left: 5px solid #000;
-}
 
 
 
-.search-input:focus {
-  outline: none;
-  padding: 1.2rem 3rem 1.2rem 0.9rem; /* Adjust the padding as needed */
-
-}
-
-.search-icon {
-  font-size: 1.7rem;
-  color: var(--title-color);
-  cursor: pointer;
-  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-  padding: 1.4rem 1rem;
-  padding-left: 1.7rem;
-}
-
-.tees__menu {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  cursor: pointer;
-  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-  
-}
-
-.nav__collections {
-  border-left: 2px solid #000;
-  padding: 1.2rem;
-}
-
-.nav__about {
-  border-left: 2px solid #000;
-  padding: 1.2rem;
-  border-right: 2px solid #000;
-}
 
 
-.tees__menu__dropdown {
-  position: absolute;
-  margin-top: 0.5rem;
-  top: 100%;
-  left: 0;
-  width: 10rem;
-  background-color: var(--container-color);
-  color: var(--nav-overlay-color);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  padding: 1rem 1rem;
-  border-radius: 1rem;
-  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-}
 
 
-.createpost__button {
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-  border-left: 2px solid #000;
-  display: flex;
-  background-color: var(--nav-overlay-color);
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem 1rem 1.2rem 1rem;
-  text-align: center;
-  color: var(--container-color);
-  gap: 0.5rem;
-  width: 10rem;
-}
 
-
-.createpost__button h3 {
-  color: var(--container-color);
-}
-
-.createpost__button i {
-  color: var(--container-color);
-  font-size: 1.1rem;
-}
-
-.nav__logins {
-  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-  border-left: 2px solid #000;
-  padding: 1rem 2.5rem;
-}
 
 
 @media (max-width: 450px) {

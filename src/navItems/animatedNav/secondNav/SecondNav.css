@@ -5,13 +5,17 @@
     width: 100%;
     height: 4.3rem;
     background-color: transparent;
-    z-index: 0;
+    z-index: 9;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.5s ease;
     border-bottom: 2px solid var(--title-color);
 
+}
+
+.nav__second.spin {
+    border-bottom: 2px solid var(--container-color);
 }
 
 .nav__container_second {
@@ -82,6 +86,10 @@
 .nav__content ul li:hover::after {
     width: 80%;
     transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav__content.spin ul li {
+    color: var(--container-color);
 }
 
 .new__arrivals1 {

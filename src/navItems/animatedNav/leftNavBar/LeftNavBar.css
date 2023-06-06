@@ -1,0 +1,77 @@
+.menu-toggle {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    padding: 0.35rem 2.5rem;
+    border-right: 2px solid var(--title-color);
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.menu-toggle.spin {
+    border-right: 2px solid var(--container-color);
+}
+
+
+.left__navbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.lineTop.spin {
+    top: 1.35em;
+    transform: rotate(135deg);
+    background: var(--container-color);
+}
+
+.lineBottom.spin {
+    top: 1.35em;
+    transform: rotate(225deg);
+    background: var(--container-color);
+}
+
+.hamBox {
+    position: relative;
+    width: 2.75rem;
+    height: 3.75rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    z-index: 999999;
+
+}
+
+.lineTop {
+    margin: 0 auto;
+    position: absolute;
+    display: block;
+    width: 1.5rem;
+    height: 0.225rem;
+    border-radius: 0.625rem;
+    background: var(--title-color);
+    left: 0;
+    right: 0;
+    transform: rotate(0deg);
+    transition: all 0.4s;
+    color: var(--title-color);
+    top: 1.5em;
+    z-index: 999999;
+}
+
+.lineBottom {
+    margin: 0 auto;
+    position: absolute;
+    display: block;
+    width: 1.5rem;
+    height: 0.225rem;
+    border-radius: 0.625rem;
+    background: var(--title-color);
+    left: 0;
+    right: 0;
+    transform: rotate(0deg);
+    transition: all 0.4s;
+    color: var(--title-color);
+    z-index: 999999;
+    top: 1.05em;
+}

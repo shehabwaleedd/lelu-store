@@ -2,6 +2,7 @@ import React from 'react';
 import './Shop.css';
 import Search from './search/Search';
 import Products from './products/Products';
+import FilterTop from './filterTop/FilterTop';
 
 const Shop = () => {
 
@@ -11,7 +12,7 @@ const Shop = () => {
             <div className="shop__container containered">
                 <div className="shop__content">
                     <div className="shop__upper">
-                        <Search />
+                        <FilterTop />
                     </div>
                     <div className="shop__lower">
                         <Products />

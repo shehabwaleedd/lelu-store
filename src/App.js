@@ -15,7 +15,7 @@ export const ThemeContext = createContext(null);
 function App() {
 
   const [theme, setTheme] = useState('dark');
-  const [navOpen, setNavOpen] = useState(false);
+  const [navOpen, setNavOpen] = React.useState(false);
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className="App" id={theme}>
-            <Cursor />
+            <Cursor navOpen={navOpen} setNavOpen={setNavOpen} />
             <AnimatedNav navOpen={navOpen} setNavOpen={setNavOpen} toggleTheme={toggleTheme}/>
             <ThemeContext.Provider value={{ theme, toggleTheme }}>
               <AnimatePresence>

@@ -1,0 +1,114 @@
+.rest__navbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-input {
+    padding: 0.5rem 1rem;
+    /* Adjust the padding as needed */
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    padding-right: 2.5rem;
+    /* Adjust the padding as needed */
+
+
+}
+
+
+.search-container {
+    position: relative;
+    display: inline-block;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+
+.search-input:focus {
+    outline: none;
+    padding: 1.2rem 3rem 1.2rem 0.9rem;
+    /* Adjust the padding as needed */
+
+}
+
+.search-icon {
+    font-size: 1.7rem;
+    color: var(--title-color);
+    cursor: pointer;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    padding: 1.4rem 1rem;
+    padding-left: 1.7rem;
+}
+
+.search-icon.spin {
+    color: var(--container-color);
+}
+
+
+.search-input-hidden {
+    padding: 0.5rem 1rem;
+    /* Adjust the padding as needed */
+    border: none;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    padding-right: 2.5rem;
+    /* Adjust the padding as needed */
+    opacity: 0;
+
+}
+
+.search-container input {
+    position: absolute;
+    right: 4rem;
+    top: 1rem;
+    width: 14vw;
+    height: 4vh;
+    font-size: 1rem;
+    font-weight: var(--font-medium);
+    background-color: transparent;
+    border: 1px solid var(--title-color);
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    text-align: left;
+    align-items: last baseline;
+    border-left: 5px solid #000;
+}
+
+.search-container.spin input {
+    border: 1px solid var(--container-color);
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    border-left: 5px solid var(--container-color);
+}
+
+.createpost__button {
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    border-left: 2px solid #000;
+    display: flex;
+    background-color: var(--nav-overlay-color);
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1rem 1.2rem 1rem;
+    text-align: center;
+    color: var(--container-color);
+    gap: 0.5rem;
+    width: 10rem;
+}
+
+.createpost__button.spin {
+    border-left: 1px solid var(--container-color);
+}
+
+.createpost__button h3 {
+    color: var(--container-color);
+}
+
+.createpost__button i {
+    color: var(--container-color);
+    font-size: 1.1rem;
+}
+
+
+.nav__logins {
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    border-left: 2px solid #000;
+    padding: 1rem 2.5rem;
+}
