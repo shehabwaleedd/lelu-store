@@ -30,6 +30,11 @@
     border-right: 2px solid var(--container-color);
     height: 100%;
     margin-top: 8.3rem;
+    opacity: 0;
+}
+
+.nav-links.spin {
+    opacity: 1;
 }
 
 .menu-item-wrapper {

@@ -1,37 +1,4 @@
-.products {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5rem;
 
-
-}
-
-.products__container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.products__content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-
-
-.products__cards {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-    flex-wrap: wrap;
-    width: 105%;
-}
 
 .product__card {
     display: flex;
@@ -52,7 +19,6 @@
 .product__details img {
     border: 1px solid #c2c2c2;
     width: 20rem;
-
     height: 25rem;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;

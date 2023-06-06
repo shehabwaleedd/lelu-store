@@ -3,6 +3,7 @@ import './Shop.css';
 import Search from './search/Search';
 import Products from './products/Products';
 import FilterTop from './filterTop/FilterTop';
+import FilterLeft from './filterLeft/FilterLeft';
 
 const Shop = () => {
 
@@ -15,7 +16,12 @@ const Shop = () => {
                         <FilterTop />
                     </div>
                     <div className="shop__lower">
-                        <Products />
+                        <div className="shop__left">
+                            <FilterLeft />
+                        </div>
+                        <div className="shop__right">
+                            {/* <Products /> */}
+                        </div>
                     </div>
                 </div>
             </div>

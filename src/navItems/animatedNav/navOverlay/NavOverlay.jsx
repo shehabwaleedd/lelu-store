@@ -19,7 +19,7 @@ const NavOverlay = (Props) => {
             top: Props.navOpen ? "0" : "-100%",
             transitionDelay: Props.navOpen ? "0s" : "0s"
         }}>
-            <div className="nav-links">
+            <div className={Props.navOpen ? "nav-links spin" : "nav-links"}>
                 {Data.map(({ id, title, path }) => (
                     <div className='menu-item-wrapper' style={{
                         bottom: Props.navOpen ? "0" : "7.5rem",
