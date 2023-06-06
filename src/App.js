@@ -24,14 +24,13 @@ function App() {
 
   return (
     <div className="App" id={theme}>
-            <Cursor navOpen={navOpen} setNavOpen={setNavOpen} />
+            {/* <Cursor navOpen={navOpen} setNavOpen={setNavOpen} /> */}
             <AnimatedNav navOpen={navOpen} setNavOpen={setNavOpen} toggleTheme={toggleTheme}/>
             <ThemeContext.Provider value={{ theme, toggleTheme }}>
               <AnimatePresence>
                 <MainRoutes />
               </AnimatePresence>
               <ScrollUp />
-              <Footer />
             </ThemeContext.Provider>
       </div>
   );

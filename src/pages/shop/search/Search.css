@@ -16,7 +16,7 @@
 }
 
 .shop__input input {
-    width: 80vw;
+    width: 100vw;
     height: 5rem;
     border: none;
     border: 1px solid var(--text-color);

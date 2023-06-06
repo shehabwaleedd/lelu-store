@@ -11,17 +11,14 @@ const Shop = () => {
     return (
         <section className="shop">
             <div className="shop__container containered">
+            <FilterTop />
+            <Search />
                 <div className="shop__content">
-                    <div className="shop__upper">
-                        <FilterTop />
+                    <div className="shop__left">
+                        <FilterLeft />
                     </div>
-                    <div className="shop__lower">
-                        <div className="shop__left">
-                            <FilterLeft />
-                        </div>
-                        <div className="shop__right">
-                            {/* <Products /> */}
-                        </div>
+                    <div className="shop__right">
+                        <Products />
                     </div>
                 </div>
             </div>

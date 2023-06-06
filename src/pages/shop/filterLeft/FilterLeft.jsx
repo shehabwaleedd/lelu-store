@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './FilterLeft.css';
 
 const FilterLeft = () => {
-    const [isExpanded, setExpanded] = useState(false);
+    const [isExpanded, setExpanded] = useState(true);
 
     const categories = [
         { id: 1, name: 'Egyptian Cotton' },
@@ -33,6 +33,13 @@ const FilterLeft = () => {
         { id: 1, name: 'Include Out of Stock' },
     ];
 
+    const status = [
+        { id: 1, name: 'All' },
+        { id: 2, name: 'Popular' },
+        { id: 3, name: 'Trending' },
+        { id: 4, name: 'New' },
+    ];
+
     const toggleFilters = () => {
         setExpanded(!isExpanded);
     };
@@ -49,7 +56,23 @@ const FilterLeft = () => {
                             <i className={`bx ${isExpanded ? 'bx-caret-up expandedd' : 'bx-caret-up notexpandedd'}`}></i>
                         </div>
                     </div>
-                        <dev className={isExpanded ? "expanded" : "notexpanded"}>
+                        <div className={isExpanded ? "expanded" : "notexpanded"}>
+                        <div className="filterLeft__category">
+                                <h3>Status</h3>
+                                <ul>
+                                    {status.map((status) => (
+                                        <li key={status.id}>
+                                            <input
+                                                type="checkbox"
+                                                id={`category${status.id}`}
+                                                name="category"
+                                                value={status.name}
+                                            />
+                                            <label htmlFor={`category${status.id}`}>{status.name}</label>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
                             <div className="filterLeft__category">
                                 <h3>Materials</h3>
                                 <ul>
@@ -99,7 +122,7 @@ const FilterLeft = () => {
                                     ))}
                                 </ul>
                             </div>
-                        </dev>
+                        </div>
                 </div>
             </div>
         </section>
