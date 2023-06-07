@@ -14,8 +14,8 @@ const Products = () => {
                 <div className="products__content">
                     <div className="products__cards">
                         {Data.map((item, index) => (
-                            <Link to={`/details/${index}`}>
-                                <div className="product__card" key={item.id}>
+                            <Link to={`/details/${index}`} key={item.id}>
+                                <div className="product__card" >
                                         <img className='products__img' src={item.img} alt="" />
                                         <div className="product__info">
                                             <h3>{item.name}</h3>

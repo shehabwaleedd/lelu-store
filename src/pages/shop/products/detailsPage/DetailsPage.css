@@ -82,6 +82,7 @@
     position: relative;
     object-fit: cover;
     border-radius: 1rem;
+    height: 53rem;
 }
 
 .product-info {
@@ -96,25 +97,50 @@
 
 .product-description {
     color: var(--nav-overlay-color);
+    font-family: "Grifinito L";
     padding-top: 3rem;
+    letter-spacing: 0.2rem;
 }
+
+
 
 .product-title {
     font-family: "Grifinito L";
     font-size: 6em;
     line-height: 0.8em;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
     color: var(--nav-overlay-color);
 }
 
 .product-colors {
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: 0.58rem;
 }
 
 .product-colors label input {
     display: none;
 }
+
+.product-price {
+    font-family: "Grifinito L";
+    font-size: 4em;
+    margin-top: 0.3em;
+}
+
+.product-color {
+    font-family: Helvetica;
+    font-weight: 400;
+    padding: 1.2em 0;;
+}
+
+.product-size {
+    margin-top: 1.4em;
+    font-family: "Satoshi-Medium";
+    padding-bottom: 1rem;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    color: var(--text-color);
+}
+
 
 .red {
     background-color: #ff8787;
@@ -159,22 +185,7 @@
     border-radius: 0.5rem;
 }
 
-.product-price {
-    font-family: "Grifinito L";
-    font-size: 4em;
-    margin-top: 0.3em;
-}
 
-.product-color {
-    font-family: Helvetica;
-    font-weight: 400;
-    padding: 1.2em 0;
-}
-
-.product-size {
-    margin-top: 1.4em;
-    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-}
 
 label {
     display: inline-block;
@@ -208,14 +219,15 @@ label {
     color: var(--container-color);
 }
 
-.product-description {
+.product-descriptionn {
+    margin-top: 4rem;
     padding-right: 2rem;
-    font-family: "Satoshi-Light";
+    font-family: "Satoshi-Medium";
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5;
     letter-spacing: 0.1rem;
-    color: var(--nav-overlay-color);
+    color: var(--text-color);
 }
 
 .product-add-to-cart {

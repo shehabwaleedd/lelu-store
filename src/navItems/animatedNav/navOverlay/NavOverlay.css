@@ -20,7 +20,7 @@
 .nav-links {
     position: absolute;
     top: 50%;
-    right: 50%;
+    right: 37%;
     transform: translate(-50%, -50%);
     margin: 0;
     padding: 0;
@@ -79,6 +79,7 @@
     position: relative;
     border-bottom: 1px solid var(--container-color);
 
+
 }
 
 .nav-item h1::before {
@@ -86,8 +87,10 @@
     content: attr(data-text);
     -webkit-text-fill-color: var(--container-color);
     transition: 1s cubic-bezier(0.16, 0.5, 0.3, 1);
-    width: 1%;
+    width: 0%;
     overflow: hidden;
+    white-space: nowrap;
+
 }
 
 .nav-item h1:hover::before {
@@ -97,7 +100,7 @@
 
 
 .nav__logins.spin {
-    border-left: 1px solid var(--container-color);
+    border-left: 2px solid var(--container-color);
 }
 
 

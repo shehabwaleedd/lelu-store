@@ -72,12 +72,12 @@
   gap: 0.5rem;
   width: 100%;
   transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  padding-left: 1rem;
 }
 
 .logoTitle.spin {
   transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
   color: var(--container-color);
-  padding-left: 1rem;
 }
 
 .logo img {
@@ -102,7 +102,7 @@
 }
 
 .dash {
-  width: 0.15rem;
+  width: 0.125rem;
   height: 4rem;
   background-color: var(--nav-overlay-color);
   position: absolute;

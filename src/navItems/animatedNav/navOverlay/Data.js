@@ -10,17 +10,17 @@ const Data = [
     },
     {
         id: 2,
-        title: "navbar__about",
-        path: "/about",
+        title: "Categories",
+        path: "/categories",
     },
     {
         id: 3,
-        title: "navbar__projects",
+        title: "Offers/Sale",
         path: "/projects"
     },
     {
         id: 4,
-        title: "navbar__contact",
+        title: "Help Center",
         path: "/contact"
     },
 

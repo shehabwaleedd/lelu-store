@@ -3,25 +3,24 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
-
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCTiYXKijf8IhZloQnf5-zDj08IYgEu6Xo",
-  authDomain: "myblog-c2d41.firebaseapp.com",
-  projectId: "myblog-c2d41",
-  storageBucket: "myblog-c2d41.appspot.com",
-  messagingSenderId: "1063354066683",
-  appId: "1:1063354066683:web:0cd0a9417a14ad293cf25e",
-  measurementId: "G-N8L8B7WPSP"
+  apiKey: "AIzaSyBvif8wIw4bCkkcMvvJEstOovnWTGzP3AM",
+  authDomain: "lelu-store.firebaseapp.com",
+  projectId: "lelu-store",
+  storageBucket: "lelu-store.appspot.com",
+  messagingSenderId: "837323288412",
+  appId: "1:837323288412:web:5c0f87c62b19bbecfd1b99",
+  measurementId: "G-19WQ258KP0",
+  
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
 export const db = getFirestore(app);
 export const auth = getAuth(app);
 export const provider = new GoogleAuthProvider();

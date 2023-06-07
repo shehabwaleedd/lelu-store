@@ -3,6 +3,8 @@
     height: 130vh;
     z-index: 9999;
     border-right: 1px solid #151515;
+    padding-top: 1rem;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .filterLeft__container {
@@ -30,7 +32,7 @@
     gap: 4rem;
     margin-top: 2rem;
     transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-
+    width: 80%;
 }
 
 .filter__titleIcon h2 {

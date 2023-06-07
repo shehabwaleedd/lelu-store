@@ -4,7 +4,7 @@ import logo from "../../assets/lelulogo.png";
 import './AnimatedNav.css';
 import { useTranslation } from 'react-i18next';
 import Toggle from '../darkmode/Toggle';
-import { useUserAuth } from '../../components/authContext/AuthContext';
+import { useUserAuth } from '../../Account/authContext/AuthContext';
 import SecondNav from './secondNav/SecondNav';
 import { useMediaQuery } from 'react-responsive';
 import NavOverlay from './navOverlay/NavOverlay';
@@ -20,14 +20,14 @@ const AnimatedNav = (Props) => {
 
     const logoStyles = {
         backgroundColor: Props.navOpen ? ' var(--container-color)' : ' var(--nav-overlay-color)',
-        right: searchOpen ? '-8rem' : '-27.5rem',
+        right: searchOpen ? '-8rem' : '-26.5rem',
         height: '4.5rem',
         top: '-0.5rem',
     };
 
     if (isLargeScreen) {
         logoStyles.backgroundColor = Props.navOpen ? ' var(--container-color)' : ' var(--nav-overlay-color)';
-        logoStyles.right = searchOpen ? '-10rem' : '-35rem';
+        logoStyles.right = searchOpen ? '-10rem' : '-34rem';
         logoStyles.height = '5.1rem';
         logoStyles.top = '-1rem';
     }
@@ -57,7 +57,7 @@ const AnimatedNav = (Props) => {
                 </div>
             </nav>
             <NavOverlay navOpen={Props.navOpen} setNavOpen={Props.setNavOpen}/>
-            <SecondNav navOpen={Props.navOpen}/>
+            <SecondNav navOpen={Props.navOpen} setNavOpen={Props.setNavOpen}/>
         </>
     );
 };

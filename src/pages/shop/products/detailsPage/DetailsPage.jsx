@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef} from "react";
 import "./DetailsPage.css";
 import { useParams } from "react-router-dom";
 import Data from "../Data";
@@ -12,6 +12,8 @@ const DetailsPage = () => {
   const [selectedColor, setSelectedColor] = useState("Red");
   const [selectedImage, setSelectedImage] = useState(project.img);
   const [selectedSize, setSelectedSize] = useState(""); // New state for selected size
+  const scrollRef = useRef(null);
+
 
   const handleColorChange = (e) => {
     setSelectedColor(e.target.value);
@@ -26,8 +28,12 @@ const DetailsPage = () => {
     setSelectedSize(e.target.value);
   };
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+  
   return (
-    <section className="containerrr">
+    <section className="containerrr" ref={scrollRef}>
       <div className="product-wrapper">
         <div className="product-img">
           <div className="product__main_img">
@@ -176,7 +182,7 @@ const DetailsPage = () => {
                 <span>50</span>
               </label>
             </div>
-            <div className="product-description">
+            <div className="product-descriptionn">
               <p>{project.description}</p>
             </div>
           </div>

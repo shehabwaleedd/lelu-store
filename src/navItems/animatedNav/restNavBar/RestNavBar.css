@@ -86,15 +86,23 @@
     background-color: var(--nav-overlay-color);
     align-items: center;
     justify-content: center;
-    padding: 1.5rem 1rem 1.2rem 1rem;
-    text-align: center;
+    padding: 1.5rem 1rem 1.5rem 1rem;
     color: var(--container-color);
     gap: 0.5rem;
     width: 10rem;
 }
 
 .createpost__button.spin {
+    background-color: var(--container-color);
     border-left: 1px solid var(--container-color);
+}
+
+.createpost__button.spin h3 {
+    color: var(--nav-overlay-color);
+}
+
+.createpost__button.spin i {
+    color: var(--nav-overlay-color);
 }
 
 .createpost__button h3 {
@@ -112,3 +120,4 @@
     border-left: 2px solid #000;
     padding: 1rem 2.5rem;
 }
+

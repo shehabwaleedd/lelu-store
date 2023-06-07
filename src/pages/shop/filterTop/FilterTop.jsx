@@ -17,10 +17,20 @@ const FilterTop = () => {
     };
 
     const handleOptionSelect = (cardId, option) => {
-        setSelectedOptions((prevState) => ({
-            ...prevState,
-            [cardId]: option
-        }));
+        setSelectedOptions((prevState) => {
+            const updatedOptions = { ...(prevState[cardId] || {}) };
+
+            if (updatedOptions[option]) {
+                delete updatedOptions[option];
+            } else {
+                updatedOptions[option] = true;
+            }
+
+            return {
+                ...prevState,
+                [cardId]: updatedOptions
+            };
+        });
     };
 
     const handleOutsideClick = (e) => {
@@ -51,7 +61,7 @@ const FilterTop = () => {
                                         <h3>{title}</h3>
                                     </div>
                                     <div className="card__dropdown" onClick={() => handleExpand(id)}>
-                                    <i className={expandStates[id] ? 'bx bx-caret-up filterLeft__dropdownIconFlip' : 'bx bx-caret-up filterLeft__dropdownIconFlipNot'}></i>
+                                        <i className={expandStates[id] ? 'bx bx-caret-up filterLeft__dropdownIconFlip' : 'bx bx-caret-up filterLeft__dropdownIconFlipNot'}></i>
                                     </div>
                                 </div>
                                 <div className={expandStates[id] ? "card__submenu" : "card__hidden"}>
@@ -59,8 +69,16 @@ const FilterTop = () => {
                                         {Object.entries(Data[id - 1])
                                             .filter(([key]) => key.startsWith('option'))
                                             .map(([key, option]) => (
-                                                <li key={key} className={`option ${selectedOptions[id] === option ? 'selected' : ''}`} onClick={() => handleOptionSelect(id, option)}>
-                                                    <input type="checkbox" checked={selectedOptions[id] === option} onChange={() => handleOptionSelect(id, option)}/>
+                                                <li
+                                                    key={key}
+                                                    className={`option ${selectedOptions[id] && selectedOptions[id][option] ? 'selected' : ''}`}
+                                                    onClick={() => handleOptionSelect(id, option)}
+                                                >
+                                                    <input
+                                                        type="checkbox"
+                                                        checked={selectedOptions[id] && selectedOptions[id][option]}
+                                                        onChange={() => handleOptionSelect(id, option)}
+                                                    />
                                                     {option}
                                                 </li>
                                             ))}

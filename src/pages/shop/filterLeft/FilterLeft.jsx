@@ -52,7 +52,7 @@ const FilterLeft = () => {
                         <div className="filter__title">
                             <h2>Filters</h2>
                         </div>
-                        <div className="filter__icon">
+                        <div className="filter__icon" onClick={toggleFilters}>
                             <i className={`bx ${isExpanded ? 'bx-caret-up expandedd' : 'bx-caret-up notexpandedd'}`}></i>
                         </div>
                     </div>
