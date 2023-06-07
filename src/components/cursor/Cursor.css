@@ -1,8 +1,9 @@
 .cursor-dot {
-    width: 0.5rem;
-    height: 0.5rem;
-    background-color: var(--accent-color);
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--nav-overlay-color);
     transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 0.8);
+    z-index: 99999;
 }
 
 .cursor-dot.spin {
@@ -10,10 +11,12 @@
 }
 
 .cursor-outline {
-    width: 2.1rem;
-    height: 2.1rem;
-    border: 2px solid var(--title-color);
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #bebebe;
+    opacity: 0.2;
     transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1.8);
+    z-index: 10;
 }
 
 .cursor-outline.spin {
@@ -26,7 +29,6 @@
     top: 0;
     left: 0;
     border-radius: 50%;
-    z-index: 999999;
     pointer-events: none;
 }
 

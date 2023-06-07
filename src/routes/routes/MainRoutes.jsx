@@ -8,6 +8,7 @@ import DetailsPage from '../../pages/shop/products/detailsPage/DetailsPage';
 import Login from '../../Account/login/Login';
 import PasswordReset from '../../Account/passwordReset/PasswordReset';
 import SignUp from '../../Account/signUp/SignUp';
+import About from '../../pages/about/About';
 
 const MainRoutes = (Props) => {
 
@@ -27,8 +28,7 @@ const MainRoutes = (Props) => {
       <Route path="/login" element={<Login />} />
       <Route path="/passwordreset" element={<PasswordReset />} />
       <Route path="/signup" element={<SignUp />} />
-
-
+      <Route path="/about" element={<About />} />
     </Routes>
   )
 }

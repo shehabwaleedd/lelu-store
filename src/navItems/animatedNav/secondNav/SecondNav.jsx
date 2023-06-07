@@ -16,7 +16,7 @@ const SecondNav = (Props) => {
                         <li><Link to="/shop" onClick={handleNavItemClick}>Shop</Link></li>
                         <li><Link to="/blog" onClick={handleNavItemClick}>Blog</Link></li>
                         <li><Link to="/faqs" onClick={handleNavItemClick}>FAQs</Link></li>
-                        <li><Link to="/" onClick={handleNavItemClick}>About US</Link></li>
+                        <li><Link to="/about" onClick={handleNavItemClick}>About US</Link></li>
                         <li><Link to="/contact" onClick={handleNavItemClick}>Contact</Link></li>
                     </ul>
                 </div>

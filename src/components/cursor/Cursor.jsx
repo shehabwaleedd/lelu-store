@@ -32,15 +32,15 @@ const Cursor = (Props) => {
         const dotElement = dotRef.current;
         const outlineElement = outlineRef.current;
 
-        const dotSizeHalf = dotSize / 2;
-        const outlineSizeHalf = outlineElement.offsetWidth / 2.5;
+        const dotSizeHalf = dotSize / 1.5;
+        const outlineSizeHalf = outlineElement.offsetWidth / 2;
 
         const dotOffsetX = -dotSizeHalf + outlineSizeHalf;
         const dotOffsetY = -dotSizeHalf + outlineSizeHalf;
 
         
 
-        dotElement.style.transform = `translate(${cursorX - dotSizeHalf}px, ${cursorY - dotSizeHalf}px)`;
+        dotElement.style.transform = `translate(${cursorX - 9}px, ${cursorY - 9}px)`;
         outlineElement.style.transform = `translate(${cursorX - outlineSizeHalf}px, ${cursorY - outlineSizeHalf}px)`;
     }, [cursorX, cursorY]);
 

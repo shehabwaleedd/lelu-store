@@ -47,10 +47,11 @@ function Login() {
 
 
   return (
-    <section className="login " id='skills'>
+    <section className="login section" id='skills'>
       <h2 className='section__title'>{t("login__form__title")}</h2>
       <h3 className='section__subtitle-login'>Ignite Your Passion for Writing: Explore a Diverse Collection of Blogs, Uncover Inspiration, and Share Your Voice</h3>
-      <div className="login__container ">
+      <div className="login__container">
+        <div className="login__content">
         <div className="login__container-left">
           <form className="login__form" onSubmit={handleSignIn}>
             <div className="form__container">
@@ -88,6 +89,7 @@ function Login() {
               <p className="login__account">{t("signup__form__dont_have_account")} <Link className="signup__link" to="/signup">{t("signup__form__title")}</Link></p>
             </div>
           </div>
+        </div>
         </div>
       </div>
       <span className='login__forgot'>{t("login__form__forgot_password")}? <Link className='clickhere__button' to="/passwordreset">{t("login__form__click_here")}</Link></span>
