@@ -11,8 +11,8 @@ const Shop = () => {
     return (
         <section className="shop">
             <div className="shop__container containered">
-            <FilterTop />
-            <Search />
+                <FilterTop />
+                <Search />
                 <div className="shop__content">
                     <div className="shop__left">
                         <FilterLeft />

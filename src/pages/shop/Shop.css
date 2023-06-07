@@ -31,7 +31,10 @@
     align-items: flex-start;
     gap: 1rem;
     transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-    height: 100%;
+    height: 150vh;
+    position: sticky;
+    top: 0;
+
 }
 
 .shop__right {
@@ -44,4 +47,15 @@
     transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
     width: 76vw;
     height: 100%;
+}
+
+
+@media (min-width: 1524px) {
+    .shop {
+        margin-right: 40rem;
+    }
+
+    .shop__right {
+        width: 80vw;
+    }
 }

@@ -34,7 +34,7 @@
 .product__card {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     width: 20rem;
     height: 33rem;
@@ -47,13 +47,21 @@
     cursor: pointer;
 }
 
-.product__details img {
+.product__card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.product__card img:hover {
+    transform: scale(2);
+}
+
+.product__card img {
     border: 1px solid #c2c2c2;
-    width: 20rem;
-    height: 25rem;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
+
 
 .product__info {
     padding: 1rem;
