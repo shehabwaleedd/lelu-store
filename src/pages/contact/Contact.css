@@ -468,6 +468,18 @@
   } */
 
 
+@media (min-width: 1920px) {
+    .contact__dash {
+        height: 46.6vh;
+    }
+    .contact__name_dash_vertical {
+        top: -18%;
+        height: 64.3vh;
+
+    }
+    
+}
+
 
 @media (max-width: 454px) {
     /* Styles for mobile phones */
