@@ -340,6 +340,7 @@
     align-self: center;
     text-align: left;
     width: 80vw;
+    padding-top: 2rem;
 }
 
 
@@ -349,12 +350,13 @@
     align-items: center;
     align-self: center;
     text-align: center;
-    height: 20vh;
+    height: 23.4vh;
     padding-bottom: 1.3rem;
     width: 30%;
     background-color: var(--nav-overlay-color);
     transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
     cursor: pointer;
+    margin-top: 2rem;
 }
 
 .contact__submit_button:hover {
