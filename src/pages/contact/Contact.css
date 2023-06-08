@@ -6,6 +6,7 @@
     font-family: "Satoshi", sans-serif;
     padding: 0 1rem;
     margin-top: 10rem;
+
 }
 
 .let__contact {
@@ -14,7 +15,7 @@
     font-size: 10rem;
     justify-content: center;
     text-align: center;
-    border-bottom: 1px solid var(--nav-overlay-color);
+    border-bottom: 2px solid var(--nav-overlay-color);
     align-items: center;
     transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
     position: relative;
@@ -29,11 +30,47 @@
 }
 
 .contact__container {
-    grid-template-columns: repeat(2, max-content);
-    justify-content: center;
-    column-gap: 6rem;
-    padding-bottom: 3rem;
+    display: flex;
+    width: 100vw;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
+
+}
+
+.contact__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100vw;
+    padding-left: 2rem;
+    margin-top: 2rem;
+
+}
+
+.contact__content_info {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100vw;
+    padding-left: 2rem;
+    border-bottom: 2px solid var(--nav-overlay-color);
+    padding-bottom: 3rem;
+
+}
+
+.contact__dash {
+    position: absolute;
+    top: -21%;
+    left: 40%;
+    content: "";
+    width: 0.2rem;
+    height: 48.15vh;
+    background-color: var(--nav-overlay-color);
+
 }
 
 .contact__title {
@@ -70,19 +107,110 @@
     font-family: "Satoshi", sans-serif;
     margin-bottom: 2rem;
     position: relative;
-
+    width: 100vw;
 }
 
-.contact__merged input {
-    width: 100%;
-    height: 3rem;
-    border-radius: 0.0rem;
-    border-bottom: 2px solid var(--text-color);
-    outline: none;
-    font-size: 1rem;
+.contact__name_dash_vertical {
+    position: absolute;
+    top: -19%;
+    left: 20%;
+    content: "";
+    width: 0.2rem;
+    height: 66.5vh;
+    background-color: var(--nav-overlay-color);
+}
+
+.contact__name_dash_horizontal {
+    position: absolute;
+    top: 100%;
+    left: -10%;
+    content: "";
+    width: 120vw;
+    height: 0.14rem;
+    background-color: var(--nav-overlay-color);
+}
+
+.contact__email_dash_horizontal {
+    position: absolute;
+    top: 100%;
+    left: -10%;
+    content: "";
+    width: 120vw;
+    height: 0.14rem;
+    background-color: var(--nav-overlay-color);
+}
+
+.contact__form_label {
+    display: flex;
+    margin-bottom: var(--mb-0-5);
+    letter-spacing: 0.1rem;
     margin: 0rem 0.5rem;
+    transition: 0.3s ease;
+
+    width: 20vw;
+    padding: 2rem 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact__form_label label {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1-5);
+    margin-left: 1rem;
+    color: var(--title-color);
     font-family: "Satoshi-Bold", sans-serif;
-    gap: 1rem;
+    width: 20vw;
+    padding: 2rem 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    letter-spacing: 0.5rem;
+}
+
+.contact__form_input {
+    display: flex;
+    margin-bottom: var(--mb-0-5);
+    letter-spacing: 0.1rem;
+    margin: 0rem 0.5rem;
+    transition: 0.3s ease;
+    width: 80vw;
+    padding: 2.5rem 0rem;
+}
+
+.contact__form_input textarea {
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.contact__form_input input {
+    font-size: 2rem;
+}
+
+.contact__form_email {
+    position: relative;
+    display: flex;
+    margin-bottom: var(--mb-0-5);
+    letter-spacing: 0.1rem;
+    margin: 0rem 0.5rem;
+    transition: 0.3s ease;
+    width: 100vw;
+    ;
+}
+
+.contact__form-message {
+    position: relative;
+    display: flex;
+    margin-bottom: var(--mb-0-5);
+    letter-spacing: 0.1rem;
+    margin: 0rem 0.5rem;
+    transition: 0.3s ease;
+    width: 100vw;
+    padding-top: 2rem;
+}
+
+
+.contact__merged input {
+    padding-left: 1rem;
 }
 
 
@@ -94,37 +222,23 @@
 
 .contact__button {
 
-    color: var(--title-color);
+    color: var(--container-color);
     font-size: var(--h2-font-size);
     display: inline-block;
     align-items: center;
     justify-content: center;
-    column-gap: 0.25rem;
     transition: 0.6s;
     text-align: center;
     display: flex;
     padding-top: 2rem;
-    padding-left: 1rem;
-    font-family: "Satoshi-Bold", serif;
+    padding-right: 1rem;
+    font-family: "Posterama", serif;
     position: relative;
+    letter-spacing: 0.3rem;
 }
 
-.contact__button::after {
-    content: "";
-    position: absolute;
-    left: 1rem;
-    top: 5rem;
-    width: 70%;
-    height: 2px;
-    background-color: var(--title-color);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
-}
 
-.contact__button:hover::after {
-    transform: scaleX(1);
-}
+
 
 
 .contact__form-div {
@@ -140,7 +254,7 @@
 .contact__form-input {
 
     width: 100%;
-    height: 100%;
+    height: 5rem;
     background: transparent;
     color: var(--text-color);
     outline: none;
@@ -153,72 +267,6 @@
     letter-spacing: 0.1rem;
     margin: 0rem 0.5rem;
     transition: 0.3s ease;
-}
-
-
-.contact__form-div input {
-    border-radius: 0rem;
-    border-bottom: 2px solid var(--text-color);
-}
-
-.contact__merged select {
-    padding-bottom: 1rem;
-    padding-top: 0.5rem;
-    border-radius: 0rem;
-    border-bottom: 2px solid var(--text-color);
-    background: transparent;
-    color: var(--text-color);
-    outline: none;
-    font-size: var(--normal-font-size);
-    font-family: "Satoshi-Bold", sans-serif;
-    margin: 0rem 0.5rem;
-    transition: 0.3s ease;
-
-}
-
-.contact__form-div textarea {
-    resize: vertical;
-    height: 100%;
-    width: calc(100% + 17px);
-    /* Adjust for scrollbar width */
-    background: transparent;
-    color: var(--text-color);
-    outline: none;
-    z-index: 1;
-    overflow-y: scroll;
-    scrollbar-width: thin;
-
-}
-
-.contact__form-div textarea::-webkit-scrollbar {
-    width: 0.0rem;
-    /* Adjust as needed */
-    background-color: transparent;
-
-}
-
-.contact__form-div textarea::-webkit-scrollbar-thumb {
-    background-color: transparent;
-}
-
-
-.contact__form-area {
-    width: 100%;
-    height: 5rem;
-    background: transparent;
-    color: var(--text-color);
-    outline: none;
-    border-radius: 0.75rem;
-    z-index: 1;
-    padding: 1rem 0rem;
-    border-bottom: 2px solid var(--text-color);
-    border-radius: 0rem;
-
-}
-
-.contact__form-area textarea {
-    resize: none;
-
 }
 
 .button--flex {
@@ -274,61 +322,63 @@
 }
 
 
-.custom-dropdown {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    text-align: center;
-    align-items: center;
-    height: 100%;
-    background: transparent;
-    color: var(--text-color);
-    position: relative;
-}
 
-.dropdown-select {
-    appearance: none;
-    border: none;
-    background: transparent;
-    padding: 1.6rem;
-    font-size: 1rem;
-    cursor: pointer;
-}
 
-.dropdown-icon {
-    position: absolute;
-    top: 45%;
-    right: 1.375rem;
-    transform: translateY(-50%);
-    pointer-events: none;
-    color: var(--title-color);
-    font-size: 1.2rem;
-}
 
 .contact__lower {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    padding-bottom: 8rem;
+    width: 100vw;
+    height: 20vh;
 }
 
 .contact__checkbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: center;
+    text-align: left;
+    width: 80vw;
+}
+
+
+.contact__submit_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    height: 20vh;
+    padding-bottom: 1.3rem;
+    width: 30%;
+    background-color: var(--nav-overlay-color);
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: pointer;
+}
+
+.contact__submit_button:hover {
+    background-color: black;
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.contact__checkbox label {
     display: flex;
     justify-content: center;
     align-items: center;
     align-self: center;
     text-align: left;
-    width: 70%;
 }
 
+
+
 .contact__checkbox p {
-    font-size: var(--small-font-size);
+    font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-0-5);
     font-family: "Satoshi", sans-serif;
     color: var(--text-color);
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
 }
 
 .contact__checkbox input[type="checkbox"] {
@@ -587,6 +637,7 @@
     .contact__location p {
         font-size: 1rem;
     }
+
     .contact__location h3 {
         font-size: 1.1rem;
     }

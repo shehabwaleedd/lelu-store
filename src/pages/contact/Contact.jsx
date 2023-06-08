@@ -119,8 +119,8 @@ const Contact = () => {
         <h1>LET'S CONNECT</h1>
       </div>
       <section className='contact section' id='contact' ref={(el) => (body = el)}>
-        <div className="contact__container container grid">
-          <div className="contact__content">
+        <div className="contact__container">
+          <div className="contact__content_info">
             <div className="contact__details">
               <h1>{t("contact__title1")}<br />{t("contact__title2")}<br />{t("contact__title3")}</h1>
             </div>
@@ -135,61 +135,85 @@ const Contact = () => {
                 <p>+2001030013746</p>
               </div>
             </div>
+            <div className="contact__dash"></div>
           </div>
           <div className="contact__content">
             <form className="contact__form" onSubmit={handleSubmit} ref={form}>
               <div className="contact__merged">
-                <input
-                  type="text"
-                  name="name"
-                  className={`contact__form-input ${formErrors.name ? "error" : ""}`}
-                  placeholder={t("contact__form__insert_name")}
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  required
-                />
+                <div className="contact__form_label">
+                  <label htmlFor="">NAME</label>
+                </div>
+                <div className="contact__form_input">
+                  <input
+                    type="text"
+                    name="name"
+                    className={`contact__form-input ${formErrors.name ? "error" : ""}`}
+                    placeholder={t("contact__form__insert_name")}
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                  />
+                </div>
+                <div className="contact__name_dash_vertical"></div>
+                <div className="contact__name_dash_horizontal"></div>
                 {formErrors.name && <p className="error-message">{formErrors.name}</p>}
               </div>
-              <div className="contact__form-div">
-                <input
-                  type="email"
-                  name="email"
-                  className={`contact__form-input ${formErrors.email ? "error" : ""}`}
-                  placeholder={t("contact__form__insert_email")}
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                />
+              <div className="contact__form_email">
+                <div className="contact__form_label">
+                  <label htmlFor="">EMAIL</label>
+                </div>
+                <div className="contact__form_input">
+                  <input
+                    type="email"
+                    name="email"
+                    className={`contact__form-input ${formErrors.email ? "error" : ""}`}
+                    placeholder={t("contact__form__insert_email")}
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
+                </div>
+                <div className="contact__email_dash_horizontal"></div>
                 {formErrors.email && <p className="error-message">{formErrors.email}</p>}
               </div>
-              <div className="contact__form-div contact__form-area">
-                <textarea
-                  name="message"
-                  cols="30"
-                  rows="5"
-                  className={`contact__form-input ${formErrors.message ? "error" : ""}`}
-                  placeholder={t("contact__form__write_me_your_project")}
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  required
-                ></textarea>
+              <div className="contact__form-message">
+                <div className="contact__form_label">
+                  <label htmlFor="">MESSAGE</label>
+                </div>
+                <div className="contact__form_input">
+                  <textarea
+                    name="message"
+                    cols="30"
+                    rows="5"
+                    className={`contact__form-input ${formErrors.message ? "error" : ""}`}
+                    placeholder={t("contact__form__write_me_your_project")}
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    required
+                  ></textarea>
+                </div>
+                <div className="contact__email_dash_horizontal"></div>
                 {formErrors.message && <p className="error-message">{formErrors.message}</p>}
                 <div className="contact__form-line"></div>
               </div>
               <div className="contact__lower">
-                <label className="contact__checkbox">
-                  <input
-                    type="checkbox"
-                    checked={agreed}
-                    onChange={(e) => setAgreed(e.target.checked)}
-                    required
-                  />
-                  <p>I agree with the storage and processing of my personal data</p>
-                </label>
+                <div className="contact__checkbox">
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={agreed}
+                      onChange={(e) => setAgreed(e.target.checked)}
+                      required
+                    />
+                    <p>I agree with the storage and processing of my personal data</p>
+                  </label>
+                </div>
                 {formErrors.agreed && <p className="error-message">{formErrors.agreed}</p>}
-                <button type="submit" className="contact__button">
-                  {t("contact__button_submit")}
-                </button>
+                <div className="contact__submit_button">
+                  <button type="submit" className="contact__button">
+                    {t("contact__button_submit")}
+                  </button>
+                </div>
               </div>
             </form>
           </div>
