@@ -20,7 +20,7 @@ const AnimatedNav = (Props) => {
 
     const logoStyles = {
         backgroundColor: Props.navOpen ? ' var(--container-color)' : ' var(--nav-overlay-color)',
-        right: searchOpen ? '-8rem' : '-26.5rem',
+        right: searchOpen ? '-8rem' : '-23rem',
         height: '4.5rem',
         top: '-0.5rem',
     };

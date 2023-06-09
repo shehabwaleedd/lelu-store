@@ -2,6 +2,8 @@ import React from 'react'
 import './About.css'
 import { useRef } from 'react';
 import { TweenMax, TimelineMax, Power3, Power4 } from "gsap";
+import { motion, useAnimation, useScroll } from 'framer-motion';
+
 import { useEffect } from 'react';
 import aboutImg from "../../assets/aboutus.jpg"
 import haidy from "../../assets/haidy.jpeg"
@@ -9,50 +11,59 @@ import mina from "../../assets/mina.jpg"
 
 const About = () => {
 
-    let screen = useRef(null);
-    let body = useRef(null);
+    // let screen = useRef(null);
+    // let body = useRef(null);
+    const ref = useRef(null)
+    const { scrollYProgress } = useScroll(
+        {
+            target: ref,
+            offset: ["start end", "center start"]
+        }
+    )
 
     // useEffect(() => {
     //     runAnimation();
     // }, []);
 
-    const runAnimation = () => {
-        var tl = new TimelineMax();
-        tl.fromTo(
-            screen,
-            { width: "0%", right: "100%" },
-            {
-                duration: 0.5,
-                width: "100%",
-                right: "0%",
-                ease: Power3.easeInOut,
-            }
-        );
-        tl.fromTo(
-            screen,
-            { right: "0%" },
-            {
-                duration: 0.5,
-                right: "-100%",
-                ease: Power3.easeInOut,
-                delay: 0.1,
-            }
-        );
-        tl.set(screen, { right: "100%" });
-        TweenMax.to(body, 0.3, {
-            css: {
-                opacity: "1",
-                pointerEvents: "auto",
-                ease: Power4.easeInOut,
-            },
-        }).delay(1);
-    };
+
+
+    // const runAnimation = () => {
+    //     var tl = new TimelineMax();
+    //     tl.fromTo(
+    //         screen,
+    //         { width: "0%", right: "100%" },
+    //         {
+    //             duration: 0.5,
+    //             width: "100%",
+    //             right: "0%",
+    //             ease: Power3.easeInOut,
+    //         }
+    //     );
+    //     tl.fromTo(
+    //         screen,
+    //         { right: "0%" },
+    //         {
+    //             duration: 0.5,
+    //             right: "-100%",
+    //             ease: Power3.easeInOut,
+    //             delay: 0.1,
+    //         }
+    //     );
+    //     tl.set(screen, { right: "100%" });
+    //     TweenMax.to(body, 0.3, {
+    //         css: {
+    //             opacity: "1",
+    //             pointerEvents: "auto",
+    //             ease: Power4.easeInOut,
+    //         },
+    //     }).delay(1);
+    // };
 
     return (
         <>
-            <div className="about__load-container">
+            {/* <div className="about__load-container">
                 <div className="about__load-screen" ref={(el) => (screen = el)}></div>
-            </div>
+            </div> */}
             <section className='about '>
                 <div className="about__container">
                     <div className="about__upper">
@@ -71,9 +82,13 @@ const About = () => {
                             <div className="about__left_horizontal"></div>
                         </div>
                     </div>
-                    <div className="about__what_it_feels">
-                        <h1>WHAT IT'S LIKE <br /> TO WORK WITH US</h1>
-                        <div className="what__it_feels_content">
+                    <motion.div
+                        ref={ref}
+                        className="about__what_it_feels"
+                        transition={{ duration: 0.5, type: 'spring' }}
+                    >
+                        <motion.h1 initial={{ y: 50 }} whileInView={{y: 0}} transition={{duration: 1, type: "spring"}} >WHAT IT'S LIKE TO WORK WITH US</motion.h1>
+                        <motion.div  initial={{ y: 50 }} whileInView={{y: 0}} transition={{duration: 1, type: "spring"}} className="what__it_feels_content">
                             <div className="col_1">
                                 <h2>Customer Satisfaction</h2>
                                 <span>Your satisfaction is our top priority. We strive to deliver an exceptional customer experience from start to finish. From personalized consultations to ensuring timely delivery, we go above and beyond to exceed your expectations. We value your feedback and continuously work towards improving our services to better serve your needs.</span>
@@ -86,19 +101,19 @@ const About = () => {
                                 <h2>Value in Every Garment</h2>
                                 <span>Revolutionizing with purpose. Our strategic branding ignites impactful change. Embrace our vision to disrupt the fashion industry, creating value in every garment. Together, let's make a real impact and drive meaningful transformation in and beyond your business.</span>
                             </div>
-                        </div>
-                    </div>
-                    <div className="our__founding__story">
-                        <h1>OUR FOUNDING STORY</h1>
-                        <span>MEET FACES BEHIND <br /> THE BRANDS</span>
-                    </div>
-                    <div className="our__founding__content">
-                        <h3>THE COUPLE WHO REDFINED THE INDUSTRY</h3>
-                        <span>Mina and his fiancee Haidy, have revolutionized the clothing industry with their unique designs, captivating the attention of Egypt's youth. Inspired by ancient Egyptian art, their innovative approach fused bold colors and unconventional patterns. Their designs quickly gained popularity, propelling them to the forefront of the fashion scene. Their success extended internationally, solidifying their status as trendsetters and influencers. Haidy and Mina's story is a testament to passion, creativity, and the belief in a unique vision, inspiring a generation to embrace individuality and cultural heritage.</span>
-                    </div>
+                        </motion.div>
+                    </motion.div>
+                    <motion.div ref={ref} className="our__founding__story">
+                        <motion.h1 initial={{ x: -50, opacity: 0 }} whileInView={{x: 10, opacity: 1}} transition={{duration: 0.5, type: "spring"}} >OUR FOUNDING STORY</motion.h1>
+                        <motion.span initial={{ x: -50, opacity: 0 }} whileInView={{x: 10, opacity: 1}} transition={{duration: 0.5, type: "spring"}} >MEET FACES BEHIND <br /> THE BRANDS</motion.span>
+                    </motion.div>
+                    <motion.div ref={ref} className="our__founding__content">
+                        <motion.h3 initial={{ x: -50, opacity: 0 }} whileInView={{x: 10, opacity: 1}} transition={{duration: 0.5, type: "spring"}}>THE COUPLE WHO REDFINED THE INDUSTRY</motion.h3>
+                        <motion.span initial={{ x: -50, opacity: 0 }} whileInView={{x: 10, opacity: 1}} transition={{duration: 0.5, type: "spring"}}>Mina and his fiancee Haidy, have revolutionized the clothing industry with their unique designs, captivating the attention of Egypt's youth. Inspired by ancient Egyptian art, their innovative approach fused bold colors and unconventional patterns. Their designs quickly gained popularity, propelling them to the forefront of the fashion scene. Their success extended internationally, solidifying their status as trendsetters and influencers. Haidy and Mina's story is a testament to passion, creativity, and the belief in a unique vision, inspiring a generation to embrace individuality and cultural heritage.</motion.span>
+                    </motion.div>
                     <div className="founders__div">
-                        <div className="founders__div_contents">
-                            <div className="founders__div_content">
+                        <motion.div ref={ref} className="founders__div_contents">
+                            <motion.div initial={{ x: -50, opacity: 0 }} whileInView={{x: 10, opacity: 1}} transition={{duration: 0.5, type: "spring"}} className="founders__div_content">
                                 <div className="founders__content">
                                     <h1>MINA FAYEZ</h1>
                                     <span>CEO & FOUNDER</span>
@@ -107,8 +122,8 @@ const About = () => {
                                     <img src={mina} alt="Mina Fayez" className='mina' />
                                     <p>In the bustling streets of Shoubra, Giza, a young and ambitious Egyptian man embarked on a journey that would shape the fashion landscape. As the founder of a clothing brand, his vision and creativity knew no bounds. With a passion for vibrant colors and funky designs, he sought to redefine the fashion industry, one garment at a time. With a Fine Art degree under his belt, he embarked on a mission to expand his artistic philosophy beyond traditional mediums. Inspired by the desire to merge art with everyday life, Mina ventured into the world of fashion. Combining his artistic vision with impeccable craftsmanship, he began creating wearable art that captivated the senses. Each design he crafted became a canvas, expressing his unique perspective and creative flair. From intricately hand-painted garments to avant-garde silhouettes, Mina's creations became a visual feast for fashion enthusiasts seeking something extraordinary Through his innovative approach, he aimed to redefine the boundaries of fashion and challenge conventional norms. Today, Mina continues to evolve as an artist, pushing the boundaries of artistic expression in the realm of fashion, and captivating the hearts and minds of individuals who appreciate the fusion of art and style.</p>
                                 </div>
-                            </div>
-                            <div className="founders__div_content">
+                            </motion.div>
+                            <motion.div initial={{ x: 50, opacity: 0 }} whileInView={{x: 0, opacity: 1}} transition={{duration: 0.5, type: "spring"}} className="founders__div_content">
                                 <div className="founders__content">
                                     <h1>HAIDY GABRAH</h1>
                                     <span>HEAD OF DESIGN DEPARTMENT</span>
@@ -121,8 +136,8 @@ const About = () => {
                                     </div>
                                     <img src={haidy} alt="Haidy Gabrah" className='haidy' />
                                 </div>
-                            </div>
-                        </div>
+                            </motion.div>
+                        </motion.div>
                     </div>
                 </div>
             </section>

@@ -1,5 +1,6 @@
 import React from 'react'
 import './LeftNavBar.css'
+import DropDownMenu from '../dropDownMenu/DropDownMenu'
 
 const LeftNavBar = (Props) => {
     return (
@@ -10,6 +11,14 @@ const LeftNavBar = (Props) => {
                     <span className={Props.navOpen ? "lineBottom spin" : "lineBottom"}></span>
                 </div>
             </div>
+            {/* <div className="language__nav">
+                <div className="language__nav__container">
+                    <button>
+                        <h1>EN</h1>
+                    </button>
+                </div>
+            </div> */}
+            <DropDownMenu />
         </div>
     )
 }

@@ -6,6 +6,7 @@ const DropDownMenu = (Props) => {
   const [open, setOpen] = useState(false);
   const [language, setLanguage] = useState(i18next.language);
 
+
   let menuRef = useRef();
 
   useEffect(() => {
@@ -27,7 +28,7 @@ const DropDownMenu = (Props) => {
   }, [language]);
 
   const handleLanguageChange = () => {
-    setLanguage(language === 'en' ? 'de' : 'en');
+    setLanguage(language === 'EN' ? 'DE' : 'EN');
     setOpen(false);
   };
 
@@ -38,7 +39,8 @@ const DropDownMenu = (Props) => {
           onClick={() => handleLanguageChange()}
           className={Props.navOpen ? "dropdown__icon spin" : "dropdown__icon"}
         >
-          <span>{language === 'en' ? 'de' : 'en'}</span>
+          <span>{language === 'EN' ? 'DE' : 'EN'}</span>
+        <div className="language__dash"></div>
         </button>
       </div>
     </div>
