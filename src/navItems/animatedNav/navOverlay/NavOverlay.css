@@ -20,7 +20,7 @@
 .nav-links {
     position: absolute;
     top: 50%;
-    right: 37%;
+    right: 33%;
     transform: translate(-50%, -50%);
     margin: 0;
     padding: 0;
@@ -41,7 +41,7 @@
     display: flex;
     position: relative;
     top: 5%;
-    left: -20%;
+    left: -10%;
     transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
     align-items: flex-start;
     gap: 1rem;

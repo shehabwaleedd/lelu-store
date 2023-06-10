@@ -52,21 +52,8 @@
     transform: scale(1.2);
 }
 
-/* 
-body {
+
+/* body {
+
     cursor: none;
 } */
-
-li.pointer {
-    cursor: none;
-}
-
-@media (max-width: 454px) {
-    .cursor-dot {
-        display: none;
-    }
-
-    .cursor-outline {
-        display: none;
-    }
-}

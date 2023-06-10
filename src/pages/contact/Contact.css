@@ -12,7 +12,7 @@
 .let__contact {
     margin-top: 2rem;
     display: flex;
-    font-size: 10rem;
+    font-size: 8rem;
     justify-content: center;
     text-align: center;
     border-bottom: 2px solid var(--nav-overlay-color);
@@ -20,6 +20,7 @@
     transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
     position: relative;
     top: 5rem;
+    width: 100vw;
 
 }
 
@@ -68,7 +69,7 @@
     left: 40%;
     content: "";
     width: 0.2rem;
-    height: 48.15vh;
+    height: 56.65vh;
     background-color: var(--nav-overlay-color);
 
 }
@@ -116,7 +117,7 @@
     left: 20%;
     content: "";
     width: 0.2rem;
-    height: 66.5vh;
+    height: 78.5vh;
     background-color: var(--nav-overlay-color);
 }
 
@@ -350,7 +351,7 @@
     align-items: center;
     align-self: center;
     text-align: center;
-    height: 23.4vh;
+    height: 23.8vh;
     padding-bottom: 1.3rem;
     width: 30%;
     background-color: var(--nav-overlay-color);

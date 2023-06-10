@@ -1,5 +1,5 @@
 .login {
-    height: 127vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,7 +64,7 @@
     text-transform: lowercase;
     transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
     width: 100vw;
-    margin-left: 23.5rem;
+    margin-left: 26.5rem;
 }
 
 .login__content {
@@ -95,7 +95,7 @@
     padding: 2rem;
     border: 1.5px solid var(--nav-overlay-color);
     margin-top: 2rem;
-    height: 63.8vh;
+    height: 75.8vh;
     margin-top: 6.4rem;
 }
 
@@ -110,7 +110,7 @@
 .form__container_form-buttons {
     display: flex;
     flex-direction: column;
-    width: 20vw;
+    width: 26vw;
     align-items: first baseline;
     gap: 0.5rem;
     font-family: "Satoshi", sans-serif;
@@ -133,9 +133,21 @@
     padding: 0 0.5rem;
 }
 
+
+
 .social__logins i {
     font-size: 1.7rem;
     margin-right: 0.5rem;
+}
+
+.social__loginss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+    padding-left: 3rem;
+    width: 30vw;
 }
 
 .login__button-sign {
@@ -146,12 +158,19 @@
     margin: 0.4rem 1rem;
     padding: 1rem;
     border-radius: 0.1rem;
-    gap: 26.4rem;
+    gap: 21.8rem;
 }
 
 .login__button {
+    display: flex;   
+}
+
+.login__social-button {
     display: flex;
-    
+    justify-content: center;
+    margin: 0.4rem 0.1rem;
+    padding: 1rem;
+    border-radius: 0.1rem;
 }
 
 .facebook__button_blacked {
@@ -160,8 +179,19 @@
     display: flex;
     justify-content: flex-start;
     margin: 0.4rem 0.2rem;
-    border-radius: 0.4rem;
-    gap: 4rem;
+    border-radius: 0.1rem;
+    gap: 2rem;
+}
+
+.facebook__button_blacked_login {
+    background-color: var(--nav-overlay-color);
+    color: var(--container-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.4rem 0.2rem;
+    border-radius: 0.1rem;
+    gap: 5rem;
 }
 
 .google__button_blacked {
@@ -171,7 +201,17 @@
     justify-content: flex-start;
     margin: 0.4rem 1rem;
     padding: 1rem;
-    border-radius: 0.4rem;
+}
+
+.google__button_blacked_login {
+    background-color: var(--nav-overlay-color);
+    color: var(--container-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4rem 1rem;
+    padding: 1rem;
+    gap: 5rem;
 }
 
 .google__button_blacked button {
@@ -223,8 +263,8 @@
     gap: 1rem;
     text-align: left;
     font-size: 1.4rem;
-    padding: 1rem 1.2rem;
-    width: 100%;
+    padding: 1rem 1.3rem;
+    width: 14.5vw;
     color: var(--container-color);
     border-radius: 0.5rem;
     transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);

@@ -20,14 +20,14 @@ const AnimatedNav = (Props) => {
 
     const logoStyles = {
         backgroundColor: Props.navOpen ? ' var(--container-color)' : ' var(--nav-overlay-color)',
-        right: searchOpen ? '-8rem' : '-23rem',
+        right: searchOpen ? '-2rem' : '-15rem',
         height: '4.5rem',
         top: '-0.5rem',
     };
 
     if (isLargeScreen) {
         logoStyles.backgroundColor = Props.navOpen ? ' var(--container-color)' : ' var(--nav-overlay-color)';
-        logoStyles.right = searchOpen ? '-10rem' : '-34rem';
+        logoStyles.right = searchOpen ? '-5rem' : '-34rem';
         logoStyles.height = '5.1rem';
         logoStyles.top = '-1rem';
     }

@@ -45,6 +45,8 @@
     width: 100%;
     height: 90%;
     object-fit: cover;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
 }
 
 .image__thumbnails{

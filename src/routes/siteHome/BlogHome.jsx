@@ -11,6 +11,7 @@ import Insurance from "../../pages/insurance/Insurance"
 import Awareness from "../../pages/awareness/Awareness"
 import Testimonials from "../../pages/testimonials/Testimonials"
 import Mission from "../../pages/mission/Mission"
+import Swipe from "../../pages/main/swipe/Swipe"
 
 export const BlogHome = () => {
 
@@ -21,7 +22,7 @@ export const BlogHome = () => {
     <div>
       <motion.div>
         <Picks />
-        <Home />
+        <Swipe />
         <Awareness />
         <MainProducts />
         <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0, transition: { delay: 1, ...transition } }} exit={{ opacity: 1 }} transition={transition}>

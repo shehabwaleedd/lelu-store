@@ -46,7 +46,7 @@
 .card__content {
     display: flex;
     justify-content: space-between;
-    gap: 5rem;
+    gap: 4rem;
     align-content: center;
     align-items: center;
 
@@ -125,9 +125,9 @@
     margin-bottom: 1.25rem;
     color: var(--container-color);
     font-family: "Posterama", sans-serif;
-    right: -1rem;
-    width: 10vw;
-    top: 1.5rem;
+    right: -4rem;
+    width: 12vw;
+    top: 0.5rem;
     transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
 
 }
@@ -135,9 +135,9 @@
 .filterItem span {
     position: absolute;
     width: 10vw;
-    left: 2rem;
-    top: 1.5rem;
-    font-size: 1.2rem;
+    left: -6.8rem;
+    top: 2.5rem;
+    font-size: 1rem;
     font-weight: 500;
     margin-bottom: 1.25rem;
     color: var(--container-color);
@@ -163,7 +163,7 @@
 }
 
 .filterItem input[type="range"] {
-    width: 15.5rem;
+    width: 11.5rem;
     height: 1rem;
     /* Customize the range track color */
     background-color: #c9c9c9;

@@ -77,12 +77,12 @@ function Login() {
                       <i className="uil uil-arrow-right button__icon-login"></i>
                     </button>
                   </div>
-                  <div className="social__logins">
-                    <div className="signup__social-button facebook__button_blacked">
+                  <div className="social__loginss">
+                    <div className="login__social-button facebook__button_blacked_login">
                       <i class='bx bxl-facebook' ></i>
                       <button onClick={handleGoogle} className="">Facebook</button>
                     </div>
-                    <div className="signup__social-button google__button_blacked">
+                    <div className="login__social-button google__button_blacked_login">
                       <i class='bx bxl-google' ></i>
                       <button onClick={handleGoogle}>Google</button>
                     </div>

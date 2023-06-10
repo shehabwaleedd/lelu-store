@@ -2,6 +2,7 @@ import React from 'react'
 import './Footer.css'
 import logo from "../../assets/lelulogo.png"
 import Socials from '../../components/supplements/socials/Socials'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -15,25 +16,24 @@ const Footer = () => {
                         <div className="footer__links_container">
                             <ul>
                                 <h2>LELU</h2>
-                                <li>Home</li>
-                                <li>Collections</li>
-                                <li>About Lelu</li>
-                                <li>Contact Us</li>
-                                <li>Careers</li>
-                                <li>Our Blog</li>
+                                <Link to="/"><li>Home</li></Link>
+                                <Link to="/collections"><li>Collections</li></Link>
+                                <Link to="/about"><li>About Lelu</li></Link>
+                                <Link to="/contact"><li>Contact Us</li></Link>
+                                <Link to="/careers"><li>Careers</li></Link>
+                                <Link to="/blog"><li>Our Blog</li></Link>
                             </ul>
                             <ul>
                                 <h2>NEED HELP?</h2>
-                                <li>Size Guide</li>
-                                <li>FAQs</li>
-                                <li>Terms & Conditions</li>
-                                <li>Privacy & Cookies</li>
-                                <li>Shipping & Delivery</li>
-                                <li>Returns & Exchanges</li>
+                                <Link to="/faqs"><li>FAQs</li></Link>
+                                <Link to="/terms-conditions"><li>Terms & Conditions</li></Link>
+                                <Link to="/privacy-policy"><li>Privacy & Cookies</li></Link>
+                                <Link to="/shipping-policy"><li>Shipping & Delivery</li></Link>
+                                <Link to="/returns-exchanges"><li>Returns & Exchanges</li></Link>
                             </ul>
                             <ul>
                                 <h2>MIGHT BE INTERESTED AT</h2>
-                                <li>Tees</li>
+                                <Link to="/swipe"><li>Tees</li></Link>
                                 <li>Hoodies</li>
                                 <li>Cargos</li>
                                 <li>Bags</li>

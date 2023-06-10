@@ -9,6 +9,12 @@ import Login from '../../Account/login/Login';
 import PasswordReset from '../../Account/passwordReset/PasswordReset';
 import SignUp from '../../Account/signUp/SignUp';
 import About from '../../pages/about/About';
+import Faqs from '../../pages/footer/faqs/Faqs';
+import Terms from '../../pages/footer/terms/Terms';
+import Policy from '../../pages/footer/policy/Policy';
+import Shippment from '../../pages/footer/shippment/Shippment';
+import Returns from '../../pages/footer/returns/Returns';
+import Swipe from '../../pages/main/swipe/Swipe';
 
 const MainRoutes = (Props) => {
 
@@ -29,6 +35,12 @@ const MainRoutes = (Props) => {
       <Route path="/passwordreset" element={<PasswordReset />} />
       <Route path="/signup" element={<SignUp />} />
       <Route path="/about" element={<About />} />
+      <Route path="/faqs" element={<Faqs />} />
+      <Route path="/terms-conditions" element={<Terms />} />
+      <Route path="/privacy-policy" element={<Policy />} />
+      <Route path="/shipping-policy" element={<Shippment />} />
+      <Route path="/returns-exchanges" element={<Returns />} />
+      <Route path="/swipe" element={<Swipe />} />
     </Routes>
   )
 }
