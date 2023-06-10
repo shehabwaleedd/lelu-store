@@ -186,7 +186,10 @@ const DetailsPage = () => {
               <p>{project.description}</p>
             </div>
           </div>
-          <div className="product-add-to-cart">Add to bag</div>
+          <div className="product-add-to-cart">
+            Add to bag
+            <div className="product__dash"></div>  
+          </div>
         </div>
       </div>
       <TopPicks />
