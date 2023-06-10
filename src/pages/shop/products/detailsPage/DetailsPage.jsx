@@ -2,8 +2,6 @@ import React, { useEffect, useState, useRef} from "react";
 import "./DetailsPage.css";
 import { useParams } from "react-router-dom";
 import Data from "../Data";
-import lelu1 from "../../../../assets/lelu3.jpg";
-import SimilarProducts from "./similarProducts/SimilarProducts";
 import TopPicks from "../../../topPicks/TopPicks";
 
 const DetailsPage = () => {

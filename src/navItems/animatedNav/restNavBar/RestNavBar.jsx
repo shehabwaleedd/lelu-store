@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import NavComponents from '../navComponents/NavComponents'
 import { useUserAuth } from '../../../Account/authContext/AuthContext'
 import CartSubMenu from './cartSubMenu.jsx/CartSubMenu'
+import { AnimatePresence, motion } from 'framer-motion';
 
 
 const RestNavBar = (Props) => {
@@ -15,6 +16,7 @@ const RestNavBar = (Props) => {
         setCartOpen(!cartOpen);
     };
 
+    const AnimatedCartSubMenu = motion(CartSubMenu);
 
 
     return (
@@ -33,15 +35,15 @@ const RestNavBar = (Props) => {
             <div className={Props.navOpen ? "nav__logins spin" : "nav__logins"}>
                 <NavComponents navOpen={Props.navOpen} />
             </div>
-            <div className={Props.navOpen ? "cart__button spin" : "cart__button"}onClick={handleCartOpen}>
+            <div className={Props.navOpen ? "cart__button spin" : "cart__button"} onClick={handleCartOpen}>
                 <Link className={Props.navOpen ? "createpost__button spin" : "createpost__button"}>
                     <i className='bx bx-cart'></i>
                     <h3 className='cart-icon '>CART</h3>
                 </Link>
             </div>
-            {cartOpen && (
-                <CartSubMenu />
-            )}
+            <AnimatePresence>
+                <CartSubMenu cartOpen={cartOpen} setCartOpen={setCartOpen}/>
+            </AnimatePresence>
         </div>
     )
 }
