@@ -296,3 +296,52 @@
     transform: translate(-50%, -50%) rotate(45deg);
     transition: all 0.3s ease;
 }
+
+@media screen and (min-width: 1700px)  {
+    .filterItem h2 {
+        position: absolute;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 1.25rem;
+        color: var(--container-color);
+        font-family: "Posterama", sans-serif;
+        right: -8rem;
+        width: 12vw;
+        top: 0.5rem;
+        transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    
+    }
+    
+    .filterItem span {
+        position: absolute;
+        width: 10vw;
+        left: -6.4rem;
+        top: 2.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 1.25rem;
+        color: var(--container-color);
+        font-family: "Posterama", sans-serif;
+        transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    
+    }
+
+    .filterItem input {
+        margin-top: 3rem;
+        margin-right: 2rem;
+        width: 13.5rem;
+        height: 1.5rem;
+    }
+
+.filterItem input[type="range"] {
+    width: 11.5rem;
+    height: 1rem;
+    /* Customize the range track color */
+    background-color: #c9c9c9;
+    -webkit-appearance: none;
+    border-radius: 2rem;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    margin-left: 0.3rem;
+    margin-top: 5rem;
+}
+}

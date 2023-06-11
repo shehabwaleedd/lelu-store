@@ -171,6 +171,7 @@
     margin: 0.4rem 0.1rem;
     padding: 1rem;
     border-radius: 0.1rem;
+    cursor: pointer;
 }
 
 .facebook__button_blacked {
@@ -181,6 +182,7 @@
     margin: 0.4rem 0.2rem;
     border-radius: 0.1rem;
     gap: 2rem;
+    cursor: pointer;
 }
 
 .facebook__button_blacked_login {
@@ -192,6 +194,7 @@
     margin: 0.4rem 0.2rem;
     border-radius: 0.1rem;
     gap: 5rem;
+    cursor: pointer;
 }
 
 .google__button_blacked {
@@ -201,6 +204,7 @@
     justify-content: flex-start;
     margin: 0.4rem 1rem;
     padding: 1rem;
+    cursor: pointer;
 }
 
 .google__button_blacked_login {
@@ -212,6 +216,7 @@
     margin: 0.4rem 1rem;
     padding: 1rem;
     gap: 5rem;
+    cursor: pointer;
 }
 
 .google__button_blacked button {
@@ -378,5 +383,99 @@
     color: var(--accent-color);
 }
 
+
+@media screen and (min-width: 1768px) {
+    .login {
+        height: 130vh;
+    }    
+    .login__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        text-transform: lowercase;
+        transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+        margin-left: 26.5rem;
+    }
+
+    .login__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120vw;
+        gap: 4rem;
+    }
+    .form__container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 40vw;
+        padding: 2rem;
+        border: 1.5px solid var(--nav-overlay-color);
+        height: 61.8vh;
+        margin-top: 6.4rem;
+        margin-right: 7rem;
+    }
+    .social__loginss {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        padding: 0 0.5rem;
+        width: 32.1vw;
+        padding-left: 0.7rem;
+    }
+    .login__button-sign {
+        background-color: var(--nav-overlay-color);
+        color: var(--container-color);
+        display: flex;
+        justify-content: space-between;
+        margin: 0.4rem 1rem;
+        padding: 1rem;
+        border-radius: 0.1rem;
+        gap: 30.8rem;
+
+    }
+
+    .google__button_blacked_login {
+        background-color: var(--nav-overlay-color);
+        color: var(--container-color);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0.4rem 1rem;
+        gap: 1rem;
+        width: 20vw;
+        cursor: pointer;
+    }
+
+    .google__button_blacked_login button {
+        font-size: 1.2rem;
+    }
+    .google__button_blacked_login i {
+        font-size: 1.5rem;
+    }
+    .facebook__button_blacked_login {
+        background-color: var(--nav-overlay-color);
+        color: var(--container-color);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0.4rem 0.2rem;
+        border-radius: 0.1rem;
+        gap: 1rem;
+        width: 20vw;
+        cursor: pointer;
+    }
+    .facebook__button_blacked_login button {
+        font-size: 1.2rem;
+    }
+    .facebook__button_blacked_login i {
+        font-size: 1.5rem;
+    }
+    
+}
 
 
