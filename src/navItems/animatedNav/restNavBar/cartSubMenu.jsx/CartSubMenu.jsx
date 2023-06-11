@@ -31,12 +31,11 @@ const CartSubMenu = (Props) => {
     ];
 
     return (
-        <AnimatePresence>
             <motion.div
-                className={Props.cartOpen ? 'cart show' : 'hidden'}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
+                className="cart__dropdown show"
+                initial={{ opacity: 0, y: -50,  width: "30vw", height: "60vh", x: 20 }}
+                animate={{  opacity: 1, y: 50,  width: "30vw", height: "60vh", x: -50 }}
+                exit={{ opacity: 0, x: 150, y: 0}}
                 transition={{ duration: 0.3 }}
             >
                 <h1>Products In Your Cart</h1>
@@ -63,7 +62,6 @@ const CartSubMenu = (Props) => {
                 <button>PROCEED TO CHECKOUT</button>
                 <span className="reset">Reset Cart</span>
             </motion.div>
-        </AnimatePresence>
     );
 };
 

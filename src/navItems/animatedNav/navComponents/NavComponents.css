@@ -80,6 +80,7 @@
     backdrop-filter: blur(6.8px);
     -webkit-backdrop-filter: blur(6.8px);
     border: 1px solid rgba(238, 231, 225, 0.3);
+    z-index: 99999;
   }
   
   

@@ -16,7 +16,6 @@ const RestNavBar = (Props) => {
         setCartOpen(!cartOpen);
     };
 
-    const AnimatedCartSubMenu = motion(CartSubMenu);
 
 
     return (
@@ -35,14 +34,16 @@ const RestNavBar = (Props) => {
             <div className={Props.navOpen ? "nav__logins spin" : "nav__logins"}>
                 <NavComponents navOpen={Props.navOpen} />
             </div>
-            <div className={Props.navOpen ? "cart__button spin" : "cart__button"} onClick={handleCartOpen}>
-                <Link className={Props.navOpen ? "createpost__button spin" : "createpost__button"}>
+            <div className={Props.navOpen ? "cart__button spin" : "cart__button"} >
+                <Link className={Props.navOpen ? "createpost__button spin" : "createpost__button"} onClick={handleCartOpen}>
                     <i className='bx bx-cart'></i>
                     <h3 className='cart-icon '>CART</h3>
                 </Link>
             </div>
             <AnimatePresence>
-                <CartSubMenu cartOpen={cartOpen} setCartOpen={setCartOpen}/>
+                {cartOpen && (
+                    <CartSubMenu cartOpen={cartOpen} setCartOpen={setCartOpen} />
+                )}
             </AnimatePresence>
         </div>
     )

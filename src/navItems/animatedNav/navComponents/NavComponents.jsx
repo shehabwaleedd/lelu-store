@@ -37,8 +37,8 @@ const NavComponents = (Props) => {
                         {expanded && (
                             <motion.div
                                 className="account__dropdown show"
-                                initial={{ opacity: 0, y: -20 }}
-                                animate={{ opacity: 1, y: 0 }}
+                                initial={{ opacity: 0, y: -20,  width: "20vw", height: "30vh", x: 20  }}
+                                animate={{ opacity: 1, y: 20, width: "20vw", height: "30vh", x: 30 }}
                                 exit={{ opacity: 0, y: -20 }}
                                 transition={{ duration: 0.2 }}
                             >

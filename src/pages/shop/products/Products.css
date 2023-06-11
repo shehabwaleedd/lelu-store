@@ -10,7 +10,7 @@
 
 .products__content {
     width: 100vw;
-    transform: translateX(13%);
+    transform: translateX(11%);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -25,8 +25,6 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
     row-gap: 5rem;
-
-
 }
 
 .product__card {
@@ -38,7 +36,19 @@
     transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
     border-top-left-radius: 1rem;
     margin-bottom: 1.5rem;
+    position: relative;
     cursor: pointer;
+}
+
+.product__card::after {
+    content: "";
+    position: absolute;
+    top: 35rem;
+    left: -4rem;
+    width: 100vw;
+    height: 0.3%;
+    background-color: var(--text-color);
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .product__card:hover img {
