@@ -1,10 +1,11 @@
 .filterLeft {
     width: 20vw;
-    height: 130vh;
+    height: 138.6vh;
     z-index: 9999;
     border-right: 1px solid #151515;
     padding-top: 1rem;
     transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    margin-bottom: 12rem;
 }
 
 .filterLeft__container {

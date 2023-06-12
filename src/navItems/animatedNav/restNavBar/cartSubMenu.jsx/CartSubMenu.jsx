@@ -19,11 +19,11 @@ const CartSubMenu = (Props) => {
         },
         {
             id: 2,
-            title: 'Green Tropical T-Shirt',
+            title: 'Floral Tropical T-Shirt',
             price: '599.99',
             oldPrice: '699.99',
             img2: picture2,
-            img: picture1,
+            img: picture2,
             alt: 'summer collection',
             desc: 'Flannel Muslin.',
             isNew: true,
@@ -33,9 +33,9 @@ const CartSubMenu = (Props) => {
     return (
             <motion.div
                 className="cart__dropdown show"
-                initial={{ opacity: 0, y: -50,  width: "30vw", height: "60vh", x: 20 }}
+                initial={{ opacity: 0, y: 50,  width: "30vw", height: "60vh", x: 50 }}
                 animate={{  opacity: 1, y: 50,  width: "30vw", height: "60vh", x: -50 }}
-                exit={{ opacity: 0, x: 150, y: 0}}
+                exit={{ opacity: 0, x: 150, y: 50}}
                 transition={{ duration: 0.3 }}
             >
                 <h1>Products In Your Cart</h1>

@@ -196,7 +196,7 @@
     top: 100%;
     left: 0;
     width: 25vw;
-    height: 30vh;
+    height: 33vh;
     background: rgba(238, 231, 225, 0.66);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -219,8 +219,8 @@
     transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1);
     top: 100%;
     left: 0;
-    height: 0;
-    width: 0;
+    width: 25vw;
+    height: 30vh;
     opacity: 0;
 }
 

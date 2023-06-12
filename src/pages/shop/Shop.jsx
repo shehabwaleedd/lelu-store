@@ -14,9 +14,9 @@ const Shop = () => {
                 <FilterTop />
                 <Search />
                 <div className="shop__content">
-                    {/* <div className="shop__left">
+                    <div className="shop__left">
                         <FilterLeft />
-                    </div> */}
+                    </div>
                     <div className="shop__right">
                         <Products />
                     </div>

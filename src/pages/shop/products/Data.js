@@ -1,6 +1,6 @@
 import img1 from "../../../assets/293076870_742525037018858_6561026921075834909_n.jpg"
 import img2 from "../../../assets/293350364_372270118175081_3046696230036478632_n.jpg"
-import img3 from "../../../assets/293269097_1116061939288589_4759040072183287974_n.jpg"
+import img3 from "../../../assets/lelu14.jpg"
 import img4 from "../../../assets/301845189_3146127769032460_5176714179471543522_n.jpg"
 import img5 from "../../../assets/backpack1.jpg"
 import img6 from "../../../assets/backpack2.jpg"

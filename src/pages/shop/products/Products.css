@@ -10,7 +10,7 @@
 
 .products__content {
     width: 100vw;
-    transform: translateX(11%);
+    transform: translateX(1%);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -22,9 +22,10 @@
 
 .products__cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
     row-gap: 5rem;
+    flex: wrap;
 }
 
 .product__card {
@@ -44,7 +45,7 @@
     content: "";
     position: absolute;
     top: 35rem;
-    left: -4rem;
+    left: -1.9rem;
     width: 100vw;
     height: 0.3%;
     background-color: var(--text-color);

@@ -65,7 +65,11 @@
     font-family: "Satoshi-Bold", sans-serif;
     font-size: 1.2rem;
     position: relative;
-    width: 24%;
+    width: 26.5%;
+}
+
+.photography {
+    padding-left: 2rem;
 }
 
 .awareness__tag p {

@@ -19,7 +19,7 @@ const Awareness = () => {
                         </div>
                     </div>
                     <div className="awareness__data data2">
-                        <div className="awareness__tag">
+                        <div className="awareness__tag photography">
                             <p>Photography</p>
                         </div>
                         <div className="awareness__title">

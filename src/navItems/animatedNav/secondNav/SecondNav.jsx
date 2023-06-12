@@ -12,13 +12,12 @@ const SecondNav = (Props) => {
                 <div className={Props.navOpen ? "nav__content spin" : "nav__content"}>
                     <ul>
                         <li><Link to="/" onClick={handleNavItemClick}><span className='new__arrivals1'>Arrivals</span></Link></li>
-                        <li><Link to="/" onClick={handleNavItemClick}><a href="/" className='new__arrivals2'>New Arrivals</a></Link></li>
-                        <li><Link to="/shop" onClick={handleNavItemClick}>Shop</Link></li>
-                        <li><Link to="/sale" onClick={handleNavItemClick}>On Sale</Link></li>
-                        <li><Link to="/blog" onClick={handleNavItemClick}>Blog</Link></li>
-                        <li><Link to="/faqs" onClick={handleNavItemClick}>FAQs</Link></li>
-                        <li><Link to="/about" onClick={handleNavItemClick}>About US</Link></li>
-                        <li><Link to="/contact" onClick={handleNavItemClick}>Contact</Link></li>
+                        <li><Link to="/" onClick={handleNavItemClick}><a href="/" className='new__arrivals2'>Sale</a></Link></li>
+                        <li><Link to="/shop" onClick={handleNavItemClick}>Upper <i className='bx bx-chevron-down' ></i></Link></li>
+                        <li><Link to="/sale" onClick={handleNavItemClick}>Bottoms <i className='bx bx-chevron-down' ></i></Link></li>
+                        <li><Link to="/sale" onClick={handleNavItemClick}>SETS <i className='bx bx-chevron-down' ></i></Link></li>
+                        <li><Link to="/blog" onClick={handleNavItemClick}>BAGs <i className='bx bx-chevron-down' ></i></Link></li>
+                        <li><Link to="/blog" onClick={handleNavItemClick}>SHOP ALL <i className='bx bx-chevron-down' ></i></Link></li>
                     </ul>
                 </div>
             </div>

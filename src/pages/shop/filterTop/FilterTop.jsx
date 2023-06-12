@@ -2,6 +2,8 @@ import React from 'react';
 import './FilterTop.css';
 import Data from './Data';
 import { useEffect } from 'react';
+import { AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 
 const FilterTop = () => {
@@ -64,26 +66,43 @@ const FilterTop = () => {
                                         <i className={expandStates[id] ? 'bx bx-caret-up filterLeft__dropdownIconFlip' : 'bx bx-caret-up filterLeft__dropdownIconFlipNot'}></i>
                                     </div>
                                 </div>
-                                <div className={expandStates[id] ? "card__submenu" : "card__hidden"}>
-                                    <ul className="submenu__options">
-                                        {Object.entries(Data[id - 1])
-                                            .filter(([key]) => key.startsWith('option'))
-                                            .map(([key, option]) => (
-                                                <li
-                                                    key={key}
-                                                    className={`option ${selectedOptions[id] && selectedOptions[id][option] ? 'selected' : ''}`}
-                                                    onClick={() => handleOptionSelect(id, option)}
-                                                >
-                                                    <input
-                                                        type="checkbox"
-                                                        checked={selectedOptions[id] && selectedOptions[id][option]}
-                                                        onChange={() => handleOptionSelect(id, option)}
-                                                    />
-                                                    {option}
-                                                </li>
-                                            ))}
-                                    </ul>
-                                </div>
+                                <AnimatePresence>
+                                    {expandStates[id] && (
+                                        <motion.div
+                                            initial={{ opacity: 0 }}
+                                            animate={{ opacity: 1 }}
+                                            exit={{ opacity: 0 }}
+                                            className={expandStates[id] ? "card__submenu" : "card__hidden"}
+                                        >
+                                            <motion.ul
+                                                initial={{ opacity: 0, y: -10 }}
+                                                animate={{ opacity: 1, y: 0 }}
+                                                exit={{ opacity: 0, y: -10 }}
+                                                className="submenu__options"
+                                            >
+                                                {Object.entries(Data[id - 1])
+                                                    .filter(([key]) => key.startsWith('option'))
+                                                    .map(([key, option]) => (
+                                                        <motion.li
+                                                            key={key}
+                                                            initial={{ opacity: 0, x: -20 }}
+                                                            animate={{ opacity: 1, x: 0 }}
+                                                            exit={{ opacity: 0, x: -20 }}
+                                                            className={`option ${selectedOptions[id] && selectedOptions[id][option] ? 'selected' : ''}`}
+                                                            onClick={() => handleOptionSelect(id, option)}
+                                                        >
+                                                            <input
+                                                                type="checkbox"
+                                                                checked={selectedOptions[id] && selectedOptions[id][option]}
+                                                                onChange={() => handleOptionSelect(id, option)}
+                                                            />
+                                                            {option}
+                                                        </motion.li>
+                                                    ))}
+                                            </motion.ul>
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
                             </div>
                         ))}
                         <div className="filterTop__filter">
