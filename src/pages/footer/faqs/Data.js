@@ -17,28 +17,28 @@ const FaqsData = [
     },
     {
         id: 4,
-        question: 'Will my website be mobile-friendly?',
-        answer: 'Yes, all the websites we build are mobile-friendly and responsive. This means they will adapt to different screen sizes and provide a great user experience on all devices.'
+        question: 'Do you offer international shipping?',
+        answer: 'Yes, we offer international shipping to select countries. During the checkout process, you can enter your shipping address to see if we deliver to your location.'
     },
     {
         id: 5,
-        question: 'Can you help me update my existing website?',
-        answer: 'Yes, we offer website maintenance services to help you update and maintain your existing website. We can also help with website redesigns and upgrades.'
+        question: 'What payment methods do you accept?',
+        answer: 'We accept various payment methods, including credit/debit cards, PayPal, Apple Pay and Fawry Pay. You can choose your preferred payment option at the checkout.'
     },
     {
         id: 6,
-        question: 'Can you help me with SEO for my website?',
-        answer: "Yes, we offer SEO services to help you improve your website's visibility in search engine results pages. Our services include keyword research, content optimization, and backlink building."
+        question: 'Are the colors of the products accurate to what I see on my screen?',
+        answer: "While we make every effort to display accurate colors, the actual colors may vary due to monitor settings and lighting conditions. We recommend referring to the product description and photos for the most accurate representation."
     },
     {
         id: 7,
-        question: 'How do I get started with building my website?',
-        answer: ' To get started, simply contact us to discuss your project requirements. We will provide you with a custom quote and timeline for your project. Once we receive your approval, we will begin building your website.'
+        question: 'What is your return policy?',
+        answer: "We offer a hassle-free return policy. If you're not satisfied with your purchase, you can return the item within 30 days of delivery for a refund or exchange. Please refer to our Returns & Exchanges page for more information."
     },
     {
         id: 8,
-        question: 'What is the difference between a web designer and a web developer?',
-        answer: 'A web designer is someone who creates the look, layout, and features of a website. The web designer will work with the client to determine what the client wants on the website. The web designer will then create a design for the client to review and approve. Once the client approves the design, the web designer will then create the website.'
+        question: 'How do I track my order?',
+        answer: " Once your order is shipped, we will provide you with a tracking number via email. You can use this tracking number to track the status of your package on our website or the shipping carrier's website."
     },
 ]
 
