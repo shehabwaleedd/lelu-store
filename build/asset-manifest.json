@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.db76dc97.css",
-    "main.js": "/static/js/main.e0623c44.js",
+    "main.css": "/static/css/main.94dbe643.css",
+    "main.js": "/static/js/main.6229971d.js",
     "static/js/787.fd708470.chunk.js": "/static/js/787.fd708470.chunk.js",
     "static/media/lelu2.jpg": "/static/media/lelu2.85e0c83a41c3038ca114.jpg",
     "static/media/land3.jpg": "/static/media/land3.1a884ac00bf8de693186.jpg",
@@ -104,12 +104,12 @@
     "static/media/logo_lelu.webp": "/static/media/logo_lelu.6fedf37d96c4cbccaab4.webp",
     "index.html": "/index.html",
     "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.db76dc97.css.map": "/static/css/main.db76dc97.css.map",
-    "main.e0623c44.js.map": "/static/js/main.e0623c44.js.map",
+    "main.94dbe643.css.map": "/static/css/main.94dbe643.css.map",
+    "main.6229971d.js.map": "/static/js/main.6229971d.js.map",
     "787.fd708470.chunk.js.map": "/static/js/787.fd708470.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.db76dc97.css",
-    "static/js/main.e0623c44.js"
+    "static/css/main.94dbe643.css",
+    "static/js/main.6229971d.js"
   ]
 }
