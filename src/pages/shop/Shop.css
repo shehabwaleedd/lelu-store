@@ -51,12 +51,9 @@
 }
 
 
-@media (min-width: 1524px) {
+@media (min-width: 1724px) {
     .shop {
         margin-right: 40rem;
     }
 
-    .shop__right {
-        width: 80vw;
-    }
 }
