@@ -14,8 +14,7 @@
     transition: all 0.3s ease-out;
     width: 100vw;
     justify-content: center;
-    border-bottom: 1.5px solid #000;
-    align-content: center;
+    border-bottom: 2px solid var(--nav-overlay-color);    align-content: center;
     align-items: center;
     text-align: center;
     padding-bottom: 1rem;

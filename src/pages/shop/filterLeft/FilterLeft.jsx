@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './FilterLeft.css';
 
-const FilterLeft = () => {
+const FilterLeft = (Props) => {
     const [isExpanded, setExpanded] = useState(true);
 
     const categories = [
@@ -45,87 +45,91 @@ const FilterLeft = () => {
     };
 
     return (
-        <section className="filterLeft">
-            <div className="filterLeft__container">
-                <div className="filterLeft__content">
-                    <div className="filter__titleIcon" onClick={toggleFilters}>
-                        <div className="filter__title">
-                            <h2>Filters</h2>
-                        </div>
-                        <div className="filter__icon" onClick={toggleFilters}>
-                            <i className={`bx ${isExpanded ? 'bx-caret-up expandedd' : 'bx-caret-up notexpandedd'}`}></i>
+        <>
+            {Props.selectedProductId ? null : (
+                <section className="filterLeft">
+                    <div className="filterLeft__container">
+                        <div className="filterLeft__content">
+                            <div className="filter__titleIcon" onClick={toggleFilters}>
+                                <div className="filter__title">
+                                    <h2>Filters</h2>
+                                </div>
+                                <div className="filter__icon" onClick={toggleFilters}>
+                                    <i className={`bx ${isExpanded ? 'bx-caret-up expandedd' : 'bx-caret-up notexpandedd'}`}></i>
+                                </div>
+                            </div>
+                            <div className={isExpanded ? "expanded" : "notexpanded"}>
+                                <div className="filterLeft__category">
+                                    <h3>Status</h3>
+                                    <ul>
+                                        {status.map((status) => (
+                                            <li key={status.id}>
+                                                <input
+                                                    type="checkbox"
+                                                    id={`category${status.id}`}
+                                                    name="category"
+                                                    value={status.name}
+                                                />
+                                                <label htmlFor={`category${status.id}`}>{status.name}</label>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div className="filterLeft__category">
+                                    <h3>Materials</h3>
+                                    <ul>
+                                        {categories.map((category) => (
+                                            <li key={category.id}>
+                                                <input
+                                                    type="checkbox"
+                                                    id={`category${category.id}`}
+                                                    name="category"
+                                                    value={category.name}
+                                                />
+                                                <label htmlFor={`category${category.id}`}>{category.name}</label>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div className="filterLeft__arrivals">
+                                    <h3>New Arrivals</h3>
+                                    <ul>
+                                        {brands.map((brand) => (
+                                            <li key={brand.id}>
+                                                <input type="checkbox" id={`brand${brand.id}`} name="brand" value={brand.name} />
+                                                <label htmlFor={`brand${brand.id}`}>{brand.name}</label>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div className="filterLeft__discount">
+                                    <h3>Discount</h3>
+                                    <ul>
+                                        {discount.map((discount) => (
+                                            <li key={discount.id}>
+                                                <input type="checkbox" id={`discount${discount.id}`} name="discount" value={discount.name} />
+                                                <label htmlFor={`discount${discount.id}`}>{discount.name}</label>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div className="filterLeft__availability">
+                                    <h3>Availability</h3>
+                                    <ul>
+                                        {availability.map((availability) => (
+                                            <li key={availability.id}>
+                                                <input type="checkbox" id={`availability${availability.id}`} name="availability" value={availability.name} />
+                                                <label htmlFor={`availability${availability.id}`}>{availability.name}</label>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className={isExpanded ? "expanded" : "notexpanded"}>
-                        <div className="filterLeft__category">
-                            <h3>Status</h3>
-                            <ul>
-                                {status.map((status) => (
-                                    <li key={status.id}>
-                                        <input
-                                            type="checkbox"
-                                            id={`category${status.id}`}
-                                            name="category"
-                                            value={status.name}
-                                        />
-                                        <label htmlFor={`category${status.id}`}>{status.name}</label>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="filterLeft__category">
-                            <h3>Materials</h3>
-                            <ul>
-                                {categories.map((category) => (
-                                    <li key={category.id}>
-                                        <input
-                                            type="checkbox"
-                                            id={`category${category.id}`}
-                                            name="category"
-                                            value={category.name}
-                                        />
-                                        <label htmlFor={`category${category.id}`}>{category.name}</label>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="filterLeft__arrivals">
-                            <h3>New Arrivals</h3>
-                            <ul>
-                                {brands.map((brand) => (
-                                    <li key={brand.id}>
-                                        <input type="checkbox" id={`brand${brand.id}`} name="brand" value={brand.name} />
-                                        <label htmlFor={`brand${brand.id}`}>{brand.name}</label>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="filterLeft__discount">
-                            <h3>Discount</h3>
-                            <ul>
-                                {discount.map((discount) => (
-                                    <li key={discount.id}>
-                                        <input type="checkbox" id={`discount${discount.id}`} name="discount" value={discount.name} />
-                                        <label htmlFor={`discount${discount.id}`}>{discount.name}</label>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="filterLeft__availability">
-                            <h3>Availability</h3>
-                            <ul>
-                                {availability.map((availability) => (
-                                    <li key={availability.id}>
-                                        <input type="checkbox" id={`availability${availability.id}`} name="availability" value={availability.name} />
-                                        <label htmlFor={`availability${availability.id}`}>{availability.name}</label>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                </section>
+            )}
+        </>
     );
 };
 

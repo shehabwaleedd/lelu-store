@@ -10,8 +10,7 @@
     justify-content: center;
     align-items: center;
     transition: all 0.5s ease;
-    border-bottom: 2px solid var(--title-color);
-
+    border-bottom: 2px solid var(--nav-overlay-color);
 }
 
 .nav__second.spin {
@@ -97,6 +96,168 @@
 .new__arrivals1 {
     display: none;
 }
+
+.upper {
+    position: relative;
+}
+
+.upper__submenu {
+    position: absolute;
+    top: 4rem;
+    left: -100%;
+    width: 20vw;
+    height: 40vh;
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.upper__submenu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 1.6rem;
+    gap: 0.3rem;
+    background-color: transparent;
+    color: var(--title-color);
+    font-family: "Satoshi-Bold", sans-serif;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    position: relative;
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+    padding-top: 1rem;
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    background: rgba(238, 231, 225, 0.66);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.8px);
+    -webkit-backdrop-filter: blur(6.8px);
+    border: 1px solid rgba(238, 231, 225, 0.3);
+}
+
+.bottoms {
+    position: relative;
+}
+
+.bottoms__submenu {
+    position: absolute;
+    top: 4rem;
+    left: -0%;
+    width: 20vw;
+    height: 30vh;
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bottoms__submenu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 1.6rem;
+    gap: 0.3rem;
+    background-color: transparent;
+    color: var(--title-color);
+    font-family: "Satoshi-Bold", sans-serif;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    position: relative;
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+    padding-top: 1rem;
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    background: rgba(238, 231, 225, 0.66);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.8px);
+    -webkit-backdrop-filter: blur(6.8px);
+    border: 1px solid rgba(238, 231, 225, 0.3);
+}
+
+.set {
+    position: relative;
+}
+
+.set__submenu {
+    position: absolute;
+    top: 4rem;
+    left: -0%;
+    width: 20vw;
+    height: 30vh;
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.set__submenu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 1.6rem;
+    gap: 0.3rem;
+    background-color: transparent;
+    color: var(--title-color);
+    font-family: "Satoshi-Bold", sans-serif;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    position: relative;
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+    padding-top: 1rem;
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    background: rgba(238, 231, 225, 0.66);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.8px);
+    -webkit-backdrop-filter: blur(6.8px);
+    border: 1px solid rgba(238, 231, 225, 0.3);
+}
+
+
+.bags {
+    position: relative;
+}
+
+.bags__submenu {
+    position: absolute;
+    top: 4rem;
+    left: -0%;
+    width: 20vw;
+    height: 30vh;
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bags__submenu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 1.6rem;
+    gap: 0.3rem;
+    background-color: transparent;
+    color: var(--title-color);
+    font-family: "Satoshi-Bold", sans-serif;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    position: relative;
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+    padding-top: 1rem;
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    background: rgba(238, 231, 225, 0.66);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.8px);
+    -webkit-backdrop-filter: blur(6.8px);
+    border: 1px solid rgba(238, 231, 225, 0.3);
+}
+
+.bags__submenu ul li, .set__submenu ul li, .bottoms__submenu ul li, .upper__submenu ul li{
+    color: var(--nav-overlay-color);
+}
+
 
 @media (max-width: 450px) {
     .nav__container_second {

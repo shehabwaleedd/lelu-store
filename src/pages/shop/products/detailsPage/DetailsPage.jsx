@@ -1,24 +1,37 @@
-import React, { useEffect, useState, useRef} from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./DetailsPage.css";
 import { useParams } from "react-router-dom";
 import Data from "../Data";
+import { motion } from "framer-motion";
 import TopPicks from "../../../topPicks/TopPicks";
 
-const DetailsPage = () => {
-  const { id } = useParams();
-  const project = Data[id];
+const DetailsPage = ({ id, closeModal }) => {
+  const [product, setProduct] = useState(null);
   const [selectedColor, setSelectedColor] = useState("Red");
-  const [selectedImage, setSelectedImage] = useState(project.img);
-  const [selectedSize, setSelectedSize] = useState(""); // New state for selected size
+  const [selectedImage, setSelectedImage] = useState("");
+  const [selectedSize, setSelectedSize] = useState("");
   const scrollRef = useRef(null);
 
+  useEffect(() => {
+    const getProductById = () => {
+      const foundProduct = Data.find((item) => item.id === Number(id));
+      setProduct(foundProduct);
+    };
+
+    getProductById();
+  }, [id]);
+
+  useEffect(() => {
+    if (product) {
+      setSelectedImage(product.img);
+    }
+  }, [product]);
 
   const handleColorChange = (e) => {
     setSelectedColor(e.target.value);
   };
 
   const handleImageClick = (imageSrc) => {
-    console.log("Clicked image:", imageSrc);
     setSelectedImage(imageSrc);
   };
 
@@ -29,51 +42,30 @@ const DetailsPage = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
-  
+
+  if (!product) {
+    return <div>Loading...</div>;
+  }
+
+
   return (
-    <section className="containerrr" ref={scrollRef}>
+    <motion.section className="containerrr show"
+    initial={{ opacity: 0, y: 265, height: "150vh", x: 250}}
+    animate={{  opacity: 1, y: -265, height: "150vh", x: 0}}
+    exit={{opacity: 0, y: 605, height: "150vh", x: -250}}
+    transition={{ duration: 0.2, ease: "easeInOut"}}
+    ref={scrollRef}>
       <div className="product-wrapper">
+      <i className="bx bx-x closing__icon" onClick={closeModal}></i>
         <div className="product-img">
           <div className="product__main_img">
-            <img src={selectedImage} alt={project.name} />
-          </div>
-          <div className="image__thumbnails">
-            <img
-              src={project.img2}
-              alt={project.name}
-              onClick={() => handleImageClick(project.img2)}
-            />
-            <img
-              src={project.img1}
-              alt={project.title}
-              onClick={() => handleImageClick(project.img1)}
-            />
-            <img
-              src={project.img4}
-              alt={project.name}
-              onClick={() => handleImageClick(project.img4)}
-            />
-            <img
-              src={project.img5}
-              alt={project.name}
-              onClick={() => handleImageClick(project.img5)}
-            />
-            <img
-              src={project.img6}
-              alt={project.name}
-              onClick={() => handleImageClick(project.img6)}
-            />
-            <img
-              src={project.img7}
-              alt={project.name}
-              onClick={() => handleImageClick(project.img7)}
-            />
+            <img src={selectedImage} alt={product.name} />
           </div>
         </div>
         <div className="product-info">
           <div className="product-description">
-            <div className="product-title">{project.name}</div>
-            <div className="product-price">EGP {project.price}</div>
+            <div className="product-title">{product.name}</div>
+            <div className="product-price">EGP {product.price}</div>
             <div className="product-colors">
               <label>
                 <input
@@ -181,7 +173,7 @@ const DetailsPage = () => {
               </label>
             </div>
             <div className="product-descriptionn">
-              <p>{project.description}</p>
+              <p>{product.description}</p>
             </div>
           </div>
           <div className="product-add-to-cart">
@@ -190,8 +182,7 @@ const DetailsPage = () => {
           </div>
         </div>
       </div>
-      <TopPicks />
-    </section>
+    </motion.section>
   );
 };
 

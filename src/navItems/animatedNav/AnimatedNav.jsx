@@ -27,8 +27,8 @@ const AnimatedNav = (Props) => {
 
     if (isLargeScreen) {
         logoStyles.backgroundColor = Props.navOpen ? ' var(--container-color)' : ' var(--nav-overlay-color)';
-        logoStyles.right = searchOpen ? '-5rem' : '-30rem';
-        logoStyles.height = '5.1rem';
+        logoStyles.right = searchOpen ? '-5rem' : '-31rem';
+        logoStyles.height = '5rem';
         logoStyles.top = '-1rem';
     }
 

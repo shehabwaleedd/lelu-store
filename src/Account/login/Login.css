@@ -19,8 +19,7 @@
     display: flex;
     width: 100vw;
     justify-content: center;
-    border-bottom: 1.5px solid #000;
-}
+    border-bottom: 2px solid var(--nav-overlay-color);}
 
 .account__section h2 {
     color: var(--nav-overlay-color);
@@ -466,7 +465,7 @@
         margin: 0.4rem 0.2rem;
         border-radius: 0.1rem;
         gap: 1rem;
-        width: 20vw;
+        width: 55vw;
         cursor: pointer;
     }
     .facebook__button_blacked_login button {

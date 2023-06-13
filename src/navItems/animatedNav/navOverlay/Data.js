@@ -11,12 +11,12 @@ const Data = [
     {
         id: 2,
         title: "FAQS",
-        path: "/categories",
+        path: "/faqs",
     },
     {
         id: 3,
         title: "navbar__about",
-        path: "/projects"
+        path: "/about"
     },
     {
         id: 4,

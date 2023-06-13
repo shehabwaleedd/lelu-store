@@ -229,3 +229,10 @@
     background-color: #5d5deb;
     color: var(--overlay-color);
 }
+
+
+.login__checkbox p {
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+    
+}

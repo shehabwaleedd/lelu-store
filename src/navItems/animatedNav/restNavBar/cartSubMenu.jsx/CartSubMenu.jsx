@@ -33,9 +33,9 @@ const CartSubMenu = (Props) => {
     return (
             <motion.div
                 className="cart__dropdown show"
-                initial={{ opacity: 0, y: 50,  width: "30vw", height: "60vh", x: 50 }}
-                animate={{  opacity: 1, y: 50,  width: "30vw", height: "60vh", x: -50 }}
-                exit={{ opacity: 0, x: 150, y: 50}}
+                initial={{ opacity: 0, y: 20,  width: "30vw", height: "60vh", x: 50 }}
+                animate={{  opacity: 1, y: 20,  width: "30vw", height: "60vh", x: -50 }}
+                exit={{ opacity: 0, x: 150, y: 20}}
                 transition={{ duration: 0.3 }}
             >
                 <h1>Products In Your Cart</h1>

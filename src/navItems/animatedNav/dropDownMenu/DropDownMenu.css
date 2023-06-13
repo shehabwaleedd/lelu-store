@@ -46,7 +46,7 @@
   left: 8rem;
   width: 0.125rem;;
   height: 8.4vh;
-  background: var(--title-color);
+  background: var(--nav-overlay-color);
   border-radius: 0.625rem;
   transition: all 0.4s;
   z-index: 999999;
@@ -59,6 +59,6 @@
   }
   .language__dash {
     left: 6rem;
-    top: -1.85rem;
+    top: -1.90rem;
   }
 }
