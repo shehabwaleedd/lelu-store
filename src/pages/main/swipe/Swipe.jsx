@@ -4,7 +4,7 @@ import Swiper from 'swiper';
 import 'swiper/css';
 import 'swiper/css/effect-cube';
 import { Link } from 'react-router-dom';
-import img1 from '../../../assets/items/bag2.jpg';
+import img1 from '../../../assets/land5.jpg';
 import img2 from '../../../assets/lelu5.jpg';
 import img3 from '../../../assets/lelu12.jpg';
 import img4 from '../../../assets/lelu3.jpg';

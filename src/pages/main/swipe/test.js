@@ -1,5 +1,0 @@
-// import img1 from "../../../assets/land1.jpg"
-// import img2 from "../../../assets/lelu1.JPEG"
-// import img3 from "../../../assets/land9.jpg"
-// import img4 from "../../../assets/lelu3.jpg"
-// import img5 from "../../../assets/land8.jpg"

@@ -130,7 +130,7 @@
 .bottoms__submenu {
     position: absolute;
     top: 4rem;
-    left: -0%;
+    left: -40%;
     width: 20vw;
     height: 26vh;
     transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
@@ -170,7 +170,7 @@
     position: absolute;
     top: 4rem;
     left: -0%;
-    width: 20vw;
+    width: 23vw;
     height: 25vh;
     transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -214,7 +214,7 @@
     top: 4rem;
     left: -0%;
     width: 20vw;
-    height: 25vh;
+    height: 20vh;
     transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -354,10 +354,12 @@
 
 }
 
+
+
 .link__graphic_pijamas {
     position: absolute;
     top: 0;
-    left: 1rem;
+    left: -3.5rem;
     pointer-events: none;
     fill: none;
     stroke: var(--title-color);
@@ -445,3 +447,59 @@
 
 
 
+
+
+
+.shirt__submenu {
+    position: absolute;
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+    width: 50vw;
+    height: 50vh;
+    bottom: -6.5rem;
+    left: 20rem;
+    z-index: 9999999;
+}
+
+
+
+.shirt__submenu img {
+    z-index: 9999999;
+    height: 70vh;
+    width: 70%;
+    object-fit: cover;
+}
+
+.cargo__submenu {
+    position: absolute;
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+    width: 50vw;
+    height: 50vh;
+    bottom: -11.5rem;
+    left: 20rem;
+    z-index: 9999999;
+}
+
+.cargo__submenu img {
+    z-index: 9999999;
+    height: 70vh;
+    width: 70%;
+    object-fit: cover;
+}
+
+.nottoday__submenu {
+    position: absolute;
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+    width: 50vw;
+    height: 50vh;
+    top: -3rem;
+    left: -250%;
+    z-index: 9999999;
+    
+}
+
+.nottoday__submenu img {
+    z-index: 9999999;
+    height: 70vh;
+    width: 70%;
+    object-fit: cover;
+}
