@@ -11,24 +11,28 @@ const Data = [
         title: "navbar__home",
         path: "/",
         img: img1,
+        alt: "home",
     },
     {
         id: 2,
         title: "FAQS",
         path: "/faqs",
         img: img2,
+        alt: "faqs"
     },
     {
         id: 3,
         title: "navbar__about",
         path: "/about",
         img: img3,
+        alt: "about"
     },
     {
         id: 4,
         title: "navbar__contact",
         path: "/contact",
         img: img4,
+        alt: "contact"
     },
 
 ]

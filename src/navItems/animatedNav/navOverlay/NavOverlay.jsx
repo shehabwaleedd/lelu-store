@@ -21,14 +21,14 @@ const NavOverlay = (Props) => {
             transitionDelay: Props.navOpen ? "0s" : "0s"
         }}>
             <div className={Props.navOpen ? "nav-links spin" : "nav-links"}>
-                {Data.map(({ id, title, path, img }) => (
+                {Data.map(({ id, title, path, img, alt }) => (
                     <div className='menu' style={{ bottom: Props.navOpen ? "0" : "7.5rem", transitionDelay: Props.navOpen ? "0.7s" : "0s", opacity: Props.navOpen ? "1" : "0" }}>
                         <div className="menu__item" key={id}>
                             <Link to={path} onClick={() => Props.setNavOpen(!Props.navOpen)}>
-                                <h1 className='menu__item-link' data-text={t(title)} style={{ top: Props.navOpen ? "0" : "7.5rem", transitionDelay: Props.navOpen ? "0.7s" : "0s", opacity: Props.navOpen ? "1" : "0" }}>
+                                <a className='menu__item-link' data-text={t(title)}  aria-hidden="true" style={{ top: Props.navOpen ? "0" : "7.5rem", transitionDelay: Props.navOpen ? "0.7s" : "0s", opacity: Props.navOpen ? "1" : "0" }}>
                                     {t(title)}
-                                </h1>
-                                <img className="menu__item-img" src={img} alt="Some image"/>
+                                </a>
+                                <img className="menu__item-img" src={img} alt={alt}/>
                                 <div className="marquee">
                                     <div className="marquee__inner" aria-hidden="true">
                                         <span>{t(title)}</span>

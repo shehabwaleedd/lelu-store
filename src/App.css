@@ -93,7 +93,10 @@
   --accent: var(--pink);
   --background-color: #eee7e1;
   --color-number: #999;
-
+	--color-link-hover: #1b1b1b;
+  --color-link: #b19e7f;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   /* =========== Font And Typography =========== */
 
@@ -191,9 +194,8 @@ ul {
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
-
 button {
   cursor: pointer;
   border: none;
