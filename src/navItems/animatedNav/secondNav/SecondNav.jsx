@@ -16,17 +16,17 @@ const SecondNav = (Props) => {
 
     const handleSubmenuClick = () => {
         setUpperSubmenuOpen(!upperSubmenuOpen);
-        Props.setNavOpen(false); 
+        Props.setNavOpen(false);
     };
 
     const handleBottomsSubmenuClick = () => {
-        setBottomsSubmenuOpen(!bottomsSubmenuOpen); 
-        Props.setNavOpen(false); 
+        setBottomsSubmenuOpen(!bottomsSubmenuOpen);
+        Props.setNavOpen(false);
     };
 
     const handleSetSubmenuClick = () => {
         setSetSubMenu(!setSubMenu);
-        Props.setNavOpen(false); 
+        Props.setNavOpen(false);
     };
 
     const handleBagsSubmenuClick = () => {
@@ -47,8 +47,8 @@ const SecondNav = (Props) => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/shop" onClick={handleNavItemClick}>
-                                SHOP ALL
+                            <Link>
+                                <span>Shop All</span>
                             </Link>
                         </li>
                         <li className='upper'>
@@ -58,45 +58,57 @@ const SecondNav = (Props) => {
                             <AnimatePresence>
                                 {upperSubmenuOpen && (
                                     <motion.div className='upper__submenu'
-                                        initial={{y: -15}}
-                                        animate={{y: 3}}
-                                        exit={{opacity: 0, y: -15}}
+                                        initial={{ y: -15 }}
+                                        animate={{ y: 3 }}
+                                        exit={{ opacity: 0, y: -15 }}
                                     >
                                         <motion.ul>
-                                            <motion.li             
-                                            initial={{x: -15}}
-                                            animate={{x: 0}}
-                                            exit={{x: -15}}
-                                        >
-                                                <Link to="/shop/upper/shirts" onClick={handleNavItemClick}>
-                                                    Shirts
+                                            <motion.li
+                                                initial={{ x: -15 }}
+                                                animate={{ x: 0 }}
+                                                exit={{ x: -15 }}
+                                            >
+                                                <Link to="/shop/upper/shirts" onClick={handleNavItemClick} className="link link--carme">
+                                                    - Shirts
+                                                    <svg className="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9" viewBox="0 0 101 9">
+                                                        <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1" />
+                                                    </svg>
                                                 </Link>
                                             </motion.li>
                                             <motion.li
-                                            initial={{x: -15}}
-                                            animate={{x: 0}}
-                                            exit={{x: -15}}
+                                                initial={{ x: -15 }}
+                                                animate={{ x: 0 }}
+                                                exit={{ x: -15 }}
                                             >
-                                                <Link to="/shop/upper/hoodies" onClick={handleNavItemClick}>
-                                                    Hoodies
+                                                <Link to="/shop/upper/hoodies" onClick={handleNavItemClick} className="link link--carme">
+                                                    - Hoodies
+                                                    <svg className="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9" viewBox="0 0 101 9">
+                                                        <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1" />
+                                                    </svg>
                                                 </Link>
                                             </motion.li>
                                             <motion.li
-                                            initial={{x: -15}}
-                                            animate={{x: 0}}
-                                            exit={{x: -15}}
+                                                initial={{ x: -15 }}
+                                                animate={{ x: 0 }}
+                                                exit={{ x: -15 }}
                                             >
-                                                <Link to="/shop/upper/jackets" onClick={handleNavItemClick}>
-                                                    Jackets
+                                                <Link to="/shop/upper/jackets" onClick={handleNavItemClick} className="link link--carme">
+                                                    - Jackets
+                                                    <svg className="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9" viewBox="0 0 101 9">
+                                                        <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1" />
+                                                    </svg>
                                                 </Link>
                                             </motion.li>
                                             <motion.li
-                                            initial={{x: -15}}
-                                            animate={{x: 0}}
-                                            exit={{x: -15}}
+                                                initial={{ x: -15 }}
+                                                animate={{ x: 0 }}
+                                                exit={{ x: -15 }}
                                             >
-                                                <Link to="/shop/upper/t-shirts" onClick={handleNavItemClick}>
-                                                    T-Shirts
+                                                <Link to="/shop/upper/t-shirts" onClick={handleNavItemClick} className="link link--carme">
+                                                    - T-Shirts
+                                                    <svg className="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9" viewBox="0 0 101 9">
+                                                        <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1" />
+                                                    </svg>
                                                 </Link>
                                             </motion.li>
                                         </motion.ul>
@@ -106,41 +118,50 @@ const SecondNav = (Props) => {
                         </li>
                         <li className='bottoms'>
                             <Link to="" onClick={handleBottomsSubmenuClick}>
-                                Bottoms <i className="bx bx-chevron-down"></i>  
+                                Bottoms <i className="bx bx-chevron-down"></i>
                             </Link>
                             <AnimatePresence>
                                 {bottomsSubmenuOpen && (
                                     <motion.div className='bottoms__submenu'
-                                        initial={{y: -15}}
-                                        animate={{y: 3}}
-                                        exit={{opacity: 0, y: -15}}
+                                        initial={{ y: -15 }}
+                                        animate={{ y: 3 }}
+                                        exit={{ opacity: 0, y: -15 }}
                                     >
                                         <motion.ul>
-                                            <motion.li             
-                                            initial={{x: -15}}
-                                            animate={{x: 0}}
-                                            exit={{x: -15}}
-                                        >
-                                                <Link to="/shop/upper/shirts" onClick={handleNavItemClick}>
-                                                    Cargos
+                                            <motion.li
+                                                initial={{ x: -15 }}
+                                                animate={{ x: 0 }}
+                                                exit={{ x: -15 }}
+                                            >
+                                                <Link to="/shop/upper/shirts" onClick={handleNavItemClick} className="link link--carme">
+                                                    - Cargos
+                                                    <svg className="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9" viewBox="0 0 101 9">
+                                                        <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1" />
+                                                    </svg>
                                                 </Link>
                                             </motion.li>
                                             <motion.li
-                                            initial={{x: -15}}
-                                            animate={{x: 0}}
-                                            exit={{x: -15}}
+                                                initial={{ x: -15 }}
+                                                animate={{ x: 0 }}
+                                                exit={{ x: -15 }}
                                             >
-                                                <Link to="/shop/upper/hoodies" onClick={handleNavItemClick}>
-                                                    Sweatpants
+                                                <Link to="/shop/upper/hoodies" onClick={handleNavItemClick} className="link link--carme">
+                                                    - Sweatpants
+                                                    <svg className="link__graphic_sweatpants link__graphic--stroke link__graphic--scribble" width="100%" height="9" viewBox="0 0 101 9">
+                                                        <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1" />
+                                                    </svg>
                                                 </Link>
                                             </motion.li>
                                             <motion.li
-                                            initial={{x: -15}}
-                                            animate={{x: 0}}
-                                            exit={{x: -15}}
+                                                initial={{ x: -15 }}
+                                                animate={{ x: 0 }}
+                                                exit={{ x: -15 }}
                                             >
-                                                <Link to="/shop/upper/t-shirts" onClick={handleNavItemClick}>
-                                                    Shorts
+                                                <Link to="/shop/upper/t-shirts" onClick={handleNavItemClick} className="link link--carme">
+                                                    - Shorts
+                                                    <svg className="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9" viewBox="0 0 101 9">
+                                                        <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1" />
+                                                    </svg>
                                                 </Link>
                                             </motion.li>
                                         </motion.ul>
@@ -155,36 +176,45 @@ const SecondNav = (Props) => {
                             <AnimatePresence>
                                 {setSubMenu && (
                                     <motion.div className='set__submenu'
-                                        initial={{y: -15}}
-                                        animate={{y: 3}}
-                                        exit={{opacity: 0, y: -15}}
+                                        initial={{ y: -15 }}
+                                        animate={{ y: 3 }}
+                                        exit={{ opacity: 0, y: -15 }}
                                     >
                                         <motion.ul>
-                                            <motion.li             
-                                            initial={{x: -15}}
-                                            animate={{x: 0}}
-                                            exit={{x: -15}}
-                                        >
-                                                <Link to="/shop/upper/shirts" onClick={handleNavItemClick}>
-                                                    "Not Today" Set
+                                            <motion.li
+                                                initial={{ x: -15 }}
+                                                animate={{ x: 0 }}
+                                                exit={{ x: -15 }}
+                                            >
+                                                <Link to="/shop/upper/shirts" onClick={handleNavItemClick} className="link link--carme">
+                                                    - "Not Today" Set
+                                                    <svg className="link__graphic_laptop link__graphic--stroke link__graphic--scribble" width="100%" height="9" viewBox="0 0 101 9">
+                                                        <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1" />
+                                                    </svg>
                                                 </Link>
                                             </motion.li>
                                             <motion.li
-                                            initial={{x: -15}}
-                                            animate={{x: 0}}
-                                            exit={{x: -15}}
+                                                initial={{ x: -15 }}
+                                                animate={{ x: 0 }}
+                                                exit={{ x: -15 }}
                                             >
-                                                <Link to="/shop/upper/hoodies" onClick={handleNavItemClick}>
-                                                    Zebra Set
+                                                <Link to="/shop/upper/hoodies" onClick={handleNavItemClick} className="link link--carme">
+                                                    - Zebra Set
+                                                    <svg className="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9" viewBox="0 0 101 9">
+                                                        <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1" />
+                                                    </svg>
                                                 </Link>
                                             </motion.li>
                                             <motion.li
-                                            initial={{x: -15}}
-                                            animate={{x: 0}}
-                                            exit={{x: -15}}
+                                                initial={{ x: -15 }}
+                                                animate={{ x: 0 }}
+                                                exit={{ x: -15 }}
                                             >
-                                                <Link to="/shop/upper/t-shirts" onClick={handleNavItemClick}>
-                                                    Pijamas
+                                                <Link to="/shop/upper/t-shirts" onClick={handleNavItemClick} className="link link--carme">
+                                                    - Pijamas
+                                                    <svg className="link__graphic_pijamas link__graphic--stroke link__graphic--scribble" width="100%" height="9" viewBox="0 0 101 9">
+                                                        <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1" />
+                                                    </svg>
                                                 </Link>
                                             </motion.li>
                                         </motion.ul>
@@ -199,36 +229,45 @@ const SecondNav = (Props) => {
                             <AnimatePresence>
                                 {bagsSubMenu && (
                                     <motion.div className='bags__submenu'
-                                        initial={{y: -15}}
-                                        animate={{y: 3}}
-                                        exit={{opacity: 0, y: -15}}
+                                        initial={{ y: -15 }}
+                                        animate={{ y: 3 }}
+                                        exit={{ opacity: 0, y: -15 }}
                                     >
                                         <motion.ul>
-                                            <motion.li             
-                                            initial={{x: -15}}
-                                            animate={{x: 0}}
-                                            exit={{x: -15}}
-                                        >
-                                                <Link to="/shop/upper/shirts" onClick={handleNavItemClick}>
-                                                    Backpacks
+                                            <motion.li
+                                                initial={{ x: -15 }}
+                                                animate={{ x: 0 }}
+                                                exit={{ x: -15 }}
+                                            >
+                                                <Link to="/shop/upper/shirts" onClick={handleNavItemClick} className="link link--carme">
+                                                    - Backpacks
+                                                    <svg className="link__graphic_backpacks link__graphic--stroke link__graphic--scribble" width="100%" height="9" viewBox="0 0 101 9">
+                                                        <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1" />
+                                                    </svg>
                                                 </Link>
                                             </motion.li>
                                             <motion.li
-                                            initial={{x: -15}}
-                                            animate={{x: 0}}
-                                            exit={{x: -15}}
+                                                initial={{ x: -15 }}
+                                                animate={{ x: 0 }}
+                                                exit={{ x: -15 }}
                                             >
-                                                <Link to="/shop/upper/hoodies" onClick={handleNavItemClick}>
-                                                    Waist Bags
+                                                <Link to="/shop/upper/hoodies" onClick={handleNavItemClick}  className="link link--carme">
+                                                    - Waist Bags
+                                                    <svg className="link__graphic_backpacks link__graphic--stroke link__graphic--scribble" width="100%" height="9" viewBox="0 0 101 9">
+                                                        <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1" />
+                                                    </svg>
                                                 </Link>
                                             </motion.li>
                                             <motion.li
-                                            initial={{x: -15}}
-                                            animate={{x: 0}}
-                                            exit={{x: -15}}
+                                                initial={{ x: -15 }}
+                                                animate={{ x: 0 }}
+                                                exit={{ x: -15 }}
                                             >
-                                                <Link to="/shop/upper/t-shirts" onClick={handleNavItemClick}>
-                                                    Laptop Sleeves
+                                                <Link to="/shop/upper/t-shirts" onClick={handleNavItemClick} className="link link--carme">
+                                                    - Laptop Sleeves
+                                                    <svg className="link__graphic_laptop link__graphic--stroke link__graphic--scribble" width="100%" height="9" viewBox="0 0 101 9">
+                                                        <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1" />
+                                                    </svg>
                                                 </Link>
                                             </motion.li>
                                         </motion.ul>

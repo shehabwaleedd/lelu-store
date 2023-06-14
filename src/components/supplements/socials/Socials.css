@@ -30,7 +30,7 @@
 }
 
 
-.nav-social-media ul li::after {
+/* .nav-social-media ul li::after {
     content: "";
     position: absolute;
     left: 0rem;
@@ -47,7 +47,7 @@
 .nav-social-media ul li:hover::after {
     transform: scaleX(1); 
 
-  }
+  } */
 
  
 
