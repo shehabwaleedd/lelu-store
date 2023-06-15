@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import './SecondNav.css';
 import { AnimatePresence } from 'framer-motion';
 import { motion } from 'framer-motion';
-import shirt from "../../../assets/men1.jpg"
-import hoodie from "../../../assets/land7.jpg"
-import jacket from "../../../assets/land8.jpg"
-import tshirt from "../../../assets/land1.jpg"
+import shirt from "../../../assets/summer1.jpg"
+import hoodie from "../../../assets/land1.jpg"
+import jacket from "../../../assets/j1.jpg"
+import tshirt from "../../../assets/casual1.jpg"
 import cargo from "../../../assets/items/cargo4.jpg"
 import Sweatpants from "../../../assets/sweatpants.jpg"
 import Shorts from "../../../assets/shorts2.jpg"
@@ -14,7 +14,7 @@ import NotToday from "../../../assets/nottoday.jpg"
 import Doodle from "../../../assets/doodle1.jpg"
 import ShortSet from "../../../assets/set1.jpg"
 import Backpack from "../../../assets/backpack1.jpg"
-import Waistback from "../../../assets/wbag1.jpg"
+import Waistback from "../../../assets/wbag2.jpg"
 
 const SecondNav = (Props) => {
     const [upperSubmenuOpen, setUpperSubmenuOpen] = useState(false);
@@ -217,10 +217,10 @@ const SecondNav = (Props) => {
                                             <AnimatePresence>
                                                 {shirtSubMenu && (
                                                     <motion.div className="shirt__submenu"
-                                                    initial={{ opacity: 0, x: 250}}
-                                                    animate={{  opacity: 1, x: 0}}
-                                                    exit={{opacity: 0, x: 250}}
-                                                    transition={{ duration: 0.2, ease: "easeInOut"}}
+                                                        initial={{ opacity: 0, x: 250 }}
+                                                        animate={{ opacity: 1, x: 0 }}
+                                                        exit={{ opacity: 0, x: 250 }}
+                                                        transition={{ duration: 0.2, ease: "easeInOut" }}
                                                     >
                                                         <img src={shirt} alt="" />
                                                     </motion.div>
@@ -242,10 +242,10 @@ const SecondNav = (Props) => {
                                             <AnimatePresence>
                                                 {hoodiesSubMenu && (
                                                     <motion.div className="shirt__submenu"
-                                                    initial={{ opacity: 0, x: 250}}
-                                                    animate={{  opacity: 1, x: 0}}
-                                                    exit={{opacity: 0, x: 250}}
-                                                    transition={{ duration: 0.2, ease: "easeInOut"}}
+                                                        initial={{ opacity: 0, x: 250 }}
+                                                        animate={{ opacity: 1, x: 0 }}
+                                                        exit={{ opacity: 0, x: 250 }}
+                                                        transition={{ duration: 0.2, ease: "easeInOut" }}
                                                     >
                                                         <img src={hoodie} alt="" />
                                                     </motion.div>
@@ -267,10 +267,10 @@ const SecondNav = (Props) => {
                                             <AnimatePresence>
                                                 {jacketSubMenu && (
                                                     <motion.div className="shirt__submenu"
-                                                    initial={{ opacity: 0, x: 250}}
-                                                    animate={{  opacity: 1, x: 0}}
-                                                    exit={{opacity: 0, x: 250}}
-                                                    transition={{ duration: 0.2, ease: "easeInOut"}}
+                                                        initial={{ opacity: 0, x: 250 }}
+                                                        animate={{ opacity: 1, x: 0 }}
+                                                        exit={{ opacity: 0, x: 250 }}
+                                                        transition={{ duration: 0.2, ease: "easeInOut" }}
                                                     >
                                                         <img src={jacket} alt="" />
                                                     </motion.div>
@@ -292,10 +292,10 @@ const SecondNav = (Props) => {
                                             <AnimatePresence>
                                                 {tshirtsSubMenu && (
                                                     <motion.div className="shirt__submenu"
-                                                    initial={{ opacity: 0, x: 250}}
-                                                    animate={{  opacity: 1, x: 0}}
-                                                    exit={{opacity: 0, x: 250}}
-                                                    transition={{ duration: 0.2, ease: "easeInOut"}}
+                                                        initial={{ opacity: 0, x: 250 }}
+                                                        animate={{ opacity: 1, x: 0 }}
+                                                        exit={{ opacity: 0, x: 250 }}
+                                                        transition={{ duration: 0.2, ease: "easeInOut" }}
                                                     >
                                                         <img src={tshirt} alt="" />
                                                     </motion.div>
@@ -334,10 +334,10 @@ const SecondNav = (Props) => {
                                             <AnimatePresence>
                                                 {cargosSubMenu && (
                                                     <motion.div className="cargo__submenu"
-                                                    initial={{ opacity: 0, x: 250}}
-                                                    animate={{  opacity: 1, x: 0}}
-                                                    exit={{opacity: 0, x: 250}}
-                                                    transition={{ duration: 0.2, ease: "easeInOut"}}
+                                                        initial={{ opacity: 0, x: 250 }}
+                                                        animate={{ opacity: 1, x: 0 }}
+                                                        exit={{ opacity: 0, x: 250 }}
+                                                        transition={{ duration: 0.2, ease: "easeInOut" }}
                                                     >
                                                         <img src={cargo} alt="" />
                                                     </motion.div>
@@ -347,7 +347,7 @@ const SecondNav = (Props) => {
                                                 initial={{ x: -15 }}
                                                 animate={{ x: 0 }}
                                                 exit={{ x: -15, transition: { duration: 0.1 } }}
-                                                onMouseEnter={handleSweatpantsSubMenuEnter} onMouseLeave={handleSweatpantsSubMenuLeave} 
+                                                onMouseEnter={handleSweatpantsSubMenuEnter} onMouseLeave={handleSweatpantsSubMenuLeave}
                                             >
                                                 <Link to="/shop/upper/hoodies" onClick={handleNavItemClick} className="link link--carme">
                                                     - Sweatpants
@@ -359,10 +359,10 @@ const SecondNav = (Props) => {
                                             <AnimatePresence>
                                                 {sweatpantsSubMenu && (
                                                     <motion.div className="cargo__submenu"
-                                                    initial={{ opacity: 0, x: 250}}
-                                                    animate={{  opacity: 1, x: 0}}
-                                                    exit={{opacity: 0, x: 250}}
-                                                    transition={{ duration: 0.2, ease: "easeInOut"}}
+                                                        initial={{ opacity: 0, x: 250 }}
+                                                        animate={{ opacity: 1, x: 0 }}
+                                                        exit={{ opacity: 0, x: 250 }}
+                                                        transition={{ duration: 0.2, ease: "easeInOut" }}
                                                     >
                                                         <img src={Sweatpants} alt="" />
                                                     </motion.div>
@@ -372,7 +372,7 @@ const SecondNav = (Props) => {
                                                 initial={{ x: -15 }}
                                                 animate={{ x: 0 }}
                                                 exit={{ x: -15, transition: { duration: 0.1 } }}
-                                                onMouseEnter={handleShortsSubMenuEnter} onMouseLeave={handleShortsSubMenuLeave} 
+                                                onMouseEnter={handleShortsSubMenuEnter} onMouseLeave={handleShortsSubMenuLeave}
                                             >
                                                 <Link to="/shop/upper/t-shirts" onClick={handleNavItemClick} className="link link--carme">
                                                     - Shorts
@@ -384,10 +384,10 @@ const SecondNav = (Props) => {
                                             <AnimatePresence>
                                                 {shortsSubMenu && (
                                                     <motion.div className="cargo__submenu"
-                                                    initial={{ opacity: 0, x: 250}}
-                                                    animate={{  opacity: 1, x: 0}}
-                                                    exit={{opacity: 0, x: 250}}
-                                                    transition={{ duration: 0.2, ease: "easeInOut"}}
+                                                        initial={{ opacity: 0, x: 250 }}
+                                                        animate={{ opacity: 1, x: 0 }}
+                                                        exit={{ opacity: 0, x: 250 }}
+                                                        transition={{ duration: 0.2, ease: "easeInOut" }}
                                                     >
                                                         <img src={Shorts} alt="" />
                                                     </motion.div>
@@ -425,12 +425,12 @@ const SecondNav = (Props) => {
                                             <AnimatePresence>
                                                 {notTodaySubMenu && (
                                                     <motion.div className="nottoday__submenu"
-                                                    initial={{ opacity: 0, left: "-300%"}}
-                                                    animate={{  opacity: 1, left: "-210%"}}
-                                                    exit={{opacity: 0, left: "-350%"}}
-                                                    transition={{ duration: 0.2, ease: "easeInOut"}}
+                                                    initial={{ opacity: 0, left: "-300%" }}
+                                                    animate={{ opacity: 1, left: "-210%" }}
+                                                    exit={{ opacity: 0, left: "-350%" }}
+                                                        transition={{ duration: 0.1, ease: "easeInOut" }}
                                                     >
-                                                        <img src={NotToday} alt="" />
+                                                        <motion.img src={NotToday} alt="" />
                                                     </motion.div>
                                                 )}
                                             </AnimatePresence>
@@ -439,7 +439,7 @@ const SecondNav = (Props) => {
                                                 animate={{ x: 0 }}
                                                 exit={{ x: -15, transition: { duration: 0.1 } }}
                                             >
-                                                <Link to="/shop/upper/hoodies" onClick={handleNavItemClick} className="link link--carme"  onMouseEnter={handleDoodleSubMenuEnter} onMouseLeave={handleDoodleSubMenuLeave}>
+                                                <Link to="/shop/upper/hoodies" onClick={handleNavItemClick} className="link link--carme" onMouseEnter={handleDoodleSubMenuEnter} onMouseLeave={handleDoodleSubMenuLeave}>
                                                     - Doodles Set
                                                     <svg className="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9" viewBox="0 0 101 9">
                                                         <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1" />
@@ -449,10 +449,10 @@ const SecondNav = (Props) => {
                                             <AnimatePresence>
                                                 {doodleSubMenu && (
                                                     <motion.div className="nottoday__submenu"
-                                                    initial={{ opacity: 0, left: "-300%"}}
-                                                    animate={{  opacity: 1, left: "-210%"}}
-                                                    exit={{opacity: 0, left: "-350%"}}
-                                                    transition={{ duration: 0.2, ease: "easeInOut"}}
+                                                        initial={{ opacity: 0, left: "-300%" }}
+                                                        animate={{ opacity: 1, left: "-210%" }}
+                                                        exit={{ opacity: 0, left: "-350%" }}
+                                                        transition={{ duration: 0.2}}
                                                     >
                                                         <img src={Doodle} alt="" />
                                                     </motion.div>
@@ -473,13 +473,14 @@ const SecondNav = (Props) => {
                                             <AnimatePresence>
                                                 {shortSetSubMenu && (
                                                     <motion.div className="nottoday__submenu"
-                                                    initial={{ opacity: 0, left: "-300%"}}
-                                                    animate={{  opacity: 1, left: "-210%"}}
-                                                    exit={{opacity: 0, left: "-350%"}}
-                                                    transition={{ duration: 0.2, ease: "easeInOut"}}
+                                                        initial={{ opacity: 0, left: "-300%" }}
+                                                        animate={{ opacity: 1, left: "-210%" }}
+                                                        exit={{ opacity: 0, left: "-350%" }}
+                                                        transition={{ duration: 0.2, ease: "easeInOut" }}
                                                     >
                                                         <img src={ShortSet} alt="" />
                                                     </motion.div>
+
                                                 )}
                                             </AnimatePresence>
                                         </motion.ul>
@@ -514,10 +515,10 @@ const SecondNav = (Props) => {
                                             <AnimatePresence>
                                                 {waistbagSubMenu && (
                                                     <motion.div className="nottoday__submenu"
-                                                    initial={{ opacity: 0, left: "-300%"}}
-                                                    animate={{  opacity: 1, left: "-250%"}}
-                                                    exit={{opacity: 0, left: "-350%"}}
-                                                    transition={{ duration: 0.2, ease: "easeInOut"}}
+                                                        initial={{ opacity: 0, left: "-300%" }}
+                                                        animate={{ opacity: 1, left: "-250%" }}
+                                                        exit={{ opacity: 0, left: "-350%" }}
+                                                        transition={{ duration: 0.2, ease: "easeInOut" }}
                                                     >
                                                         <img src={Waistback} alt="" />
                                                     </motion.div>
@@ -538,10 +539,10 @@ const SecondNav = (Props) => {
                                             <AnimatePresence>
                                                 {backpackSubMenu && (
                                                     <motion.div className="nottoday__submenu"
-                                                    initial={{ opacity: 0, left: "-300%"}}
-                                                    animate={{  opacity: 1, left: "-250%"}}
-                                                    exit={{opacity: 0, left: "-350%"}}
-                                                    transition={{ duration: 0.2, ease: "easeInOut"}}
+                                                        initial={{ opacity: 0, left: "-300%" }}
+                                                        animate={{ opacity: 1, left: "-250%" }}
+                                                        exit={{ opacity: 0, left: "-350%" }}
+                                                        transition={{ duration: 0.2, ease: "easeInOut" }}
                                                     >
                                                         <img src={Backpack} alt="" />
                                                     </motion.div>

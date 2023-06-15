@@ -492,10 +492,15 @@
     width: 50vw;
     height: 50vh;
     top: -3rem;
-    left: -250%;
-    z-index: 9999999;
+    left: -210%;
     
 }
+
+.shortss {
+    position: relative;
+
+}
+
 
 .nottoday__submenu img {
     z-index: 9999999;
