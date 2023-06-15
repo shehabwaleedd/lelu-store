@@ -1,4 +1,3 @@
-import { useTranslation } from 'react-i18next';
 import img1 from "../../../assets/land5.jpg"
 import img2 from "../../../assets/lelu4.jpg"
 import img3 from "../../../assets/aboutus.jpg"

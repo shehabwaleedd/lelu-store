@@ -157,7 +157,6 @@
 	position: relative;
     -webkit-text-stroke: 1.2px var(--container-color);
 	-webkit-text-fill-color: transparent;
-
 	color: transparent;
 	transition: color 0.4s cubic-bezier(0.16, 1, 0.3, 1); /* Add transition for color property */
 	backface-visibility: hidden;
@@ -165,9 +164,6 @@
 }
 
 .menu__item-link::before {
-	all: initial;
-	counter-increment: menu;
-	content: counter(menu);
 	position: absolute;
 	bottom: 60%;
 	left: 0;

@@ -183,7 +183,7 @@ const SecondNav = (Props) => {
                             </Link>
                         </li>
                         <li>
-                            <Link>
+                            <Link to="/shop">
                                 <span>Shop All</span>
                             </Link>
                         </li>
