@@ -96,11 +96,11 @@ const SignUp = (Props) => {
                                 <div className="social__logins">
                                     <div className="signup__social-button facebook__button_blacked">
                                         <i class='bx bxl-facebook' ></i>
-                                        <button onClick={handleGoogle} className="">Facebook</button>
+                                        <button onClick={handleGoogle} className="">facebook</button>
                                     </div>
                                     <div className="signup__social-button google__button_blacked">
                                         <i class='bx bxl-google' ></i>
-                                        <button onClick={handleGoogle}>Google</button>
+                                        <button onClick={handleGoogle}>google</button>
                                     </div>
                                 </div>
                                 <div className="login__checkbox">

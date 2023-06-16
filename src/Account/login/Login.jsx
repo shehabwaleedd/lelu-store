@@ -117,18 +117,18 @@ function Login() {
                     </div>
                     <div className="login__button">
                       <button type="submit" className="login__button-sign">
-                        <h3>LOGIN</h3>
+                        <h3>login</h3>
                         <i className="uil uil-arrow-right button__icon-login"></i>
                       </button>
                     </div>
                     <div className="social__loginss">
-                      <div className="login__social-button facebook__button_blacked_login">
+                      <div className="signup__social-button facebook__button_blacked facebook__login">
                         <i class='bx bxl-facebook' ></i>
-                        <button onClick={handleGoogle} className="">facebook</button>
+                        <button onClick={handleGoogle} className="">Facebook</button>
                       </div>
-                      <div className="login__social-button google__button_blacked_login">
+                      <div className="signup__social-button google__button_blacked google__login">
                         <i class='bx bxl-google' ></i>
-                        <button onClick={handleGoogle}>google</button>
+                        <button onClick={handleGoogle}>Google</button>
                       </div>
                     </div>
                     <div className="login__checkbox">

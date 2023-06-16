@@ -197,6 +197,7 @@
     border-radius: 0.2rem;
     transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
     width: 30vw;
+    text-transform: lowercase;
 }
 
 
@@ -214,10 +215,12 @@
 .signup__button_google button {
     background-color: var(--stack-accent-color);
     color: var(--nav-overlay-color);
+    text-transform: lowercase;
 }
 
 .signup__button_google button h3 {
     color: var(--nav-overlay-color);
+    text-transform: lowercase;
 }
 
 .signup__button button:hover {
@@ -228,6 +231,7 @@
 .signup__button_facebook button {
     background-color: #5d5deb;
     color: var(--overlay-color);
+    text-transform: lowercase;
 }
 
 
