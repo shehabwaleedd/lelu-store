@@ -15,6 +15,7 @@ import Policy from '../../pages/footer/policy/Policy';
 import Shippment from '../../pages/footer/shippment/Shippment';
 import Returns from '../../pages/footer/returns/Returns';
 import Swipe from '../../pages/main/swipe/Swipe';
+import Blog from '../../pages/awareness/blog/Blog';
 
 const MainRoutes = (Props) => {
 
@@ -41,6 +42,7 @@ const MainRoutes = (Props) => {
       <Route path="/shipping-policy" element={<Shippment />} />
       <Route path="/returns-exchanges" element={<Returns />} />
       <Route path="/swipe" element={<Swipe />} />
+      <Route path="/blog/:id" element={<Blog />} />
     </Routes>
   )
 }
