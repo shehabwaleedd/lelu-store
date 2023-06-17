@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5161657a.css",
-    "main.js": "/static/js/main.7140495e.js",
+    "main.css": "/static/css/main.42fa9d9e.css",
+    "main.js": "/static/js/main.2531657d.js",
     "static/js/787.fd708470.chunk.js": "/static/js/787.fd708470.chunk.js",
     "static/media/lelu2.jpg": "/static/media/lelu2.85e0c83a41c3038ca114.jpg",
     "static/media/land3.jpg": "/static/media/land3.1a884ac00bf8de693186.jpg",
@@ -16,12 +16,14 @@
     "static/media/wbag2.jpg": "/static/media/wbag2.f071080156a1c96abc23.jpg",
     "static/media/short2.jpg": "/static/media/short2.65904810561b3ac39a91.jpg",
     "static/media/lelu12.jpg": "/static/media/lelu12.c909866d0baf3b697afd.jpg",
+    "static/media/pose1.avif": "/static/media/pose1.c41d0a0c27c899cb9233.avif",
     "static/media/short4.jpg": "/static/media/short4.3bad152bbae7c1b38d7b.jpg",
     "static/media/eslam.jpg": "/static/media/eslam.c337457492f3dc5a2c05.jpg",
     "static/media/doodle1.jpg": "/static/media/doodle1.db6d017aac99bb07f893.jpg",
     "static/media/293350364_372270118175081__n.jpg": "/static/media/293350364_372270118175081_3046696230036478632_n.6a0b1cf9e0d76de2fb52.jpg",
     "static/media/land10.jpg": "/static/media/land10.41cd1c52f807908845f5.jpg",
     "static/media/roy.jpg": "/static/media/roy.4dfc06d58efb1aedb8b3.jpg",
+    "static/media/colors1.avif": "/static/media/colors1.212f01198fb7a7ebdbc7.avif",
     "static/media/lelu4.jpg": "/static/media/lelu4.84c753f7d6f390881993.jpg",
     "static/media/j1.jpg": "/static/media/j1.3116b403fe9946816c21.jpg",
     "static/media/aboutus.jpg": "/static/media/aboutus.6518d242185d3c9364c8.jpg",
@@ -84,6 +86,7 @@
     "static/media/Satoshi-BoldItalic.woff": "/static/media/Satoshi-BoldItalic.d6da0f2020393863d720.woff",
     "static/media/Satoshi-Italic.woff": "/static/media/Satoshi-Italic.a7000aa1c017eec57868.woff",
     "static/media/Satoshi-Medium.woff": "/static/media/Satoshi-Medium.2419b46c96ed15331ba2.woff",
+    "static/media/materials1.avif": "/static/media/materials1.ee9136f1eb0cbe6cefc1.avif",
     "static/media/Satoshi-Regular.woff": "/static/media/Satoshi-Regular.ca3da5fd2b609836ef69.woff",
     "static/media/Satoshi-Bold.woff": "/static/media/Satoshi-Bold.a875ff682ee232938607.woff",
     "static/media/Satoshi-BlackItalic.woff": "/static/media/Satoshi-BlackItalic.048e5edd452be6c13214.woff",
@@ -113,12 +116,12 @@
     "static/media/logo_lelu.webp": "/static/media/logo_lelu.6fedf37d96c4cbccaab4.webp",
     "index.html": "/index.html",
     "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.5161657a.css.map": "/static/css/main.5161657a.css.map",
-    "main.7140495e.js.map": "/static/js/main.7140495e.js.map",
+    "main.42fa9d9e.css.map": "/static/css/main.42fa9d9e.css.map",
+    "main.2531657d.js.map": "/static/js/main.2531657d.js.map",
     "787.fd708470.chunk.js.map": "/static/js/787.fd708470.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5161657a.css",
-    "static/js/main.7140495e.js"
+    "static/css/main.42fa9d9e.css",
+    "static/js/main.2531657d.js"
   ]
 }
