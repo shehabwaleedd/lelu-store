@@ -63,8 +63,7 @@
 
 .logoTitle {
   font-size: 2.5rem;
-  font-family: "LOAL";
-
+  font-family: "Reggae One";
   text-transform: uppercase;
   letter-spacing: 1.25rem;
   font-weight: 800;
@@ -89,7 +88,7 @@
 
 .logo h1 {
   font-size: 2.5rem;
-  font-family: "LOAL";
+  font-family: "Raleway";
   color: var(--nav-overlay-color);
   text-transform: uppercase;
   letter-spacing: 1.25rem;
