@@ -20,6 +20,7 @@
 
   }
   
+  
   .dropdown__icon:hover {
     cursor: pointer;
   }
@@ -30,7 +31,6 @@
     color: var(--container-color);
     transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
     transition-delay: 0.3s;
-    padding: 0.6rem;
   }
 
   .dropdown__icon span {
@@ -43,13 +43,20 @@
 .language__dash {
   position: absolute;
   top: -1rem;
-  left: 8rem;
+  left: 7.5rem;
   width: 0.125rem;;
   height: 8.4vh;
   background: var(--nav-overlay-color);
   border-radius: 0.625rem;
   transition: all 0.4s;
   z-index: 999999;
+  transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+
+}
+
+.language__dash.spin {
+  transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+  background: var(--container-color);
 }
 
 

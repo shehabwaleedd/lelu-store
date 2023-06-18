@@ -3,7 +3,7 @@
     align-items: center;
     gap: 1rem;
     cursor: pointer;
-    padding: 0.35rem 2.5rem;
+    padding: 0.3rem 2.5rem;
     border-right: 2px solid var(--nav-overlay-color);
     transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -39,6 +39,7 @@
     border-radius: 50%;
     transition: 0.3s ease;
     z-index: 999999;
+    padding-top: 1rem;
 
 }
 
@@ -53,9 +54,9 @@
     left: 0;
     right: 0;
     transform: rotate(0deg);
-    transition: all 0.4s;
+    transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
     color: var(--title-color);
-    top: 1.5em;
+    top: 1.2em;
     z-index: 999999;
 }
 
@@ -70,10 +71,10 @@
     left: 0;
     right: 0;
     transform: rotate(0deg);
-    transition: all 0.4s;
+    transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
     color: var(--title-color);
     z-index: 999999;
-    top: 1.05em;
+    top: 1.7em;
 }
 
 

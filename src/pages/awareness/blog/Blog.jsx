@@ -34,7 +34,6 @@ const Blog = () => {
                                 <a href="/" className="post__hashtag-details">#{post.category}</a>
                             </div>
                         </div>
-
                             <div className="blog__details_post-textanddate">
                                 <h3 className="post__title_name-details">{post.title}</h3>
                             </div>

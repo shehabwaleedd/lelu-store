@@ -19,6 +19,7 @@ const Awareness = () => {
                             </div>
                         </div>
                     ))}
+                    <div className="awareness__dash"></div>
                 </div>
             </div>
             <div className="mainproducts_title">

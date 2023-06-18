@@ -34,13 +34,13 @@ const DropDownMenu = (Props) => {
 
   return (
     <div className="menu__container" ref={menuRef}>
-      <div className={`dropdown-menu ${open ? 'active' : 'inactive'}`}>
+      <div className={`dropdown-menu`}>
         <button
           onClick={() => handleLanguageChange()}
           className={Props.navOpen ? "dropdown__icon spin" : "dropdown__icon"}
         >
           <span>{language === 'EN' ? 'DE' : 'EN'}</span>
-        <div className="language__dash"></div>
+        <div className={Props.navOpen? "language__dash spin" : "language__dash"}></div>
         </button>
       </div>
     </div>
