@@ -21,7 +21,7 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    padding: 5rem;
+    padding: 1rem;
 }
 
 .discount__off {
@@ -75,7 +75,7 @@
 }
 
 .explore__button {
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 
 .sales__button:hover {
@@ -116,6 +116,4 @@
         cursor: pointer;
         transition: all 0.2s ease-in-out;
     }
-    
-
 }

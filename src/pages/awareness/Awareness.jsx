@@ -9,7 +9,7 @@ const Awareness = () => {
             <div className="awareness__container">
                 <div className="awareness__content">
                     {Data.map(({id, category, title}) => (
-                        <div className="awareness__data" key={id}>
+                        <div className={`awareness__data data${id}`} key={id}>
                             <div className="awareness__tag">
                                 <p>{category}</p>
                             </div>
@@ -19,7 +19,6 @@ const Awareness = () => {
                             </div>
                         </div>
                     ))}
-                    <div className="awareness__dash"></div>
                 </div>
             </div>
             <div className="mainproducts_title">

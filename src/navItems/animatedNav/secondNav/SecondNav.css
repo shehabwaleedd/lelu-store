@@ -136,6 +136,10 @@
     transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+.bottoms__submenu img {
+    z-index: 9999999;
+}
+
 .bottoms__submenu ul {
     display: flex;
     flex-direction: column;
@@ -203,6 +207,7 @@
     text-transform: uppercase;
     letter-spacing: 0.2rem;
 }
+
 
 
 .bags {
@@ -460,7 +465,9 @@
     z-index: 9999999;
 }
 
+.cargo__submenu {
 
+}
 
 .shirt__submenu img {
     z-index: 9999999;
@@ -476,7 +483,7 @@
     height: 50vh;
     bottom: -11.5rem;
     left: 20rem;
-    z-index: 9999999;
+
 }
 
 .cargo__submenu img {

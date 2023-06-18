@@ -38,7 +38,7 @@ const Data = [
     {
         id: 3,
         category: "Insights",
-        title: "Which Materials You Should Avoid?",
+        title: "Materials You Should Avoid?",
         img: materials,
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
     }

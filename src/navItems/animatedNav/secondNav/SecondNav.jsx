@@ -364,7 +364,7 @@ const SecondNav = (Props) => {
                                                         exit={{ opacity: 0, x: 250 }}
                                                         transition={{ duration: 0.2, ease: "easeInOut" }}
                                                     >
-                                                        <img src={Sweatpants} alt="" />
+                                                        <img src={Sweatpants} alt="" style={{zIndex: 9999999}} />
                                                     </motion.div>
                                                 )}
                                             </AnimatePresence>

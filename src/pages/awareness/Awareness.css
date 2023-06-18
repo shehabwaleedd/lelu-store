@@ -66,6 +66,7 @@
     font-size: 1.2rem;
     position: relative;
     width: 26.5%;
+    cursor: pointer;
 }
 
 .photography {
@@ -75,7 +76,7 @@
 .awareness__tag p {
     font-size: 1rem;
     color: var(--title-color);
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.04rem;
     text-align: left;
     border: 1px solid var(--title-color);
     padding: 0.2rem 0.8rem;
