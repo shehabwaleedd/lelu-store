@@ -8,6 +8,7 @@ import './Login.css'
 import SignUp from '../signUp/SignUp';
 import { useRef } from 'react';
 import { TweenMax, TimelineMax, Power3, Power4 } from "gsap";
+import { auth } from "../../firebase-config";
 
 function Login() {
 
@@ -15,6 +16,7 @@ function Login() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [agreed, setAgreed] = useState(false)
+  const [rememberMe, setRememberMe] = useState(false);
   const [formErrors, setFormErrors] = useState({});
   const { signIn, signInWithGoogle } = useUserAuth(); // Use useAuth instead of useUserAuth
   const navigate = useNavigate();
@@ -24,8 +26,8 @@ function Login() {
 
   useEffect(() => {
     runAnimation();
+    retrieveRememberedCredentials();
   }, []);
-
 
   const handleSignIn = async (e) => {
     e.preventDefault();
@@ -33,7 +35,10 @@ function Login() {
 
     try {
       await signIn(email, password);
+      const user = auth.currentUser;
+      const token = await user.getIdToken();
       navigate('/');
+      console.log(token);
     } catch (e) {
       setError(e.message);
       console.log(error);
@@ -46,6 +51,10 @@ function Login() {
 
     try {
       await signInWithGoogle(email, password);
+      const user = auth.currentUser;
+      const token = await user.getIdToken();
+      navigate('/');
+      console.log(token);
       navigate('/');
     } catch (e) {
       setError(e.message);
@@ -84,6 +93,40 @@ function Login() {
         ease: Power4.easeInOut,
       },
     }).delay(1);
+  };
+
+  const retrieveRememberedCredentials = () => {
+    const rememberedEmail = localStorage.getItem('rememberedEmail');
+    const rememberedPassword = localStorage.getItem('rememberedPassword');
+
+    if (rememberedEmail && rememberedPassword) {
+      setEmail(rememberedEmail);
+      setPassword(rememberedPassword);
+      setAgreed(true);
+    }
+  };
+
+  const handleRememberMe = () => {
+    setRememberMe(!rememberMe);
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    setError('');
+
+    // Validate the form fields here if needed
+
+    // Remember the email and password if the "Remember Me" checkbox is checked
+    if (rememberMe) {
+      localStorage.setItem('rememberedEmail', email);
+      localStorage.setItem('rememberedPassword', password);
+    } else {
+      localStorage.removeItem('rememberedEmail');
+      localStorage.removeItem('rememberedPassword');
+    }
+
+    // Proceed with the sign-in process
+    handleSignIn(e);
   };
 
 
@@ -135,14 +178,16 @@ function Login() {
                       <label>
                         <input
                           type="checkbox"
-                          checked={agreed}
-                          onChange={(e) => setAgreed(e.target.checked)}
+                          checked={rememberMe}
+                          onChange={handleRememberMe}
                           required
                         />
                       </label>
                       <p>Remember Password</p>
                     </div>
-                    {formErrors.agreed && <p className="error-message">{formErrors.agreed}</p>}
+                    {formErrors.agreed && (
+                      <p className="error-message">{formErrors.agreed}</p>
+                    )}
                   </div>
                   <div className="login__forgot">
                     <span className='login__forgot'>{t("login__form__forgot_password")}? <Link className='clickhere__button' to="/passwordreset">{t("login__form__click_here")}</Link></span>

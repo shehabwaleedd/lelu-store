@@ -20,7 +20,7 @@ const AnimatedNav = (Props) => {
 
     const logoStyles = {
         backgroundColor: Props.navOpen ? ' var(--container-color)' : ' var(--nav-overlay-color)',
-        right: searchOpen ? '-2rem' : '-15rem',
+        right: searchOpen ? '-2rem' : '-15.5rem',
         height: '4.5rem',
         top: '-0.5rem',
     };
@@ -33,7 +33,7 @@ const AnimatedNav = (Props) => {
     }
 
     if (isMediumScreen) {
-        logoStyles.right = searchOpen ? '-8rem' : '-22rem';
+        logoStyles.right = searchOpen ? '-8rem' : '-18rem';
         logoStyles.height = '7rem';
         logoStyles.top = '-1rem';
     }
