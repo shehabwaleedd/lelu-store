@@ -146,7 +146,7 @@
     margin-top: 1rem;
     padding: 0 0.5rem;
     padding-left: 3rem;
-    width: 30vw;
+    width: 30.5vw;
 }
 
 .login__button-sign {
@@ -187,52 +187,30 @@
 
 .facebook__login button {
     display: flex;
-    justify-content: center;
-
-    width: 14vw;
+    justify-content: flex-start;
+    width: 13vw;
     text-transform: lowercase;
 }
 
 .google__login button {
     display: flex;
-    justify-content: center;
-    width: 14vw;
+    justify-content: flex-start;
+    width: 13vw;
     text-transform: lowercase;
 }
 
-.facebook__button_blacked_login {
-    background-color: var(--nav-overlay-color);
-    color: var(--container-color);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0.4rem 0.2rem;
 
-    gap: 5rem;
-    cursor: pointer;
-}
 
 .google__button_blacked {
     background-color: var(--nav-overlay-color);
     color: var(--container-color);
     display: flex;
     justify-content: flex-start;
-    margin: 0.4rem 1rem;
+    margin: 0.4rem 0.9rem;
     padding: 1rem;
     cursor: pointer;
 }
 
-/* .google__button_blacked_login {
-    background-color: var(--nav-overlay-color);
-    color: var(--container-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0.4rem 1rem;
-    padding: 1rem;
-    gap: 1rem;
-    cursor: pointer;
-} */
 
 .google__button_blacked button {
     font-size: 1.2rem;
@@ -251,6 +229,7 @@
     padding: 0.3rem 1rem;
     width: 100%;
     text-align-last: left;
+    gap: 1rem;
 }
 
 .login__input input {
@@ -289,26 +268,6 @@
     transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
     text-align: center;
     align-content: center;
-}
-
-.google__button {
-    background-color: #ffffff;
-    color: black;
-    border: 0.001px solid var(--text-color);
-}
-
-.facebook__button {
-    background-color: #5d5deb;
-    color: #fff;
-}
-
-.apple__button {
-    background-color: #1b1b1b;
-    color: #fff;
-}
-
-.signup__social-button:hover {
-    border-radius: 0;
 }
 
 
@@ -393,7 +352,6 @@
 
 
 .clickhere__button {
-    
     color: var(--accent-color);
 }
 

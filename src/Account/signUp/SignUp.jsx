@@ -112,7 +112,7 @@ const SignUp = (Props) => {
                                             required
                                         />
                                     </label>
-                                    <p>You agree on our Privacy Policy and Terms & Conditions</p>
+                                    <span className='policy__agree'>You agree on our Privacy Policy and Terms & Conditions</span>
                                 </div>
                                 {formErrors.agreed && <p className="error-message">{formErrors.agreed}</p>}
                             </div>

@@ -235,8 +235,8 @@
 }
 
 
-.login__checkbox p {
+.policy__agree {
     color: var(--text-color);
-    font-size: var(--small-font-size);
+    font-size: 0.9rem;
     
 }
