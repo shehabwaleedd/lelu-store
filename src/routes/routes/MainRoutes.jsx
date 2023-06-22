@@ -26,7 +26,7 @@ const MainRoutes = (Props) => {
 
   return (
     <Routes location={location} key={location.pathname}>
-      <Route path="/" element={<BlogHome />} />
+      <Route path="/" element={<BlogHome  open={Props.open} setOpen={Props.setOpen} language={Props.language} setLanguage={Props.setLanguage} languageExpanded={Props.languageExpanded} setLanguageExpanded={Props.setLanguageExpanded}/>} />
       <Route path="/collection" element={<Collection />} />
       <Route path="/collection/:id" element={<Collection />} />
       <Route path="/contact" element={<Contact />} />

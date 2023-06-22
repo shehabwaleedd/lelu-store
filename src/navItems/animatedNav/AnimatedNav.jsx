@@ -18,9 +18,10 @@ const AnimatedNav = (Props) => {
     const isLargeScreen = useMediaQuery({ minWidth: 1881 });
     const isMediumScreen = useMediaQuery({ minWidth: 768, maxWidth: 1279 });
 
+    const { t } = useTranslation();
     const logoStyles = {
         backgroundColor: Props.navOpen ? ' var(--container-color)' : ' var(--nav-overlay-color)',
-        right: searchOpen ? '-2rem' : '-15.5rem',
+        right: searchOpen ? Props.language === "AR" ? '-4.5em' : '-2.6rem' : Props.language === "AR" ? '-15.5em' : '-17.6rem',
         height: '4.5rem',
         top: '-0.5rem',
     };
@@ -46,18 +47,19 @@ const AnimatedNav = (Props) => {
         <>
             <nav className={Props.navOpen ? "nav spin" : "nav"}>
                 <div className="nav__container">
-                    <LeftNavBar navOpen={Props.navOpen} setNavOpen={Props.setNavOpen}/>
-                    <div className="logo">
+                    <LeftNavBar navOpen={Props.navOpen} setNavOpen={Props.setNavOpen} searchOpen={searchOpen} setSearchOpen={setSearchOpen} open={Props.open} setOpen={Props.setOpen} language={Props.language} setLanguage={Props.setLanguage} languageExpanded={Props.languageExpanded} setLanguageExpanded={Props.setLanguageExpanded} />
+
+                    <div className={Props.navOpen ? "logo spin" : "logo"}>
                         <Link to="/">
-                            <div className="dash" style={logoStyles}></div>
-                            <h1 className={Props.navOpen ? "logoTitle spin" : "logoTitle"}>LELU</h1>
+                            <div className="nav__dash" style={logoStyles}></div>
+                            <h1 style={{ fontFamily: Props.language === "AR" ? "Aref Ruqaa" : "", letterSpacing: Props.language === "AR" ? "0" : "1rem" }}>{t("my__name")}</h1>
                         </Link>
                     </div>
-                    <RestNavBar navOpen={Props.navOpen} setNavOpen={Props.setNavOpen} searchOpen={searchOpen} setSearchOpen={setSearchOpen}/>
+                    <RestNavBar navOpen={Props.navOpen} setNavOpen={Props.setNavOpen} searchOpen={searchOpen} setSearchOpen={setSearchOpen} open={Props.open} setOpen={Props.setOpen} language={Props.language} setLanguage={Props.setLanguage} languageExpanded={Props.languageExpanded} setLanguageExpanded={Props.setLanguageExpanded} />
                 </div>
             </nav>
-            <NavOverlay navOpen={Props.navOpen} setNavOpen={Props.setNavOpen}/>
-            <SecondNav navOpen={Props.navOpen} setNavOpen={Props.setNavOpen}/>
+            <NavOverlay navOpen={Props.navOpen} setNavOpen={Props.setNavOpen} />
+            <SecondNav navOpen={Props.navOpen} setNavOpen={Props.setNavOpen} />
         </>
     );
 };

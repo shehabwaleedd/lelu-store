@@ -11,7 +11,7 @@ const LeftNavBar = (Props) => {
                     <span className={Props.navOpen ? "lineBottom spin" : "lineBottom"}></span>
                 </div>
             </div>
-            <DropDownMenu navOpen={Props.navOpen}/>
+            <DropDownMenu navOpen={Props.navOpen} setNavOpen={Props.setNavOpen} open={Props.open} setOpen={Props.setOpen} language={Props.language} setLanguage={Props.setLanguage} languageExpanded={Props.languageExpanded} setLanguageExpanded={Props.setLanguageExpanded}/>
         </div>
     )
 }

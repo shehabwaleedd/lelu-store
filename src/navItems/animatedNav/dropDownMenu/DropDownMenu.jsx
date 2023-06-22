@@ -5,14 +5,12 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import './DropDownMenu.css';
+import uk from "../../../assets/uk.svg"
 
 const DropDownMenu = (Props) => {
-  const [open, setOpen] = useState(false);
-  const [language, setLanguage] = useState(i18next.language);
-  const [languageExpanded, setLanguageExpanded] = useState(false);
 
   const handleLanguageExpanded = () => {
-    setLanguageExpanded(!languageExpanded);
+    Props.setLanguageExpanded(!Props.languageExpanded);
   };
 
   let menuRef = useRef();
@@ -20,7 +18,7 @@ const DropDownMenu = (Props) => {
   useEffect(() => {
     let handler = (e) => {
       if (!menuRef.current.contains(e.target)) {
-        setOpen(false);
+        Props.setOpen(false);
       }
     };
 
@@ -32,14 +30,17 @@ const DropDownMenu = (Props) => {
   }, []);
 
   useEffect(() => {
-    i18next.changeLanguage(language);
-  }, [language]);
+    i18next.changeLanguage(Props.language);
+  }, [Props.language]);
 
   const handleLanguageChange = (newLanguage) => {
-    setLanguage(newLanguage);
-    setOpen(false);
+    Props.setLanguage(newLanguage);
+    Props.setOpen(false);
   };
 
+  const handleEnglishClick = () => {
+    handleLanguageChange('EN');
+  };
   const handleGermanClick = () => {
     handleLanguageChange('DE');
   };
@@ -52,6 +53,10 @@ const DropDownMenu = (Props) => {
     handleLanguageChange('ES');
   };
 
+  const handleArabicClick = () => {
+    handleLanguageChange('AR');
+  }
+
   return (
     <div className="menu__container" ref={menuRef}>
       <div className={`dropdown-menu`}>
@@ -60,18 +65,24 @@ const DropDownMenu = (Props) => {
           className={Props.navOpen ? 'dropdown__icon spin' : 'dropdown__icon'}
         >
           <span onClick={handleLanguageExpanded}>
-            {language === 'EN' ? 'DE' : 'EN'}
+            {Props.language}
             <i className="bx bx-chevron-down"></i>
             <AnimatePresence>
-              {languageExpanded && (
+              {Props.languageExpanded && (
                 <motion.div
                   initial={{ y: -15, opacity: 0 }}
                   animate={{ y: 3, opacity: 1 }}
                   exit={{ y: -15, opacity: 0 }}
                   className="language__dropdown"
                 >
+                  <button className="language__dropdown-link" onClick={handleEnglishClick}>
+                    <span className="language__text">- EN</span>
+                    <div className="uk-flag">
+                        <img src={uk} alt="" />
+                    </div>
+                  </button>
                   <button className="language__dropdown-link" onClick={handleGermanClick}>
-                    <span className="language__text">- {language === 'EN' ? 'DE' : 'EN'}</span>
+                    <span className="language__text">- DE</span>
                     <div className="germany-flag">
                       <div className="germany-flag-stripe germany-flag-stripe--black"></div>
                       <div className="germany-flag-stripe germany-flag-stripe--red"></div>
@@ -79,7 +90,7 @@ const DropDownMenu = (Props) => {
                     </div>
                   </button>
                   <button className="language__dropdown-link" onClick={handleFrenchClick}>
-                    <span className="language__text">- {language === 'EN' ? 'FR' : 'EN'}</span>
+                    <span className="language__text">- FR</span>
                     <div className="france-flag">
                       <div className="france-flag-stripe france-flag-stripe--blue"></div>
                       <div className="france-flag-stripe france-flag-stripe--white"></div>
@@ -87,15 +98,15 @@ const DropDownMenu = (Props) => {
                     </div>
                   </button>
                   <button className="language__dropdown-link" onClick={handleSpanishClick}>
-                    <span className="language__text">- {language === 'EN' ? 'SP' : 'EN'}</span>
+                    <span className="language__text">- ES</span>
                     <div className="spain-flag">
                       <div className="spain-flag-stripe spain-flag-stripe--red"></div>
                       <div className="spain-flag-stripe spain-flag-stripe--yellow"></div>
                       <div className="spain-flag-stripe spain-flag-stripe--red"></div>
                     </div>
                   </button>
-                  <button className="language__dropdown-link" onClick={handleLanguageChange}>
-                    <span className="language__text">- {language === 'EN' ? 'AR' : 'EN'}</span>
+                  <button className="language__dropdown-link" onClick={handleArabicClick}>
+                    <span className="language__text">- AR</span>
                     <div className="egypt-flag">
                       <div className="egypt-flag-stripe egypt-flag-stripe--red"></div>
                       <div className="egypt-flag-stripe egypt-flag-stripe--white"></div>
