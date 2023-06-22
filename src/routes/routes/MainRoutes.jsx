@@ -16,6 +16,7 @@ import Shippment from '../../pages/footer/shippment/Shippment';
 import Returns from '../../pages/footer/returns/Returns';
 import Swipe from '../../pages/main/swipe/Swipe';
 import Blog from '../../pages/awareness/blog/Blog';
+import Account from '../../pages/account/Account';
 
 const MainRoutes = (Props) => {
 
@@ -43,6 +44,8 @@ const MainRoutes = (Props) => {
       <Route path="/returns-exchanges" element={<Returns />} />
       <Route path="/swipe" element={<Swipe />} />
       <Route path="/blog/:id" element={<Blog />} />
+      <Route path="/account" element={<Account />} />
+
     </Routes>
   )
 }

@@ -166,11 +166,11 @@ function Login() {
                     </div>
                     <div className="social__loginss">
                       <div className="signup__social-button facebook__button_blacked facebook__login">
-                        <i class='bx bxl-facebook' ></i>
+                        <i className='bx bxl-facebook' ></i>
                         <button onClick={handleGoogle} className="">Facebook</button>
                       </div>
                       <div className="signup__social-button google__button_blacked google__login">
-                        <i class='bx bxl-google' ></i>
+                        <i className='bx bxl-google' ></i>
                         <button onClick={handleGoogle}>Google</button>
                       </div>
                     </div>

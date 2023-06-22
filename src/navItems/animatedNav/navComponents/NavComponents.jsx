@@ -30,16 +30,18 @@ const NavComponents = (Props) => {
         <div className="nav__links-links">
             {user ? (
                 <div className="loginss">
-                    <button className={Props.navOpen ? 'nav__home spin' : 'nav__home'} onClick={handleExpand}>
-                        Account
-                    </button>
+                    <Link to="/account">
+                        <button className={Props.navOpen ? 'nav__home spin' : 'nav__home'} onClick={handleExpand}>
+                            Account
+                        </button>
+                    </Link>
                     <AnimatePresence>
                         {expanded && (
                             <motion.div
                                 className="account__dropdown show"
-                                initial={{ opacity: 0, y: -20,  width: "20vw", height: "30vh", x: 20  }}
-                                animate={{ opacity: 1, y: 20, width: "20vw", height: "30vh", x: 30 }}
-                                exit={{ opacity: 0, y: -20 }}
+                                initial={{ opacity: 0, y: -20, width: "20vw", height: "1vh", x: 20 }}
+                                animate={{ opacity: 1, y: 20, width: "20vw", height: "20vh", x: 30 }}
+                                exit={{ opacity: 0, y: -20, height: "1vh" }}
                                 transition={{ duration: 0.2 }}
                             >
                                 <Link to="/account" className="account__dropdown-link">
@@ -50,9 +52,6 @@ const NavComponents = (Props) => {
                                 </Link>
                                 <Link to="/account/wishlist" className="account__dropdown-link">
                                     <span className="login__text">- My Wishlist</span>
-                                </Link>
-                                <Link to="/account/settings" className="account__dropdown-link">
-                                    <span className="login__text">- Settings</span>
                                 </Link>
                                 <button className="account__dropdown-link" onClick={handleLogout}>
                                     <span className="login__text">- Logout</span>

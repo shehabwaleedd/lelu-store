@@ -62,7 +62,7 @@
 .signup__bottom_content-item {
     display: flex;
     gap: 1rem;
-    align-items:first baseline;
+    align-items: first baseline;
 }
 
 .signup__bottom_content-item span {
@@ -99,9 +99,9 @@
 
 .signup__page__top-images {
     display: flex;
-    overflow: hidden; 
+    overflow: hidden;
     justify-content: center;
-} 
+}
 
 
 .signup__page__top-images img {
@@ -110,19 +110,21 @@
     border-radius: 50%;
     border: 2px solid #fff;
     position: relative;
-    margin-left: -1.25rem; 
-    transition: margin-left 1s cubic-bezier(0.16, 1, 0.3, 1);; 
+    margin-left: -1.25rem;
+    transition: margin-left 1s cubic-bezier(0.16, 1, 0.3, 1);
+    ;
 }
 
 
-.signup__page__top-images:hover  img {
-    transition: margin-left 1s cubic-bezier(0.16, 1, 0.3, 1);; 
+.signup__page__top-images:hover img {
+    transition: margin-left 1s cubic-bezier(0.16, 1, 0.3, 1);
+    ;
 
     margin-left: 0;
 }
 
 .signup__form {
-    display: flex;  
+    display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
@@ -153,7 +155,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    
+
 }
 
 .signup__user input {
@@ -161,20 +163,19 @@
     border: 1px solid var(--title-color);
     padding: 1rem;
     color: var(--title-color);
-    width: 30vw;
+    width: 33.4vw;
 }
 
 .signup__user input:focus {
-    outline: 0.3px solid  var(--accent-color);
+    outline: 0.3px solid var(--accent-color);
     background: var(--body-color);
 
 }
 
-.signup__user input:-webkit-autofill{ 
+.signup__user input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px var(--accent-color) inset;
     -webkit-text-fill-color: var(--container-color);
     border: 0.5px solid var(--text-color)
-
 }
 
 .signup__button {
@@ -187,19 +188,32 @@
 }
 
 
-.signup__button button{
+.signup__button button {
     display: flex;
     justify-content: flex-start;
     gap: 0.4rem;
     background-color: var(--nav-overlay-color);
     color: var(--container-color);
     padding: 0.95rem;
-    border-radius: 0.2rem;
     transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
-    width: 30vw;
+    width: 33.3vw;
     text-transform: lowercase;
 }
 
+.social__logins_signups {
+    display: flex;
+    width: 36.4vw;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.signedup__btn {
+    display: flex;
+    width: 16vw;
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+    text-transform: lowercase;
+}
 
 .signup__button button h3 {
     color: var(--container-color);
@@ -238,5 +252,62 @@
 .policy__agree {
     color: var(--text-color);
     font-size: 0.9rem;
-    
+
+}
+
+.age__country {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.age__select {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.dropdown-icon {
+    position: absolute;
+    top: 75%;
+    left: 4.5rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--title-color);
+    font-size: 0.8rem;
+}
+
+.dropdown-select {
+    appearance: none;
+    border: none;
+    background: transparent;
+    padding: 1.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.age__select select {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0rem;
+    border: 1px solid var(--title-color);
+    background: transparent;
+    color: var(--title-color);
+    outline: none;
+    font-size: var(--normal-font-size);
+    transition: 0.3s ease;
+    width: 10.9vw;
+}
+
+.dropdown__country select {
+    width: 10vw;
+}
+
+.dropdown-icon-country {
+    position: absolute;
+    top: 75%;
+    left: 7.5rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--title-color);
+    font-size: 1.2rem;
 }

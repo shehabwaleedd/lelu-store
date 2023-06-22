@@ -17,8 +17,8 @@ const UserContext = createContext();
 export const UserContextProvider = ({ children }) => {
   const [user, setUser] = useState({});
 
-  const createUser = (userName, email, password, confirmPassword) => {
-    return createUserWithEmailAndPassword(auth, userName, email, password, confirmPassword);
+  const createUser = (userName, email, password, confirmPassword, age, country) => {
+    return createUserWithEmailAndPassword(auth, userName, email, password, confirmPassword, age, country);
   };
 
   const signIn = (email, password) => {
