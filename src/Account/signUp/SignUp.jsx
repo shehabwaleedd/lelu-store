@@ -15,6 +15,7 @@ const SignUp = (Props) => {
     const [error, setError] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const [phoneNumber, setPhoneNumber] = useState('')
     const [age, setAge] = useState('age')
     const [country, setCountry] = useState('country')
     const [countries, setCountries] = useState([]);
@@ -46,7 +47,7 @@ const SignUp = (Props) => {
         e.preventDefault();
         setError('');
         try {
-            await createUser(email, password, age, country);
+            await createUser(email, password, age, country, phoneNumber);
             navigate('/');
         } catch (e) {
             setError(e.message);
@@ -102,6 +103,10 @@ const SignUp = (Props) => {
         setGender(event.target.value);
     };
 
+    const handlePhoneNumberChange= (event) => {
+        setPhoneNumber(event.target.value);
+    }
+
 
 
 
@@ -121,6 +126,8 @@ const SignUp = (Props) => {
                                     <input type="email" id="email" name='email' className="login__input-field" placeholder={t("signup__form__email")} value={email} onChange={(e) => setEmail(e.target.value)} />
                                     <h3>password</h3>
                                     <input type="password" id="password" name='password' className="signup__input-field" placeholder={t("signup__form__password")} value={password} onChange={(e) => setPassword(e.target.value)} />
+                                    <h3>phone number</h3>
+                                    <input type="text" id="phone" name='phone' className="signup__input-field" placeholder={t("signup__form__phone")} value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)}/>
                                     <div className="age__country">
                                         <div className="age__gender">
                                             <div className="age__select">
@@ -129,8 +136,7 @@ const SignUp = (Props) => {
                                                     className={`dropdown-select ${formErrors.city ? 'error' : ''}`}
                                                     name="gender"
                                                     value={gender}
-                                                    onChange={handleGenderChange}
-                                                    required
+                                                    onChange={(e) => setGender(e.target.value)}                                                    required
                                                 >
                                                     <option value="" disabled>
                                                         Gender
@@ -148,13 +154,12 @@ const SignUp = (Props) => {
                                                 className={`dropdown-select ${formErrors.budget ? "error" : ""}`}
                                                 name="age"
                                                 value={age}
-                                                onChange={handleOptionChange}
-                                                required
+                                                onChange={(e) => setAge(e.target.value)}                                                required
                                             >
                                                 <option value="age" disabled>
                                                     Age
                                                 </option>
-                                                {Array.from({ length: 36 }, (_, index) => index + 15).map((value) => (
+                                                {Array.from({ length: 56 }, (_, index) => index + 15).map((value) => (
                                                     <option key={value} value={value}>
                                                         {value}
                                                     </option>
@@ -170,8 +175,7 @@ const SignUp = (Props) => {
                                                     className={`dropdown-select  ${formErrors.country ? 'error' : ''}`}
                                                     name="country"
                                                     value={country}
-                                                    onChange={handleCountryChange}
-                                                    required
+                                                    onChange={(e) => setCountry(e.target.value)}                                                    required
                                                 >
                                                     <option value="" disabled>
                                                         Select Country

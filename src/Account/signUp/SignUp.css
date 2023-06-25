@@ -270,7 +270,7 @@
 .dropdown-icon {
     position: absolute;
     top: 75%;
-    left: 4.5rem;
+    left: 8.5rem;
     transform: translateY(-50%);
     pointer-events: none;
     color: var(--title-color);
@@ -305,7 +305,7 @@
 .dropdown-icon-country {
     position: absolute;
     top: 75%;
-    left: 7.5rem;
+    left: 7rem;
     transform: translateY(-50%);
     pointer-events: none;
     color: var(--title-color);
