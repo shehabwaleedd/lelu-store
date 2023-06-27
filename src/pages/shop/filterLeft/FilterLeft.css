@@ -31,7 +31,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 4rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
     width: 80%;
 }
@@ -48,7 +48,7 @@
     color: var(--title-color);
     cursor: pointer;
     transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-
+    
 }
 
 .filterLeft__category {
