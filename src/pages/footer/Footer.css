@@ -4,12 +4,12 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding: 1rem;
+
     font-family: "Satoshi-Bold", sans-serif;
     font-size: 1.2rem;
     width: 100%;
     bottom: 0;
-    height: 20vh;
+    height: 22vh;
     transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
 
 }
@@ -20,7 +20,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding: 1rem;
+
     font-family: "Satoshi-Bold", sans-serif;
     font-size: 1.2rem;
     width: 100%;

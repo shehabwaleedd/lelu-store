@@ -5,64 +5,66 @@ import { Link } from "react-router-dom";
 import DetailsPage from "./detailsPage/DetailsPage";
 import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
+import {useNavigate} from "react-router-dom";
 
 const Products = (Props) => {
 
 
-    const openModal = (id) => {
-        Props.setSelectedProductId(id);
-    };
+    // const openModal = (id) => {
+    //     Props.setSelectedProductId(id);
+    // };
 
-    const closeModal = () => {
-        Props.setSelectedProductId(null);
+    // const closeModal = () => {
+    //     Props.setSelectedProductId(null);
+    // };
+
+    const navigate = useNavigate();
+    const navigateTo = () => {
+
+        navigate(`/details/${Data.id}`);
     };
 
     return (
         <>
-            <AnimatePresence>
-                {Props.selectedProductId ? (
-                    <motion.div className="details_pro">
-                        <DetailsPage id={Props.selectedProductId} closeModal={closeModal} />
+                <motion.section className="products" 
+                initial={{ opacity: 0, y: 100, transition: { delay: 0.3, staggerChildren: 3.5, duration: 0.5, ease: [0.42, 0, 0.58, 1] } }} 
+                animate={{ opacity: 1, y: 0, type: "spring", transition: { delay: 0.5, staggerChildren: 3.5, duration: 0.7, ease: [0.42, 0, 0.58, 1] } }} 
+                exit={{ opacity: 0, y: 500, transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }}>
+                    <div className="products__container">
+                        <div className="products__content">
+                            <motion.div className="products__cards" 
+                            initial={{ opacity: 0, y: 100, transition: { delay: 0.3, staggerChildren: 3.5, duration: 0.5, ease: [0.42, 0, 0.58, 1] } }} 
+                            animate={{ opacity: 1, y: 0, type: "spring", transition: { delay: 0.5, staggerChildren: 3.5, duration: 0.7, ease: [0.42, 0, 0.58, 1] } }} 
+                            exit={{ opacity: 0, y: 500, transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }}>
+                                {Data.map((item) => (
+                                    <Link
+                                        initial={{ opacity: 0, y: 100, transition: { delay: 0.3, staggerChildren: 3.5, duration: 0.5, ease: [0.42, 0, 0.58, 1] } }} animate={{ opacity: 1, y: 0, type: "spring", transition: { delay: 0.5, staggerChildren: 3.5, duration: 0.7, ease: [0.42, 0, 0.58, 1] } }} exit={{ opacity: 0, y: -500, transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }}
+                                        className="product__card"
+                                        key={item.id}
+                                        to={`/details/${item.id}`}
 
-                    </motion.div>
-                ) : null}
-            </AnimatePresence>
-            {Props.selectedProductId ?
-                null : (
-                    <motion.section className="products" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{duration: 0.3}}>
-                        <div className="products__container">
-                            <div className="products__content">
-                                <motion.div className="products__cards" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{duration: 0.3}}>
-                                    {Data.map((item) => (
-                                        <motion.div
-                                            initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{duration: 0.3}}
-                                            className="product__card"
-                                            key={item.id}
-                                            onClick={() => openModal(item.id)}
-                                        >
-                                            {item.img && (
-                                                <img className="products__img" src={item.img} alt="" />
-                                            )}
-                                            <div className="product__info">
-                                                <h3>{item.name}</h3>
-                                                <div className="info__product">
-                                                    <span className="product__price">EGP {item.price}</span>
-                                                    <p>{item.category}</p>
-                                                </div>
-                                                <div className="product__button">
-                                                    <button className="product__btn">
-                                                        <h1>Quick ADD</h1>
-                                                    </button>
-                                                </div>
+                                    >
+                                        {item.img && (
+                                            <img className="products__img" src={item.img} alt="" />
+                                        )}
+                                        <div className="product__info">
+                                            <h3>{item.name}</h3>
+                                            <div className="info__product">
+                                                <span className="product__price">EGP {item.price}</span>
+                                                <p>{item.category}</p>
                                             </div>
-                                        </motion.div>
-                                    ))}
-                                </motion.div>
-                            </div>
+                                            <div className="product__button">
+                                                <button className="product__btn">
+                                                    <h1>Quick ADD</h1>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </Link>
+                                ))}
+                            </motion.div>
                         </div>
-                    </motion.section>
-                )
-            }
+                    </div>
+                </motion.section>
         </>
     );
 };

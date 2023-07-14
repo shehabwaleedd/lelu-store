@@ -5,14 +5,19 @@
     cursor: pointer;
 }
 
+
+
 .shop__titles span {
 
     color: var(--text-color);
 }
 
 .shop__input {
-    position: relative;
-    transition: all 3.8s cubic-bezier(0.19, 1, 0.22, 1);
+    position: sticky;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    top: 0rem;
+    background-color: var(--body-color);
+    z-index: 1; /* Add a higher z-index value */
 }
 
 .shop__input input {

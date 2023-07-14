@@ -10,7 +10,6 @@ import { getStorage } from "firebase/storage";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyBvif8wIw4bCkkcMvvJEstOovnWTGzP3AM",
-  authDomain: "lelu-store.firebaseapp.com",
   projectId: "lelu-store",
   storageBucket: "lelu-store.appspot.com",
   messagingSenderId: "837323288412",
