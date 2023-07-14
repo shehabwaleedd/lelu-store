@@ -11,14 +11,22 @@ import img4 from '../../../assets/lelu3.jpg';
 import img5 from '../../../assets/land9.jpg';
 import { useRef } from 'react';
 import { TweenMax, TimelineMax, Power3, Power4 } from "gsap";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Swipe = () => {
     let screen = useRef(null);
     let body = useRef(null);
 
     useEffect(() => {
-        runAnimation();
+
+        const hasMainShown =  sessionStorage.getItem('hasMainShown');
+
+        if (!hasMainShown) {
+            runAnimation();
+            sessionStorage.setItem('hasMainShown', 'true');
+        }
     }, []);
+
 
     const runAnimation = () => {
         var tl = new TimelineMax();
@@ -58,7 +66,11 @@ const Swipe = () => {
             <div className="main__load-container">
                 <div className="contact__load-screen" ref={(el) => (screen = el)}></div>
             </div>
-            <div className="swiper-container">
+            <motion.div className="swiper-container"
+                    initial={{ opacity: 0, y: 100, transition: { delay: 0.3, staggerChildren: 3.5, duration: 0.5, ease: [0.42, 0, 0.58, 1] } }} 
+                    animate={{ opacity: 1, y: 0, type: "spring", transition: { delay: 0.5, staggerChildren: 3.5, duration: 0.7, ease: [0.42, 0, 0.58, 1] } }} 
+                    exit={{ opacity: 0, y: 500, transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }}
+            >
                 <div className="swiper-wrapper">
                     <div className="swiper-slide">
                         <div className="container-general">
@@ -77,7 +89,7 @@ const Swipe = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </>
     );
 };

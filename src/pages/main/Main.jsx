@@ -1,9 +1,5 @@
 import React, { useEffect } from 'react';
 import './Main.css';
-import img1 from '../../assets/land4.jpg';
-import img2 from '../../assets/women1.jpg';
-import img3 from '../../assets/women3.jpg';
-import logo from '../../assets/logo_lelu.webp';
 import Data from './Data';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';

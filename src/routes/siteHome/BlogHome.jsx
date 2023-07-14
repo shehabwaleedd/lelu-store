@@ -19,8 +19,11 @@ export const BlogHome = () => {
 
   const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
   return (
-    <div>
-      <motion.div>
+      <motion.div
+      initial={{ opacity: 0,  transition: { delay: 0.3, staggerChildren: 3.5, duration: 0.5, ease: [0.42, 0, 0.58, 1] } }} 
+      animate={{ opacity: 1,  type: "spring", transition: { delay: 0.5, staggerChildren: 3.5, duration: 0.7, ease: [0.42, 0, 0.58, 1] } }} 
+      exit={{ opacity: 0, transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }}
+      >
         <Picks />
         <Swipe />
         <Awareness />
@@ -34,7 +37,6 @@ export const BlogHome = () => {
         <Testimonials />
         <Insurance />
       </motion.div>
-    </div >
   )
 }
 

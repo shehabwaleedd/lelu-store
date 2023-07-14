@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: center;
     padding-top: 7rem;
-    padding-bottom: 10rem;
 }
 
 .account__upper {
@@ -26,10 +25,13 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-top: 2rem;
     width: 100%;
     gap: 2rem;
-    padding: 0 4rem;
+    padding: 0 3.6rem;
+    position: relative;
+    height: 100%;
+    transition: all 0.8s cubic-bezier(0.96, 1, 0.8, 0.7);
+
 }
 
 .left__container {
@@ -37,8 +39,13 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 40%;
-    margin-left: 4.4rem;
+    width: 44%;
+    margin-left: 2.4rem;
+    border-right: 2px solid var(--nav-overlay-color);
+    padding-top: 2rem;
+    min-height: 80vh;
+    transition: all 0.8s cubic-bezier(0.96, 1, 0.8, 0.7);
+
 }
 
 .left__content {
@@ -48,6 +55,10 @@
     justify-content: flex-start;
     width: 100%;
     gap: 4rem;
+    position: sticky;
+    top: 2rem;
+    transition: all 0.8s cubic-bezier(0.96, 1, 0.8, 0.7);
+
 }
 
 .left__header {
@@ -90,7 +101,6 @@
     justify-content: flex-start;
     height: 100%;
     gap: 1rem;
-    padding-top: 4rem;
 }
 
 .left__name_email h1 {
@@ -177,8 +187,10 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    border-left: 0.1px solid var(--text-color);
     padding-left: 2rem;
+    padding-top: 2rem;
+    height: 70vh;
+    position: relative;
 }
 
 .right__header h1 {
@@ -226,12 +238,12 @@
     margin-top: 1rem;
     border-radius: 1rem;
     cursor: pointer;
-    background: var(--glass-background);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 251, 247, 0.3);
+    background: rgba(248, 248, 248, 0.039);
+    box-shadow: 0 8px 32px 0 #EEE7E12b;
+    backdrop-filter: blur( 14px );
+    -webkit-backdrop-filter: blur( 14px );
+    border-radius: 2px;
+    border: 1px solid rgba(47, 47, 47, 0.38);
     transition: all 0.8s cubic-bezier(0.96, 1, 0.8, 0.7);
 
 }
@@ -293,3 +305,13 @@
     transition: all 0.8s cubic-bezier(0.96, 1, 0.8, 0.7);
 }
 
+.right__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+    transition: all 0.8s cubic-bezier(0.96, 1, 0.8, 0.7);
+    height: 70vh;
+
+}
