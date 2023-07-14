@@ -553,11 +553,6 @@ const SecondNav = (Props) => {
                                 )}
                             </AnimatePresence>
                         </li>
-                        <li>
-                            <Link to="/faqs" onClick={handleNavItemClick}>
-                                FAQS
-                            </Link>
-                        </li>
                     </ul>
                 </div>
             </div>

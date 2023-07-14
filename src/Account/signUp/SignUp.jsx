@@ -55,18 +55,6 @@ const SignUp = (Props) => {
         }
     };
 
-    const handleFacebook = async (e) => {
-        e.preventDefault();
-        setError('');
-        try {
-            await signInWithFacebook(email, password);
-            navigate('/blog');
-        } catch (e) {
-            setError(e.message);
-            console.log(error);
-        }
-    };
-
     useEffect(() => {
         // Fetch the country data when the component mounts
         fetchCountries();
