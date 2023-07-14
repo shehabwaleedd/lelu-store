@@ -139,7 +139,7 @@ const Account = () => {
                                                 <i className='bx bx-user'></i>
                                             </div>
                                             <div className="right__bottom_card_text">
-                                                <h1>{user.displayName}</h1>
+                                                <h1>{userData.displayName}</h1>
                                             </div>
                                         </div>
                                     </div>
@@ -150,7 +150,7 @@ const Account = () => {
                                                 <i className='bx bx-calendar-alt'></i>
                                             </div>
                                             <div className="right__bottom_card_text">
-                                                <h1>{user.metadata.creationTime}</h1>
+                                                <h1>{userData.metadata.creationTime}</h1>
                                             </div>
                                         </div>
                                     </div>
@@ -172,7 +172,7 @@ const Account = () => {
                                                 <i className='bx bx-chat'></i>
                                             </div>
                                             <div className="right__bottom_card_text">
-                                                <h1>{user.email}</h1>
+                                                <h1>{userData.email}</h1>
                                             </div>
                                         </div>
                                     </div>

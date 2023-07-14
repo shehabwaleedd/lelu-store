@@ -58,7 +58,7 @@ const AnimatedNav = (Props) => {
                     <RestNavBar navOpen={Props.navOpen} setNavOpen={Props.setNavOpen} searchOpen={searchOpen} setSearchOpen={setSearchOpen} open={Props.open} setOpen={Props.setOpen} language={Props.language} setLanguage={Props.setLanguage} languageExpanded={Props.languageExpanded} setLanguageExpanded={Props.setLanguageExpanded} />
                 </div>
             </nav>
-            <NavOverlay navOpen={Props.navOpen} setNavOpen={Props.setNavOpen} />
+            <NavOverlay language={Props.language} setLanguage={Props.setLanguage} navOpen={Props.navOpen} setNavOpen={Props.setNavOpen} />
             <SecondNav navOpen={Props.navOpen} setNavOpen={Props.setNavOpen} />
         </>
     );

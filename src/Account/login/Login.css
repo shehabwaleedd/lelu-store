@@ -1,5 +1,5 @@
 .login {
-    height: 150vh;
+    height: 160vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,7 +96,7 @@
     padding: 2rem;
     border: 1.5px solid var(--nav-overlay-color);
     margin-top: 2rem;
-    height: 75.8vh;
+    height: 85.8vh;
     margin-top: 6.4rem;
 }
 
@@ -106,6 +106,7 @@
     gap: 0.2rem;
     width: 23vw;
     padding-bottom: 0.52rem;
+    height: 50vh;
 }
 
 .form__container_form-buttons {
@@ -388,7 +389,7 @@
         width: 40vw;
         padding: 2rem;
         border: 1.5px solid var(--nav-overlay-color);
-        height: 61.8vh;
+        height: 70.1vh;
         margin-top: 6.4rem;
         margin-right: 7rem;
     }

@@ -18,13 +18,7 @@ const NavOverlay = (Props) => {
     const { t } = useTranslation();
 
     return (
-        <div
-            className="nav-overlay"
-            style={{
-                top: Props.navOpen ? '0' : '-100%',
-                transitionDelay: Props.navOpen ? '0s' : '0s',
-            }}
-        >
+        <div className="nav-overlay" style={{ top: Props.navOpen ? '0' : '-100%', transitionDelay: Props.navOpen ? '0s' : '0s', }}>
             <div className={Props.navOpen ? 'nav-links spin' : 'nav-links'}>
                 <AnimatePresence>
                     {Data.map(({ id, title, path, img, alt }) => (
@@ -68,10 +62,10 @@ const NavOverlay = (Props) => {
                                     />
                                     <div className="marquee">
                                         <div className="marquee__inner" aria-hidden="true">
-                                            <span>{t(title)}</span>
-                                            <span>{t(title)}</span>
-                                            <span>{t(title)}</span>
-                                            <span>{t(title)}</span>
+                                            <span style={{ fontFamily: Props.language === "AR" ? "Aref Ruqaa" : "" }}>{t(title)}</span>
+                                            <span style={{ fontFamily: Props.language === "AR" ? "Aref Ruqaa" : "" }}>{t(title)}</span>
+                                            <span style={{ fontFamily: Props.language === "AR" ? "Aref Ruqaa" : "" }}>{t(title)}</span>
+                                            <span style={{ fontFamily: Props.language === "AR" ? "Aref Ruqaa" : "" }}>{t(title)}</span>
                                         </div>
                                     </div>
                                 </Link>

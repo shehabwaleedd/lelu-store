@@ -20,7 +20,7 @@
 .nav-links {
     position: absolute;
     top: 50%;
-    right: 23%;
+    right: 27%;
     transform: translate(-50%, -50%);
     margin: 0;
     padding: 0;
@@ -142,7 +142,6 @@
 	--offset: 20vw;
 	--move-initial: calc(-25% + var(--offset));
 	--move-final: calc(-50% + var(--offset));
-	--item-font-size: 10vw;
 	counter-reset: menu;
 }
 
@@ -220,7 +219,8 @@
 .menu__item-link:hover ~ .marquee .marquee__inner {
 	animation-play-state: running;
 	opacity: 1;
-	transition-duration: 0.4s;
+    transition: all 0.4s cubic-bezier(0.96, 1, 0.8, 0.7);
+
 }
 
 .marquee span {
@@ -230,7 +230,7 @@
 .menu__item-link,
 .marquee span {
 	white-space: nowrap;
-	font-size: var(--item-font-size);
+	font-size: 8rem;
 	padding: 0 1vw;
 	font-weight: 900;
 	line-height: 1.15;
